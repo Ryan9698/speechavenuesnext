@@ -1,10 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-// Updated variants for smoother transitions
 const menuVariants = {
   open: { opacity: 1, x: 0 },
   closed: { opacity: 0, x: "100%" },
@@ -17,12 +16,24 @@ const linkVariants = {
 
 const MobileMenu = ({ isOpen, toggleMenu }) => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentPath(window.location.pathname);
+    }
+  }, []);
 
   const toggleServices = () => {
     setIsServicesOpen(!isServicesOpen);
   };
 
   const hoverEffect = "hover:bg-gray-700 rounded-md";
+
+  const linkStyle = (path) =>
+    currentPath === path
+      ? "text-blue-400 font-semibold py-2"
+      : `text-white font-semibold py-2 ${hoverEffect}`;
 
   return (
     <div>
@@ -72,45 +83,59 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               className="flex flex-col pl-4"
             >
               <Link href="/therapy/speechtherapy">
-                <div onClick={toggleMenu} className={`py-2 ${hoverEffect}`}>
+                <div
+                  onClick={toggleMenu}
+                  className={linkStyle("/therapy/speechtherapy")}
+                >
                   Speech Therapy
                 </div>
               </Link>
               <Link href="/therapy/occupationaltherapy">
-                <div onClick={toggleMenu} className={`py-2 ${hoverEffect}`}>
+                <div
+                  onClick={toggleMenu}
+                  className={linkStyle("/therapy/occupationaltherapy")}
+                >
                   Occupational Therapy
                 </div>
               </Link>
               <Link href="/therapy/physicaltherapy">
-                <div onClick={toggleMenu} className={`py-2 ${hoverEffect}`}>
+                <div
+                  onClick={toggleMenu}
+                  className={linkStyle("/therapy/physicaltherapy")}
+                >
                   Physical Therapy
                 </div>
               </Link>
             </motion.div>
           </div>
           <Link href="/staff">
-            <div onClick={toggleMenu} className={`py-2 text-lg ${hoverEffect}`}>
+            <div onClick={toggleMenu} className={linkStyle("/staff")}>
               Our Staff
             </div>
           </Link>
           <Link href="/forms">
-            <div onClick={toggleMenu} className={`py-2 text-lg ${hoverEffect}`}>
+            <div onClick={toggleMenu} className={linkStyle("/forms")}>
               Forms
             </div>
           </Link>
           <Link href="/gallery">
-            <div onClick={toggleMenu} className={`py-2 text-lg ${hoverEffect}`}>
+            <div onClick={toggleMenu} className={linkStyle("/gallery")}>
               Gallery
             </div>
           </Link>
           <Link href="/contact">
-            <div onClick={toggleMenu} className={`py-2 text-lg ${hoverEffect}`}>
+            <div onClick={toggleMenu} className={linkStyle("/contact")}>
               Contact Us
             </div>
           </Link>
           <div className="flex-inline">
             <Link href="/school">
-              <div className={`flex items-center py-2 text-lg ${hoverEffect}`}>
+              <div
+                onClick={toggleMenu}
+                className={`flex items-center py-2 text-lg ${hoverEffect} ${
+                  currentPath === "/school" ? "text-blue-400" : "text-white"
+                }`}
+              >
                 School
                 <img
                   src="/images/pencil1.png"

@@ -5,10 +5,15 @@ import MobileMenu from "../MobileMenu";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  // Mobile Menu State
   const [isOpen, setIsOpen] = useState(false);
   const closeTimeoutId = useRef(null);
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentPath(window.location.pathname);
+    }
+  }, []);
 
   const handleMouseEnter = () => {
     if (closeTimeoutId.current) {
@@ -20,7 +25,7 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     closeTimeoutId.current = setTimeout(() => {
       setIsDropdownOpen(false);
-    }, 500); // Sets a 500ms delay in closing dropdown menu to enhance user experience.
+    }, 500);
   };
 
   useEffect(() => {
@@ -31,24 +36,24 @@ const Navbar = () => {
     };
   }, []);
 
-  // Mobile Menu Functions
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close dropdown menu once a link is clicked:
-
   const closeDropdown = () => {
     setIsDropdownOpen(false);
   };
+
+  const linkStyle = (path) =>
+    currentPath === path
+      ? "text-blue-400 font-semibold px-4 py-3"
+      : "text-white font-semibold px-4 py-3 hover:text-blue-400";
 
   return (
     <nav>
       <div className="md:hidden z-50 fixed top-6 right-8">
         <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
       </div>
-      {/* Desktop Navigation */}
       <div className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md fixed w-full z-30 top-0 left-0">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
           <div className="flex items-center">
@@ -109,25 +114,23 @@ const Navbar = () => {
               )}
             </div>
             <Link href="/staff">
-              <div className="font-semibold text-blue-400 px-4 py-3">
-                Our Staff
-              </div>
+              <div className={linkStyle("/staff")}>Our Staff</div>
             </Link>
             <Link href="/forms">
-              <div className="font-semibold text-blue-400 px-4 py-3">Forms</div>
+              <div className={linkStyle("/forms")}>Forms</div>
             </Link>
             <Link href="/contact">
-              <div className="font-semibold text-blue-400 px-4 py-3">
-                Contact
-              </div>
+              <div className={linkStyle("/contact")}>Contact</div>
             </Link>
             <Link href="/gallery">
-              <div className="font-semibold text-blue-400 px-4 py-3">
-                Gallery
-              </div>
+              <div className={linkStyle("/gallery")}>Gallery</div>
             </Link>
             <Link href="/school">
-              <div className="font-semibold text-blue-400 px-4 py-3 schoolFont text-xl inline-flex items-center">
+              <div
+                className={`${linkStyle(
+                  "/school"
+                )} schoolFont text-xl inline-flex items-center`}
+              >
                 School
                 <img
                   src="/images/pencil1.png"

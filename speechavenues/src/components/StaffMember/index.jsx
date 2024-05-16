@@ -1,10 +1,22 @@
-export default function StaffMember({ name, role, bio, imageUrl }) {
+import Image from "next/image";
+
+export default function StaffMember({
+  name,
+  role,
+  bio,
+  imageUrl,
+  width,
+  height,
+}) {
   return (
     <div className="max-w-sm rounded  shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-      <img
-        className="w-full h-[60vh] object-cover object-center"
+      <Image
+        className="w-full h-[60vh] object-cover object-center border-t"
         src={imageUrl}
         alt={`Portrait of ${name}`}
+        objectFit="cover"
+        width={width}
+        height={height}
       />
       <div className="px-4 py-2 bg-gray-300">
         <div className="font-bold text-2xl mb-2 text-gray-800">{name}</div>
