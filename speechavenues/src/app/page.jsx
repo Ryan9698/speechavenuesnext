@@ -1,5 +1,5 @@
 import React from "react";
-import PhoneIcon from "@/components/PhoneIcon"
+import PhoneIcon from "@/components/PhoneIcon";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {

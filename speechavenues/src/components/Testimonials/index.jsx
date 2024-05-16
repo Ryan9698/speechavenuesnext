@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import React, { useState, useEffect } from "react";
-import testimonials from "../../data/Testimonials";
+import testimonials from "@/data/Testimonials";
 
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
