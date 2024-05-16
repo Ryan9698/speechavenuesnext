@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import MobileMenu from "../MobileMenu";
 
 const Navbar = () => {
@@ -43,24 +43,13 @@ const Navbar = () => {
     setIsDropdownOpen(false);
   };
 
-  // Styling variables to simplify some of the code
-
-  const navBarStyle =
-    "bg-gradient-to-r from-black to-gray-800 text-white shadow-md";
-  const linkStyle = "font-semibold text-blue-400 px-4 py-3";
-  const inactiveStyle =
-    "text-gray-300 hover:bg-gray-700 hover:text-white rounded px-4 py-3 text-base font-medium transition duration-300";
-
-  // Rendered content
-
   return (
     <nav>
-      <div className="md:hidden z-50 fixed top-6  right-8">
-        {/* Other navbar content */}
+      <div className="md:hidden z-50 fixed top-6 right-8">
         <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
       </div>
       {/* Desktop Navigation */}
-      <div className={`${navBarStyle} fixed w-full z-30 top-0 left-0`}>
+      <div className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md fixed w-full z-30 top-0 left-0">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
@@ -71,14 +60,12 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          {/* Other Navigation Links */}
           <div className="hidden md:flex items-center space-x-1">
-
             <div className="relative">
               <button
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className={`${inactiveStyle} inline-flex items-center`}
+                className="text-gray-300 hover:bg-gray-700 hover:text-white rounded px-4 py-3 text-base font-medium transition duration-300 inline-flex items-center"
               >
                 Services
                 <svg
@@ -95,7 +82,6 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              {/* Services Dropdown Menu */}
               {isDropdownOpen && (
                 <div
                   onMouseEnter={handleMouseEnter}
@@ -108,92 +94,54 @@ const Navbar = () => {
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"
                   >
-                    <Link href="/therapy/speechtherapy"
-                      className={({ isActive }) =>
-                        `block px-4 py-2 text-white hover:bg-gray-700 ${
-                          isActive ? "bg-gray-700" : ""
-                        }`
-                      }
-                      role="menuitem"
-                      onClick={closeDropdown}
-                    >
-                      Speech Therapy
+                    <Link href="/therapy/speechtherapy">
+                      <div className="block px-4 py-2 text-white hover:bg-gray-700">
+                        Speech Therapy
+                      </div>
                     </Link>
-                    <Link href="/therapy/occupationaltherapy"
-                      className={({ isActive }) =>
-                        `block px-4 py-2 text-white hover:bg-gray-700 ${
-                          isActive ? "bg-gray-700" : ""
-                        }`
-                      }
-                      role="menuitem"
-                      onClick={closeDropdown}
-                    >
-                      Occupational Therapy
+                    <Link href="/therapy/occupationaltherapy">
+                      <div className="block px-4 py-2 text-white hover:bg-gray-700">
+                        Occupational Therapy
+                      </div>
                     </Link>
-                    {/* <NavLink
-                      to="/therapy/physicaltherapy"
-                      className={({ isActive }) =>
-                        `block px-4 py-2 text-white hover:bg-gray-700 ${
-                          isActive ? "bg-gray-700" : ""
-                        }`
-                      }
-                      role="menuitem"
-                      onClick={closeDropdown}
-                    >
-                      Physical Therapy
-                    </NavLink> */}
                   </div>
                 </div>
               )}
             </div>
-            <Link href="/staff"
-              className={({ isActive }) =>
-                isActive ? linkStyle : inactiveStyle
-              }
-            >
-              Our Staff
+            <Link href="/staff">
+              <div className="font-semibold text-blue-400 px-4 py-3">
+                Our Staff
+              </div>
             </Link>
-            <Link href="/forms"
-              className={({ isActive }) =>
-                isActive ? linkStyle : inactiveStyle
-              }
-            >
-              Forms
+            <Link href="/forms">
+              <div className="font-semibold text-blue-400 px-4 py-3">Forms</div>
             </Link>
-            <Link href="/contact"
-              className={({ isActive }) =>
-                isActive ? linkStyle : inactiveStyle
-              }
-            >
-              Contact
+            <Link href="/contact">
+              <div className="font-semibold text-blue-400 px-4 py-3">
+                Contact
+              </div>
             </Link>
-            <Link
-              href="/gallery"
-              className={({ isActive }) =>
-                isActive ? linkStyle : inactiveStyle
-              }
-            >
-              Gallery
+            <Link href="/gallery">
+              <div className="font-semibold text-blue-400 px-4 py-3">
+                Gallery
+              </div>
             </Link>
-            <Link
-              href="/school"
-              className={({ isActive }) =>
-                `${
-                  isActive ? linkStyle : inactiveStyle
-                } schoolFont text-xl inline-flex items-center`
-              }
-            >
-              School
-              <img src="/images/pencil1.png" alt="Logo" className="h-10 w-10" />
+            <Link href="/school">
+              <div className="font-semibold text-blue-400 px-4 py-3 schoolFont text-xl inline-flex items-center">
+                School
+                <img
+                  src="/images/pencil1.png"
+                  alt="Logo"
+                  className="h-10 w-10"
+                />
+              </div>
             </Link>
           </div>
         </div>
       </div>
-      <div className="md:hidden z-50 fixed top-6  right-8">
-        {/* Other navbar content */}
+      <div className="md:hidden z-50 fixed top-6 right-8">
         <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
       </div>
-      {/* </div> */}
       <div className="h-24 md:h-24"></div>
     </nav>
   );
