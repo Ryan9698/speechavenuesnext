@@ -99,12 +99,12 @@ const Navbar = () => {
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"
                   >
-                    <Link href="/therapy/speechtherapy">
+                    <Link href="/services/speechtherapy">
                       <div className="block px-4 py-2 text-white hover:bg-gray-700">
                         Speech Therapy
                       </div>
                     </Link>
-                    <Link href="/therapy/occupationaltherapy">
+                    <Link href="/services/occupationaltherapy">
                       <div className="block px-4 py-2 text-white hover:bg-gray-700">
                         Occupational Therapy
                       </div>

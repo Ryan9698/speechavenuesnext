@@ -82,30 +82,30 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               transition={{ duration: 0.5 }}
               className="flex flex-col pl-4"
             >
-              <Link href="/therapy/speechtherapy">
+              <Link href="/services/speechtherapy">
                 <div
                   onClick={toggleMenu}
-                  className={linkStyle("/therapy/speechtherapy")}
+                  className={linkStyle("/services/speechtherapy")}
                 >
                   Speech Therapy
                 </div>
               </Link>
-              <Link href="/therapy/occupationaltherapy">
+              <Link href="/services/occupationaltherapy">
                 <div
                   onClick={toggleMenu}
-                  className={linkStyle("/therapy/occupationaltherapy")}
+                  className={linkStyle("/services/occupationaltherapy")}
                 >
                   Occupational Therapy
                 </div>
               </Link>
-              <Link href="/therapy/physicaltherapy">
+              {/* <Link href="/services/physicaltherapy">
                 <div
                   onClick={toggleMenu}
-                  className={linkStyle("/therapy/physicaltherapy")}
+                  className={linkStyle("/services/physicaltherapy")}
                 >
                   Physical Therapy
                 </div>
-              </Link>
+              </Link> */}
             </motion.div>
           </div>
           <Link href="/staff">

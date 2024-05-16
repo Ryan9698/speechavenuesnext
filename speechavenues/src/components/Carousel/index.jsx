@@ -1,6 +1,8 @@
-// Carousel.jsx
+"use client";
+
 import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import Image from "next/image";
 
 export default function Carousel({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,10 +22,15 @@ export default function Carousel({ slides }) {
   return (
     <div className="relative mx-auto group">
       {/* Image Container */}
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="bg-center bg-cover duration-500 h-80 md:h-96 lg:h-[500px] xl:h-[600px] w-full rounded-xl"
-      ></div>
+      <div className="relative h-80 md:h-96 lg:h-[500px] xl:h-[600px] w-full rounded-xl overflow-hidden">
+        <Image
+          src={slides[currentIndex].url}
+          alt={`Slide ${currentIndex + 1}`}
+          layout="fill"
+          objectFit="cover"
+          className="duration-500"
+        />
+      </div>
       {/* Navigation Arrows */}
       <BsChevronCompactLeft
         onClick={previousSlide}
