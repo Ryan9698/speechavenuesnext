@@ -2,6 +2,11 @@ import React from "react";
 import PhoneIcon from "@/components/PhoneIcon";
 import Testimonials from "@/components/Testimonials";
 
+const metadata = {
+  title: "Speech Avenues Home Page",
+  description: "Speech Avenues Therapy Co offers speech therapy and occupational therapy services in Rockledge Florida. SATC offers an array of speech and communication services with a focus on Autism Spectrum Disorder (ASD), Downs Syndrome and Cerebral Palsy in both adults and children."
+}
+
 export default function Home() {
   return (
     <div className="container mx-auto p-4">

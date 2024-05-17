@@ -53,99 +53,103 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
         transition={{ duration: 0.5 }}
         className="fixed top-0 right-0 h-full z-40 bg-gray-900 text-white w-64 p-5"
       >
-        <nav className="flex flex-col space-y-4 mt-8">
-          <div>
-            <button
-              onClick={toggleServices}
-              className={`py-2 text-lg flex justify-between items-center w-full ${hoverEffect}`}
-            >
-              Services
-              <svg
-                className={`w-4 h-4 transform ${
-                  isServicesOpen ? "rotate-180" : "rotate-0"
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+        {isOpen && (
+          <nav className="flex flex-col space-y-4 mt-8">
+            <div>
+              <button
+                onClick={toggleServices}
+                className={`py-2 text-lg flex justify-between items-center w-full ${hoverEffect}`}
               >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            <motion.div
-              initial="closed"
-              animate={isServicesOpen ? "open" : "closed"}
-              variants={linkVariants}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col pl-4"
-            >
-              <Link href="/services/speechtherapy">
-                <div
-                  onClick={toggleMenu}
-                  className={linkStyle("/services/speechtherapy")}
+                Services
+                <svg
+                  className={`w-4 h-4 transform ${
+                    isServicesOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
                 >
-                  Speech Therapy
-                </div>
-              </Link>
-              <Link href="/services/occupationaltherapy">
-                <div
-                  onClick={toggleMenu}
-                  className={linkStyle("/services/occupationaltherapy")}
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              {isServicesOpen && (
+                <motion.div
+                  initial="closed"
+                  animate={isServicesOpen ? "open" : "closed"}
+                  variants={linkVariants}
+                  transition={{ duration: 0.5 }}
+                  className="flex flex-col pl-4"
                 >
-                  Occupational Therapy
-                </div>
-              </Link>
-              {/* <Link href="/services/physicaltherapy">
-                <div
-                  onClick={toggleMenu}
-                  className={linkStyle("/services/physicaltherapy")}
-                >
-                  Physical Therapy
-                </div>
-              </Link> */}
-            </motion.div>
-          </div>
-          <Link href="/staff">
-            <div onClick={toggleMenu} className={linkStyle("/staff")}>
-              Our Staff
+                  <Link href="/services/speechtherapy">
+                    <div
+                      onClick={toggleMenu}
+                      className={linkStyle("/services/speechtherapy")}
+                    >
+                      Speech Therapy
+                    </div>
+                  </Link>
+                  <Link href="/services/occupationaltherapy">
+                    <div
+                      onClick={toggleMenu}
+                      className={linkStyle("/services/occupationaltherapy")}
+                    >
+                      Occupational Therapy
+                    </div>
+                  </Link>
+                  {/* <Link href="/services/physicaltherapy">
+                    <div
+                      onClick={toggleMenu}
+                      className={linkStyle("/services/physicaltherapy")}
+                    >
+                      Physical Therapy
+                    </div>
+                  </Link> */}
+                </motion.div>
+              )}
             </div>
-          </Link>
-          <Link href="/forms">
-            <div onClick={toggleMenu} className={linkStyle("/forms")}>
-              Forms
-            </div>
-          </Link>
-          <Link href="/gallery">
-            <div onClick={toggleMenu} className={linkStyle("/gallery")}>
-              Gallery
-            </div>
-          </Link>
-          <Link href="/contact">
-            <div onClick={toggleMenu} className={linkStyle("/contact")}>
-              Contact Us
-            </div>
-          </Link>
-          <div className="flex-inline">
-            <Link href="/school">
-              <div
-                onClick={toggleMenu}
-                className={`flex items-center py-2 text-lg ${hoverEffect} ${
-                  currentPath === "/school" ? "text-blue-400" : "text-white"
-                }`}
-              >
-                School
-                <img
-                  src="/images/pencil1.png"
-                  alt="Logo"
-                  className="h-10 w-10"
-                />
+            <Link href="/staff">
+              <div onClick={toggleMenu} className={linkStyle("/staff")}>
+                Our Staff
               </div>
             </Link>
-          </div>
-        </nav>
+            <Link href="/forms">
+              <div onClick={toggleMenu} className={linkStyle("/forms")}>
+                Forms
+              </div>
+            </Link>
+            <Link href="/gallery">
+              <div onClick={toggleMenu} className={linkStyle("/gallery")}>
+                Gallery
+              </div>
+            </Link>
+            <Link href="/contact">
+              <div onClick={toggleMenu} className={linkStyle("/contact")}>
+                Contact Us
+              </div>
+            </Link>
+            <div className="flex-inline">
+              <Link href="/school">
+                <div
+                  onClick={toggleMenu}
+                  className={`flex items-center py-2 text-lg ${hoverEffect} ${
+                    currentPath === "/school" ? "text-blue-400" : "text-white"
+                  }`}
+                >
+                  School
+                  <img
+                    src="/images/pencil1.png"
+                    alt="Logo"
+                    className="h-10 w-10"
+                  />
+                </div>
+              </Link>
+            </div>
+          </nav>
+        )}
       </motion.div>
     </div>
   );

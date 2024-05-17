@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Chalk font */
 @font-face {
   font-family: "Rob Graves";
   src: url("/fonts/Robgraves-lKYV.ttf");
+}
+/* Header Font URL */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("/fonts/DancingScript-VariableFont_wght.ttf");
 }
 /* Header Cursive Font */
 .cursiveFont {
@@ -14,6 +20,23 @@
 .schoolFont {
   font-family: "Rob Graves", cursive;
 }
+
+/* Global Styling (Used to have footer fixed at the bottom of the viewport or content*/
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+
 /* Hamburger Mobile Icon */
 .hamburger {
   cursor: pointer;
