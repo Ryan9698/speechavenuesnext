@@ -9,12 +9,11 @@ export default function StaffMember({
   height,
 }) {
   return (
-    <div className="max-w-sm rounded  shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
+    <div className="max-w-sm rounded shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
       <Image
         className="w-full h-[60vh] object-cover object-center border-t"
         src={imageUrl}
         alt={`Portrait of ${name}`}
-        objectFit="cover"
         width={width}
         height={height}
       />
@@ -23,7 +22,7 @@ export default function StaffMember({
         <p className="text-gray-600 text-sm font-semibold text-base">{role}</p>
       </div>
       <div className="px-6 py-4 border-t">
-        <p className="text-gray-600 text-sm">{bio}</p>
+        <p className="text-gray-600 text-sm whitespace-pre-line">{bio}</p>
       </div>
     </div>
   );

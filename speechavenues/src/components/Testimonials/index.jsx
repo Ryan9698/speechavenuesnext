@@ -10,7 +10,7 @@ const Testimonials = () => {
       setCurrentTestimonial(
         (prevTestimonial) => (prevTestimonial + 1) % testimonials.length
       );
-    }, 4000); // Change the testimonial every 4 seconds
+    }, 6000); // Change the testimonial every 4 seconds
 
     return () => clearInterval(intervalId); // Clean up the interval on unmount
   }, [testimonials.length]);

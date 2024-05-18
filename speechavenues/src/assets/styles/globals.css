@@ -9,8 +9,8 @@
 }
 /* Header Font URL */
 @font-face {
-    font-family: "Dancing Script";
-    src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+  font-family: "Dancing Script";
+  src: url("/fonts/DancingScript-VariableFont_wght.ttf");
 }
 /* Header Cursive Font */
 .cursiveFont {
@@ -22,20 +22,21 @@
 }
 
 /* Global Styling (Used to have footer fixed at the bottom of the viewport or content*/
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main {
-    flex: 1;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
 
 /* Hamburger Mobile Icon */
 .hamburger {
@@ -123,6 +124,13 @@ html, body {
   100% {
     opacity: 1;
   }
+}
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards;
 }
 /* End Logo Animation */
 

@@ -6,7 +6,7 @@ export default function SpeechTherapy() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 py-6">
           <Carousel slides={slides} />
         </div>
         {/* Main content and FAQ Sidebar */}
