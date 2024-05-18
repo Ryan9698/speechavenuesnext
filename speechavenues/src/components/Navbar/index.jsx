@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import MobileMenu from "../MobileMenu";
 
 const Navbar = () => {
@@ -58,10 +59,13 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <img
+              <Image
                 src="/images/bannerlogo.png"
                 alt="Logo"
+                width={160}
+                height={160}
                 className="h-40 w-40 relative top-6 ml-4 lg:right-40"
+                priority
               />
             </Link>
           </div>
@@ -132,10 +136,12 @@ const Navbar = () => {
                 )} schoolFont text-xl inline-flex items-center`}
               >
                 School
-                <img
+                <Image
                   src="/images/pencil1.png"
-                  alt="Logo"
-                  className="h-10 w-10"
+                  alt="Pencil"
+                  width={40}
+                  height={40}
+                  className="ml-2"
                 />
               </div>
             </Link>

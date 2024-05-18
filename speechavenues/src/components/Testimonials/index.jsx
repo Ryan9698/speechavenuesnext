@@ -13,7 +13,7 @@ const Testimonials = () => {
     }, 6000); // Change the testimonial every 4 seconds
 
     return () => clearInterval(intervalId); // Clean up the interval on unmount
-  }, [testimonials.length]);
+  }, []);
 
   const getStars = (rating) => {
     return Array.from({ length: rating }, (_, index) => "⭐").join(" ");

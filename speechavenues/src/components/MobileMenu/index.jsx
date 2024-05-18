@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const menuVariants = {
@@ -140,10 +141,12 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                   }`}
                 >
                   School
-                  <img
+                  <Image
                     src="/images/pencil1.png"
-                    alt="Logo"
-                    className="h-10 w-10"
+                    alt="Pencil"
+                    width={40}
+                    height={40}
+                    className="ml-2"
                   />
                 </div>
               </Link>

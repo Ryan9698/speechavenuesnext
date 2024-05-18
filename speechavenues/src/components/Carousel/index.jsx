@@ -26,8 +26,12 @@ export default function Carousel({ slides }) {
         <Image
           src={slides[currentIndex].url}
           alt={`Slide ${currentIndex + 1}`}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="(max-width: 600px) 100vw, 
+                 (max-width: 1200px) 50vw, 
+                 33vw"
+          priority={currentIndex === 0} // Add priority to the first image
           className="duration-500"
         />
       </div>
@@ -48,7 +52,7 @@ export default function Carousel({ slides }) {
           <button
             key={slideIndex}
             aria-label={`Go to slide ${slideIndex + 1}`}
-            className={`h-1 w-1 rounded-full ${
+            className={`h-2 w-2 rounded-full ${
               currentIndex === slideIndex ? "bg-white" : "bg-gray-400"
             } focus:outline-none`}
             onClick={() => setCurrentIndex(slideIndex)}

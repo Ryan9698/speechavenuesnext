@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   const address = "107 Longwood Ave, Rockledge, FL 32955";
@@ -22,26 +23,34 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex items-center space-x-4 flex-grow justify-center">
             <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
-              <img
+              <Image
                 src="/PNG Icons/256/Facebook.png"
                 alt="Facebook"
-                className="h-9 w-9 hover:scale-150 transition-transform duration-200"
+                width={36}
+                height={36}
+                className="hover:scale-150 transition-transform duration-200"
               />
             </a>
-            <img
+            <Image
               src="/PNG Icons/256/Instagram.png"
               alt="Instagram"
-              className="h-9 w-9 hover:scale-150 transition-transform duration-200"
+              width={36}
+              height={36}
+              className="hover:scale-150 transition-transform duration-200"
             />
-            <img
+            <Image
               src="/PNG Icons/256/Linkedin.png"
               alt="LinkedIn"
-              className="h-9 w-9 hover:scale-150 transition-transform duration-200"
+              width={36}
+              height={36}
+              className="hover:scale-150 transition-transform duration-200"
             />
-            <img
+            <Image
               src="/PNG Icons/256/TikTok.png"
               alt="TikTok"
-              className="h-9 w-9 hover:scale-150 transition-transform duration-200"
+              width={36}
+              height={36}
+              className="hover:scale-150 transition-transform duration-200"
             />
           </div>
 
