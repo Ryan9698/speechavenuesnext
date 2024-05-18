@@ -10,13 +10,15 @@ export default function StaffMember({
 }) {
   return (
     <div className="max-w-sm rounded shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-      <Image
-        className="w-full h-[60vh] object-cover object-center border-t"
-        src={imageUrl}
-        alt={`Portrait of ${name}`}
-        width={width}
-        height={height}
-      />
+      <div className="relative w-full h-[60vh]">
+        <Image
+          className="object-cover object-center"
+          src={imageUrl}
+          alt={`Portrait of ${name}`}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className="px-4 py-2 bg-gray-300">
         <div className="font-bold text-2xl mb-2 text-gray-800">{name}</div>
         <p className="text-gray-600 text-sm font-semibold text-base">{role}</p>

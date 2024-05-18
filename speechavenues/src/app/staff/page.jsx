@@ -1,9 +1,6 @@
-// StaffPage.js
 import React from "react";
 import staffList from "@/data/staffdata/StaffList";
 import StaffMember from "@/components/StaffMember";
-
-// Example data, could also be fetched from an API
 
 export default function StaffPage() {
   return (
