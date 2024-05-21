@@ -4,6 +4,12 @@ import Image from "next/image";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"; // Ensure CSS is imported for styling
 import images from "@/data/galleryimagesdata/galleryimages";
+import Head from "next/head";
+
+const metadata = {
+  title: "Speech Avenues Picture Gallery",
+  description: "Picture gallery for Speech Avenues Therapy Co which showcases photos of staff, therapy services, classes, school and events."
+};
 
 export default function Gallery() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +25,12 @@ export default function Gallery() {
   };
 
   return (
+    <>
+    <Head>
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    <link rel="icon" href="/favicon.ico" />
+  </Head>
     <div>
       <h1 className="text-6xl font-bold mb-6 cursiveFont text-center">
         Gallery
@@ -69,5 +81,6 @@ export default function Gallery() {
         )}
       </div>
     </div>
+    </>
   );
 }

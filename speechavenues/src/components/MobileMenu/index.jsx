@@ -52,7 +52,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 right-0 h-full z-40 bg-gray-900 text-white w-64 p-5"
+        className="fixed top-0 right-0 h-full z-40 bg-gradient-to-r from-black to-gray-800 text-white w-64 p-5"
       >
         {isOpen && (
           <nav className="flex flex-col space-y-4 mt-8">
@@ -101,14 +101,6 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                       Occupational Therapy
                     </div>
                   </Link>
-                  {/* <Link href="/services/physicaltherapy">
-                    <div
-                      onClick={toggleMenu}
-                      className={linkStyle("/services/physicaltherapy")}
-                    >
-                      Physical Therapy
-                    </div>
-                  </Link> */}
                 </motion.div>
               )}
             </div>
@@ -143,7 +135,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                   School
                   <Image
                     src="/images/pencil1.png"
-                    alt="Pencil"
+                    alt="Pencil image for menu"
                     width={40}
                     height={40}
                     className="ml-2"

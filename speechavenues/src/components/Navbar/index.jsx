@@ -48,12 +48,12 @@ const Navbar = () => {
   const linkStyle = (path) =>
     currentPath === path
       ? "text-blue-400 font-semibold px-4 py-3"
-      : "text-white font-semibold px-4 py-3 hover:text-blue-400";
+      : "text-gray-300 font-semibold px-4 py-3 hover:bg-gray-700 hover:text-white rounded transition duration-300";
 
   return (
     <nav>
       <div className="md:hidden z-50 fixed top-6 right-8">
-        <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+        <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} currentPath={currentPath} />
       </div>
       <div className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md fixed w-full z-30 top-0 left-0">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
@@ -95,7 +95,7 @@ const Navbar = () => {
                 <div
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
-                  className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-md bg-gray-800 ring-1 ring-black ring-opacity-5"
+                  className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-md bg-gradient-to-r from-black to-gray-800 ring-1 ring-black ring-opacity-5"
                 >
                   <div
                     className="py-1 divide-y divide-gray-700"
@@ -104,12 +104,12 @@ const Navbar = () => {
                     aria-labelledby="options-menu"
                   >
                     <Link href="/services/speechtherapy">
-                      <div className="block px-4 py-2 text-white hover:bg-gray-700">
+                      <div className={linkStyle("/services/speechtherapy")}>
                         Speech Therapy
                       </div>
                     </Link>
                     <Link href="/services/occupationaltherapy">
-                      <div className="block px-4 py-2 text-white hover:bg-gray-700">
+                      <div className={linkStyle("/services/occupationaltherapy")}>
                         Occupational Therapy
                       </div>
                     </Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="md:hidden z-50 fixed top-6 right-8">
-        <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+        <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} currentPath={currentPath} />
       </div>
       <div className="h-24 md:h-24"></div>
     </nav>
