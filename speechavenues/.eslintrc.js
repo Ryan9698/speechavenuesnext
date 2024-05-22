@@ -1,5 +1,5 @@
 module.exports = {
-  extends: "next/core-web-vitals",
+  extends: ["next/core-web-vitals", "next/babel"],
   settings: {
     react: {
       version: "detect",

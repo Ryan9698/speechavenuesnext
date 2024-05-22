@@ -1,101 +1,110 @@
+"use client";
 import React, { useState } from "react";
 
-export default function ContactForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
     email: "",
     message: "",
   });
 
-  // State to manage submission status and button disable
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  // State to manage the display of the thank you message
-  const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
 
-    // Simulate data being sent
-    setIsSubmitted(true); // Disable the button after submission
-    setShowThankYouMessage(true); // Show the thank you message
-
-    // Here you would typically send the data to a server or email service
-    // For demo purposes, we simulate a delay to mimic async behavior
-    setTimeout(() => {
-      alert("Form submitted. Check the console for data.");
-      // Reset form (optional)
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-      setIsSubmitted(false); // Re-enable the button after actions are complete
-      setShowThankYouMessage(false); // Hide the thank you message after some time if desired
-    }, 2000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("Message sent successfully!");
+      } else {
+        setStatus("Failed to send message.");
+      }
+    } catch (error) {
+      setStatus("An error occurred while sending the message.");
+    }
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-8">
+      <div className="mb-4">
+        <label
+          className="block text-gray-700 text-sm font-bold mb-2"
+          htmlFor="name"
+        >
+          Name
+        </label>
         <input
           type="text"
+          id="name"
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Your Name"
-          className="px-4 py-2 border rounded-md"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           required
         />
-        <input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder="Phone Number"
-          className="px-4 py-2 border rounded-md"
-          required
-        />
+      </div>
+      <div className="mb-4">
+        <label
+          className="block text-gray-700 text-sm font-bold mb-2"
+          htmlFor="email"
+        >
+          Email
+        </label>
         <input
           type="email"
+          id="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Email Address"
-          className="px-4 py-2 border rounded-md"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           required
         />
+      </div>
+      <div className="mb-4">
+        <label
+          className="block text-gray-700 text-sm font-bold mb-2"
+          htmlFor="message"
+        >
+          Message
+        </label>
         <textarea
+          id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Your Message"
-          className="px-4 py-2 border rounded-md"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           rows="4"
           required
         ></textarea>
-        {showThankYouMessage && (
-          <div className="text-green-600">
-            Thank you! We will reach out to you as soon as possible!
-          </div>
-        )}
+      </div>
+      <div className="mb-4">
         <button
           type="submit"
-          disabled={isSubmitted}
-          className={`bg-sky-500 hover:bg-blue-700 text-white py-2 rounded-md transition duration-300 ${
-            isSubmitted ? "opacity-50 cursor-not-allowed" : "hover:bg-green-700"
-          }`}
+          className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Send Message
         </button>
-      </form>
-    </div>
+      </div>
+      {status && <p className="text-center text-green-500">{status}</p>}
+    </form>
   );
 }
+
+export default ContactForm;
