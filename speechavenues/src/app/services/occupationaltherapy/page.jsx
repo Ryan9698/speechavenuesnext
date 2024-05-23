@@ -12,13 +12,13 @@ export default function OccupationalTherapy() {
     description:
     " Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages toachieve independence and enhance their quality of life through meaningful everyday activities, known as occupations"
   };
-  // const [isLoaded, setIsLoaded] = React.useState(false);
 
   return (
     <>
       <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>Occupational Therapy - Speech Avenues</title>
+        <meta name="description" content="Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages toachieve independence and enhance their quality of life through meaningful everyday activities, known as occupations"
+ />
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div className="container mx-auto px-4 py-8">

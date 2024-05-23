@@ -1,9 +1,21 @@
 import React from "react";
+import Head from "next/head"
 import Carousel from "@/components/Carousel";
 import slides from "@/data/speechpicturesdata/SpeechPictures";
 
 export default function SpeechTherapy() {
+  const metadata = {
+    title: "Speech Avenues Speech Therapy",
+    description: "Speech Avenues Speech Therapy Test Metadata",
+  };
+  
   return (
+    <>
+    <Head>
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    <link rel="icon" href="/favicon.ico" />
+  </Head>
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-5 py-6">
@@ -162,5 +174,6 @@ export default function SpeechTherapy() {
         </div> */}
       </div>
     </div>
+    </>
   );
 }
