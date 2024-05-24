@@ -1,12 +1,13 @@
 // app/page.jsx
 import React from "react";
-import Head from "next/head";
+// import Head from "next/head";
 import PhoneIcon from "@/components/PhoneIcon";
 import Testimonials from "@/components/Testimonials";
 import MainpageImages from "@/components/MainpageImages/MainpageImages";
+import { Metadata } from 'next';
 
-const metadata = {
-  title: "Speech Avenues Home Page",
+export const metadata = {
+  title: "Speech Avenues Therapy - Home",
   description:
     "Speech Avenues Therapy Co offers speech therapy and occupational therapy services in Rockledge Florida. SATC offers an array of speech and communication services with a focus on Autism Spectrum Disorder (ASD), Downs Syndrome and Cerebral Palsy in both adults and children.",
 };
@@ -14,11 +15,7 @@ const metadata = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
           <div className="w-full md:w-1/2">

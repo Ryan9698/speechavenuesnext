@@ -1,15 +1,14 @@
 import React from "react";
-import Head from "next/head";
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from 'next';
 
+export const metadata = {
+  title: "Speech Avenues Therapy - Contact Us",
+  description: "Please contact us with any questions, comments, and concerns. We love feedback and are always looking for ways to improve our services at Speech Avenues. Thank you!",
+}
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Contact - Speech Avenues</title>
-        <meta name="description" content="Contact Speech Avenues for any inquiries or suggestions on how to improve our services." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-6 cursiveFont text-center">
           Contact Us

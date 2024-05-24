@@ -1,6 +1,12 @@
 import React from "react";
 import staffList from "@/data/staffdata/StaffList";
 import StaffMember from "@/components/StaffMember";
+import { Metadata } from 'next';
+
+export const metadata = {
+  title: "Therapy Staff - Speech Avenues Therapy Co.",
+  description: "Below you will find the diverse and talented staff at Speech Avenues to help the individual in your life achieve improved and lasting independence."
+}
 
 export default function StaffPage() {
   return (

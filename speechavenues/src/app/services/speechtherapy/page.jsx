@@ -1,21 +1,16 @@
 import React from "react";
-import Head from "next/head"
 import Carousel from "@/components/Carousel";
 import slides from "@/data/speechpicturesdata/SpeechPictures";
 
+ export const metadata = {
+  title: "Speech Therapy - Speech Avenues Therapy Co.",
+  description: "Speech Avenues Therapy Co (SATC) have a team of dedicated professionals with diverse strengths to target improve speech in adults and children. Speech Avenues works with a variety of different conditions including Autism Spectrum Disorder (ASD), Traumatic Brain Injury (TBI), Cerebral Palsy and more.",
+};
+
 export default function SpeechTherapy() {
-  const metadata = {
-    title: "Speech Avenues Speech Therapy",
-    description: "Speech Avenues Speech Therapy Test Metadata",
-  };
-  
+
   return (
     <>
-    <Head>
-    <title>{metadata.title}</title>
-    <meta name="description" content={metadata.description} />
-    <link rel="icon" href="/favicon.ico" />
-  </Head>
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-5 py-6">

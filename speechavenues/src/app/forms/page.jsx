@@ -1,15 +1,15 @@
 import React from "react";
-import Head from "next/head";
 import PacketList from "@/components/PacketList";
+import { Metadata } from 'next';
+
+export const metadata = {
+  title: "Intake Forms - Speech Avenues Therapy Co.",
+  description: "Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive.",
+};
 
 export default function Forms() {
   return (
     <>
-      <Head>
-        <title>Forms - Speech Avenues</title>
-        <meta name="description" content="Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="container mx-auto p-4">
         <div>
           <h1 className="text-4xl font-bold mb-6 cursiveFont">Forms</h1>

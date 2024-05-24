@@ -1,21 +1,18 @@
 // app/school/page.jsx
 import React from "react";
 import Image from 'next/image';
-import Head from "next/head";
+import { Metadata } from 'next';
+
+export const metadata = {
+    title: "Speech Avenues School Program",
+    description: "Speech Avenues offers a comprehensive educational experience for learners with communication disorders."
+};
 
 export default function SchoolHome() {
-    const metadata = {
-        title: "Speech Avenues School Program",
-        description: "Speech Avenues offers a comprehensive educational experience for learners with communication disorders."
-    };
+
 
     return (
         <>
-            <Head>
-                <title>{metadata.title}</title>
-                <meta name="description" content={metadata.description} />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                     <div className="lg:col-span-5 py-6">

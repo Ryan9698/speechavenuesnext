@@ -1,26 +1,18 @@
 import React from "react";
 import Carousel from "@/components/Carousel";
 import slides from "@/data/otpicturesdata/OTPictures";
-import Head from "next/head";
+import { Metadata } from 'next';
 
-
+export const metadata = {
+  title: "Speech Avenues Occupational Therapy",
+  description:
+  " Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages to achieve independence and enhance their quality of life through meaningful everyday activities, known as occupations"
+};
 
 export default function OccupationalTherapy() {
-  
-  const metadata = {
-    title: "Speech Avenues Occupational Therapy",
-    description:
-    " Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages toachieve independence and enhance their quality of life through meaningful everyday activities, known as occupations"
-  };
 
   return (
     <>
-      <Head>
-        <title>Occupational Therapy - Speech Avenues</title>
-        <meta name="description" content="Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages toachieve independence and enhance their quality of life through meaningful everyday activities, known as occupations"
- />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="lg:col-span-5 py-6">
