@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "@/components/ContactForm";
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Speech Avenues Therapy - Contact Us",

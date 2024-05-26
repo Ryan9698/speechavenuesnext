@@ -14,7 +14,7 @@ export default function Gallery() {
   return (
     <>
       <div>
-        <h1 className="text-6xl font-bold mb-6 cursiveFont text-center">
+        <h1 className="text-6xl font-bold mb-6 cursiveFont text-center pb-2">
           Gallery
         </h1>
         <GalleryComponent />

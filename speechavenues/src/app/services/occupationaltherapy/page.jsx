@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "@/components/Carousel";
 import slides from "@/data/otpicturesdata/OTPictures";
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Speech Avenues Occupational Therapy",

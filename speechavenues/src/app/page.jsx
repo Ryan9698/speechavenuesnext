@@ -4,7 +4,7 @@ import React from "react";
 import PhoneIcon from "@/components/PhoneIcon";
 import Testimonials from "@/components/Testimonials";
 import MainpageImages from "@/components/MainpageImages/MainpageImages";
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Speech Avenues Therapy - Home",

@@ -1,7 +1,7 @@
 import React from "react";
 import staffList from "@/data/staffdata/StaffList";
 import StaffMember from "@/components/StaffMember";
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Therapy Staff - Speech Avenues Therapy Co.",

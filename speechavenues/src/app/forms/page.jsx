@@ -1,6 +1,6 @@
 import React from "react";
 import PacketList from "@/components/PacketList";
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Intake Forms - Speech Avenues Therapy Co.",

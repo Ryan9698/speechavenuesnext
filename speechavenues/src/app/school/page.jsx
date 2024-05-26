@@ -1,7 +1,7 @@
 // app/school/page.jsx
 import React from "react";
 import Image from 'next/image';
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
 export const metadata = {
     title: "Speech Avenues School Program",
