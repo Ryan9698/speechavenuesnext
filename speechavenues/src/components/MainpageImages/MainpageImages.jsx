@@ -1,8 +1,8 @@
-// components/MainpageImages.jsx
 "use client";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import classNames from "classnames";
 
 const images = [
   "/images/mainpageimages/logo.jpg",
@@ -23,10 +23,12 @@ export default function MainpageImages() {
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setFade(true);
-      }, 2000);
+      }, 1000); // Ensure this timeout is shorter than the interval
     }, 5000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -37,13 +39,14 @@ export default function MainpageImages() {
           src={image}
           alt={`Image ${index}`}
           fill
-          className={`absolute top-0 left-0 transition-opacity duration-1000 ${
-            index === currentImageIndex
-              ? fade
-                ? "fade-in"
-                : "fade-out"
-              : "opacity-0"
-          }`}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className={classNames(
+            "absolute top-0 left-0 transition-opacity duration-1000",
+            {
+              "opacity-100": index === currentImageIndex && fade,
+              "opacity-0": index !== currentImageIndex || !fade,
+            }
+          )}
         />
       ))}
     </div>
