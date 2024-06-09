@@ -6,11 +6,13 @@
 @font-face {
   font-family: "Rob Graves";
   src: url("/fonts/Robgraves-lKYV.ttf");
+  font-display: swap;
 }
 /* Header Font URL */
 @font-face {
   font-family: "Dancing Script";
   src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+  font-display: swap;
 }
 /* Header Cursive Font */
 .cursiveFont {

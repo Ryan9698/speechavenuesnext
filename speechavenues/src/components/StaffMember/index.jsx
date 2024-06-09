@@ -1,13 +1,6 @@
 import Image from "next/image";
 
-export default function StaffMember({
-  name,
-  role,
-  bio,
-  imageUrl,
-  width,
-  height,
-}) {
+export default function StaffMember({ name, role, bio, imageUrl }) {
   return (
     <div className="max-w-sm rounded shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
       <div className="relative w-full h-[60vh]">
