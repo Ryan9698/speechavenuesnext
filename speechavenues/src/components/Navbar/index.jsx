@@ -74,12 +74,20 @@ const Navbar = () => {
                 alt="Logo"
                 width={160}
                 height={160}
-                className="h-40 w-40 relative top-6 ml-4 lg:right-40"
+                className="h-40 w-40 fixed -top-4 left-4"
                 priority
               />
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-1">
+            <Link href="/staff">
+              <div
+                className={linkStyle("/staff")}
+                onClick={() => setCurrentPath("/staff")}
+              >
+                Our Staff
+              </div>
+            </Link>
             <div className="relative">
               <button
                 onMouseEnter={handleMouseEnter}
@@ -101,6 +109,7 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
+
               {isDropdownOpen && (
                 <div
                   onMouseEnter={handleMouseEnter}
@@ -139,14 +148,6 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link href="/staff">
-              <div
-                className={linkStyle("/staff")}
-                onClick={() => setCurrentPath("/staff")}
-              >
-                Our Staff
-              </div>
-            </Link>
             <Link href="/forms">
               <div
                 className={linkStyle("/forms")}

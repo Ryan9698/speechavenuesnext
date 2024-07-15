@@ -1,26 +1,26 @@
 import React from "react";
-import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Speech Avenues Therapy - Contact Us",
   description:
     "Please contact us with any questions, comments, and concerns. We love feedback and are always looking for ways to improve our services at Speech Avenues. Thank you!",
 };
+
 export default function Contact() {
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-6 cursiveFont text-center">
+      <div className="container mx-auto px-4 py-8 bg-white shadow-md rounded-lg">
+        <h1 className="text-4xl font-bold mb-6 cursiveFont text-center text-gray-800">
           Contact Us
         </h1>
-        <p className="text-center mb-4">
+        <p className="text-center mb-4 text-gray-600">
           We value your input and if you have any suggestions on how to improve
           our services, please feel free to contact us at any time. We thank you
           for your support!
         </p>
 
-        <div className="text-center mb-4">
-          <p>
+        <div className="text-center mb-6">
+          <p className="text-lg text-gray-600">
             Email:{" "}
             <a
               href="mailto:admin@speechavenues.com"
@@ -29,7 +29,7 @@ export default function Contact() {
               admin@speechavenues.com
             </a>
           </p>
-          <p>
+          <p className="text-lg text-gray-600">
             Phone:{" "}
             <a
               href="tel:+13213382419"
@@ -39,10 +39,9 @@ export default function Contact() {
             </a>
           </p>
         </div>
-        <p className="text-center mt-2 text-2xl text-red-500">
-          This feature is in development. Coming soon!
-        </p>
-        <ContactForm />
+
+        {/* Uncomment this when the feature is ready */}
+        {/* <ContactForm /> */}
       </div>
     </>
   );
