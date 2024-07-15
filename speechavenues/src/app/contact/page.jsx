@@ -9,19 +9,19 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <div className="container mx-auto px-4 py-8 bg-white shadow-md rounded-lg">
-        <h1 className="text-4xl font-bold mb-6 cursiveFont text-center text-gray-800">
+      <div className="container mx-auto mt-8 px-4 py-8 bg-white ">
+        <h1 className="text-6xl font-bold mb-10 cursiveFont text-center text-gray-800">
           Contact Us
         </h1>
-        <p className="text-center mb-4 text-gray-600">
+        <p className="text-center mb-4 text-gray-600 text-xl">
           We value your input and if you have any suggestions on how to improve
           our services, please feel free to contact us at any time. We thank you
           for your support!
         </p>
 
         <div className="text-center mb-6">
-          <p className="text-lg text-gray-600">
-            Email:{" "}
+          <p className="text-xl text-gray-600">
+            <span className="font-bold">Email: </span>
             <a
               href="mailto:admin@speechavenues.com"
               className="text-blue-500 hover:underline"
@@ -29,8 +29,8 @@ export default function Contact() {
               admin@speechavenues.com
             </a>
           </p>
-          <p className="text-lg text-gray-600">
-            Phone:{" "}
+          <p className="text-xl text-gray-600">
+            <span className="font-bold">Phone: </span>
             <a
               href="tel:+13213382419"
               className="text-blue-500 hover:underline"
