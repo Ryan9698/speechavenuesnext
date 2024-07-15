@@ -1,5 +1,5 @@
-// Code for react-image-gallery
-'use client';
+// components/GalleryComponent.jsx
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import ImageGallery from "react-image-gallery";
@@ -33,10 +33,7 @@ const GalleryComponent = () => {
               alt={image.alt}
               fill
               style={{ objectFit: "cover" }}
-              sizes="(max-width: 600px) 50vw, 
-                     (max-width: 1024px) 33vw, 
-                     (max-width: 1280px) 25vw, 
-                     20vw"
+              sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
               priority={index === 0} // Add priority to the first image
             />
           </div>
@@ -64,9 +61,8 @@ const GalleryComponent = () => {
           </div>
         </div>
       )}
-          <div className="pb-4"></div>
+      <div className="pb-4"></div>
     </div>
-
   );
 };
 

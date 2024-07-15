@@ -1,10 +1,10 @@
 import React from "react";
 import PacketList from "@/components/PacketList";
-// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Intake Forms - Speech Avenues Therapy Co.",
-  description: "Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive.",
+  description:
+    "Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive.",
 };
 
 export default function Forms() {

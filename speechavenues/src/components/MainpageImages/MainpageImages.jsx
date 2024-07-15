@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import classNames from "classnames";
@@ -47,6 +46,7 @@ export default function MainpageImages() {
               "opacity-0": index !== currentImageIndex || !fade,
             }
           )}
+          priority={index === 0} // Add priority to the first image
         />
       ))}
     </div>

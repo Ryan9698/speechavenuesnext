@@ -1,11 +1,11 @@
 import React from "react";
 import ContactForm from "@/components/ContactForm";
-// import { Metadata } from 'next';
 
 export const metadata = {
   title: "Speech Avenues Therapy - Contact Us",
-  description: "Please contact us with any questions, comments, and concerns. We love feedback and are always looking for ways to improve our services at Speech Avenues. Thank you!",
-}
+  description:
+    "Please contact us with any questions, comments, and concerns. We love feedback and are always looking for ways to improve our services at Speech Avenues. Thank you!",
+};
 export default function Contact() {
   return (
     <>
@@ -31,12 +31,17 @@ export default function Contact() {
           </p>
           <p>
             Phone:{" "}
-            <a href="tel:+13213382419" className="text-blue-500 hover:underline">
+            <a
+              href="tel:+13213382419"
+              className="text-blue-500 hover:underline"
+            >
               321-338-2419
             </a>
           </p>
         </div>
-
+        <p className="text-center mt-2 text-2xl text-red-500">
+          This feature is in development. Coming soon!
+        </p>
         <ContactForm />
       </div>
     </>
