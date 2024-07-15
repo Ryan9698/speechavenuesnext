@@ -8,8 +8,8 @@ export default function StaffMember({ name, role, bio, imageUrl }) {
           className="object-cover object-center"
           src={imageUrl}
           alt={`Portrait of ${name}`}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className="px-4 py-2 bg-gray-300">
