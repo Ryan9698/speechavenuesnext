@@ -10,7 +10,7 @@ const Carousel = ({ slides }) => {
       items={slides}
       showThumbnails={false} // Hide thumbnails if not needed
       autoPlay={true}
-      slideInterval={6000} // Interval for auto-play in milliseconds
+      slideInterval={5000} // Interval for auto-play in milliseconds
       showPlayButton={false}
       showFullscreenButton={false}
     />
