@@ -12,7 +12,9 @@ const staffList = [
 
       Start on a journey of improved communication with Gail today and take the first step towards transformative growth!
     `,
-    imageUrl: "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/satc-gw_q0bt8i.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/satc-gw_q0bt8i.jpg",
+    alt: "Portrait of Gail Walter",
     width: 300,
     height: 400,
   },
@@ -27,7 +29,9 @@ const staffList = [
 
       Ready to unlock the power of communication? Schedule with her today and embark on your journey to speech success!
     `,
-    imageUrl: "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066031/Speech%20Avenues/Bio%20Photos/satc-jk_odss7n.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066031/Speech%20Avenues/Bio%20Photos/satc-jk_odss7n.jpg",
+    alt: "Portrait of Jane Kran",
     width: 300,
     height: 400,
   },
@@ -44,7 +48,9 @@ const staffList = [
 
       Step into a welcoming environment where your communication needs are understood and supported with care by Erica.
     `,
-    imageUrl: "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066034/Speech%20Avenues/Bio%20Photos/erica_ab9zvw.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066034/Speech%20Avenues/Bio%20Photos/erica_ab9zvw.jpg",
+    alt: "Portrait of Erica Gallinat",
     width: 300,
     height: 400,
   },
@@ -59,7 +65,9 @@ const staffList = [
 
       Join Chris on your journey to becoming your very best self - he is here to be your therapist, friend, and ally every step of the way!
     `,
-    imageUrl: "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716412147/Speech%20Avenues/Bio%20Photos/chris-satc2_xag7hw.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716412147/Speech%20Avenues/Bio%20Photos/chris-satc2_xag7hw.jpg",
+    alt: "Portrait of Chris Whidden",
     width: 300,
     height: 400,
   },
@@ -74,7 +82,9 @@ const staffList = [
 
       Some of Selina's passions outside of work include traveling with her husband and fur baby Bear, trying new recipes, and enjoying a strong cup of coffee!
     `,
-    imageUrl: "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/silhouette_e2no3t.png",
+    imageUrl:
+      "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/silhouette_e2no3t.png",
+    alt: "Portrait of Selina Karczewski",
     width: 300,
     height: 400,
   },
@@ -89,7 +99,9 @@ const staffList = [
 
       Feel free to say hi to me anytime!
     `,
-    imageUrl: "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066035/Speech%20Avenues/Bio%20Photos/ozzy_eevaez.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066035/Speech%20Avenues/Bio%20Photos/ozzy_eevaez.jpg",
+    alt: "Portrait of Ozzy, Therapy Dog",
     width: 300,
     height: 400,
   },
