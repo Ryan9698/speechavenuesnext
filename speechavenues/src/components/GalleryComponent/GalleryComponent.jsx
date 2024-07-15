@@ -25,14 +25,14 @@ const GalleryComponent = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative w-full h-36 cursor-pointer"
+            className="relative w-full h-36 cursor-pointer transform transition-transform duration-400 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-gray-200 hover:rounded-md shadow-md"
             onClick={() => openGallery(index)}
           >
             <Image
               src={image.thumbnail}
               alt={image.alt}
               fill
-              style={{ objectFit: "cover" }}
+              className="object-cover rounded-md"
               sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
               priority={index === 0} // Add priority to the first image
             />
@@ -41,8 +41,20 @@ const GalleryComponent = () => {
       </div>
 
       {isOpen && (
-        <div className="gallery-overlay" onClick={closeGallery}>
-          <div className="gallery-modal" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+          onClick={closeGallery}
+        >
+          <div
+            className="relative max-w-4xl w-full p-4 bg-white rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-2 right-2 text-white bg-gray-800 rounded-full p-2"
+              onClick={closeGallery}
+            >
+              X
+            </button>
             <ImageGallery
               items={images.map((img) => ({
                 original: img.original,
