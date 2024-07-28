@@ -6,6 +6,17 @@ export const metadata = {
   title: "Speech Avenues Therapy - Home",
   description:
     "Speech Avenues Therapy Co offers speech therapy and occupational therapy services in Rockledge Florida. SATC offers an array of speech and communication services with a focus on Autism Spectrum Disorder (ASD), Downs Syndrome and Cerebral Palsy in both adults and children.",
+  keywords: [
+    "speech therapy",
+    "occupational therapy",
+    "satc",
+    "school for autism",
+    "autism",
+    "cerebral palsy",
+    "downs syndrome",
+    "child with autism",
+    "adult with autism",
+  ],
   icons: {
     icon: "/favicon.ico",
   },
