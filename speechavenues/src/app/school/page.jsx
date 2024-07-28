@@ -1,4 +1,3 @@
-// app/school/page.jsx
 import React from "react";
 import Image from "next/image";
 
@@ -11,26 +10,23 @@ export const metadata = {
 export default function SchoolHome() {
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-5 py-6">
-            <div className="relative w-full h-auto">
-              <Image
-                src="/images/mainpageimages/enrollacademy.png"
-                alt="Speech Avenues Academy offers personalized lesson plans tailored to your child's individual needs"
-                width={600}
-                height={900}
-                priority={true}
-                className="rounded-lg object-cover"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
+      <div className="container mx-auto p-4">
+        <div className="flex flex-col md:flex-row items-center md:items-start">
+          <div className="relative w-96 md:mr-6">
+            <Image
+              src="/images/mainpageimages/enrollacademy.png"
+              alt="Speech Avenues Academy offers personalized lesson plans tailored to your child's individual needs"
+              width={600}
+              height={600}
+              priority={true}
+              className="rounded-2xl"
+            />
           </div>
-          <div className="lg:col-span-7">
-            <h1 className="text-4xl font-bold text-gray-800 my-4 cursiveFont">
-              School
+          <div className="flex flex-col items-center md:items-start">
+            <h1 className="text-4xl font-bold text-gray-800 mt-6 cursiveFont text-center md:text-left md:px-6">
+              Education to Meet the Needs of Your Children
             </h1>
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <div className="bg-white rounded-lg p-6 max-w-prose md:max-w-xl">
               <p className="text-justify mb-4">
                 We are working diligently to open up a brand new opportunity for
                 Brevard County learners with communication disorders. Our full
