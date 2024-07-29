@@ -20,7 +20,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto p-4 lg:pt-24">
+      <div className="container mx-auto p-4 lg:pt-24 pb-16">
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
           <div className="w-full md:w-1/2">
             <MainpageImages />
@@ -32,19 +32,19 @@ export default function Home() {
           <div className="group prose prose-md max-w-none w-full md:w-1/2">
             <div className="ml-5 mr-5">
               <h1
-                className="text-6xl font-bold mb-6 text-center md:text-left"
+                className="text-6xl font-bold mb-6 text-center md:text-left p-4"
                 style={{ fontFamily: '"Dancing Script", cursive' }}
               >
                 Welcome!
               </h1>
               <div className="space-y-4">
                 <p>
-                  Welcome to Speech Avenues Therapy Co. (S.A.T.C), where we
-                  redefine possibilities through our professional speech and
-                  occupational therapy services. Our dedicated family of
-                  therapists is committed to enhancing communication skills and
-                  promoting functional independence for individuals across all
-                  age groups.
+                  Welcome to Speech Avenues Therapy Co. (
+                  <span className="font-bold">S.A.T.C</span>), where we redefine
+                  possibilities through our professional speech and occupational
+                  therapy services. Our dedicated family of therapists is
+                  committed to enhancing communication skills and promoting
+                  functional independence for individuals across all age groups.
                 </p>
                 <p>
                   At S.A.T.C, we understand that every individual is unique. Our
@@ -56,13 +56,14 @@ export default function Home() {
                   overcome challenges while enhancing their unique special
                   abilities.
                 </p>
-                <p>
+                <p className="text-center md:text-left md:inline-block">
                   For inquiries or to book an appointment, please call:
-                  <span className="ml-3">
-                    <PhoneIcon className="inline mr-1" />
+                  <br />
+                  <span className="">
+                    <PhoneIcon className="inline mr-1 " />
                     <a
                       href="tel:+13213382419"
-                      className="text-lg font-medium no-underline hover:text-blue-700"
+                      className="text-lg font-bold no-underline hover:text-blue-700"
                     >
                       321-338-2419
                     </a>
