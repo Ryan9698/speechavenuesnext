@@ -34,12 +34,18 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
     setIsServicesOpen(!isServicesOpen);
   };
 
-  const hoverEffect = "hover:bg-gray-700 rounded-md";
+  const hoverEffect = "hover:animate-pulse hover:text-blue-400";
 
   const linkStyle = (path) =>
     currentPath === path
-      ? "text-blue-400 font-semibold py-2"
-      : `text-white font-semibold py-2 ${hoverEffect}`;
+      ? "text-blue-400 font-sans text-xl py-2"
+      : `text-white font-sans text-xl py-2 ${hoverEffect}`;
+
+  // Separate variable to prevent styling conflict
+  const servicesLinkStyle = () =>
+    currentPath === "/services"
+      ? "text-blue-400 font-sans text-lg py-2"
+      : `text-white font-sans text-lg py-2 ${hoverEffect}`;
 
   const handleLinkClick = (path) => {
     setCurrentPath(path);
@@ -49,7 +55,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
   return (
     <div>
       <div className="md:hidden z-50 fixed top-6 right-8">
-        <button onClick={toggleMenu} className="text-white">
+        <button onClick={toggleMenu} className="text-white font-sans">
           {isOpen ? (
             <XIcon className="h-6 w-6" />
           ) : (
@@ -65,15 +71,17 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
         className="fixed top-0 right-0 h-full z-40 bg-gradient-to-r from-black to-gray-800 text-white w-64 p-5"
       >
         {isOpen && (
-          <nav className="flex flex-col space-y-4 mt-8">
+          // Global Styling for Positioning
+          <nav className="flex flex-col space-y-4 text-center items-center justify-center mt-16">
+            {/* Styling for Services Link and Content(Change State)*/}
             <div>
               <button
                 onClick={toggleServices}
-                className={`py-2 text-lg flex justify-between items-center w-full ${hoverEffect}`}
+                className={`py-2 text-xl text-center font-sans flex justify-center items-center w-full ${hoverEffect}`}
               >
                 Services
                 <svg
-                  className={`w-4 h-4 transform ${
+                  className={`w-6 h-6 transform ${
                     isServicesOpen ? "rotate-180" : "rotate-0"
                   }`}
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +106,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                   <Link href="/services/speechtherapy">
                     <div
                       onClick={() => handleLinkClick("/services/speechtherapy")}
-                      className={linkStyle("/services/speechtherapy")}
+                      className={servicesLinkStyle("/services/speechtherapy")}
                     >
                       Speech Therapy
                     </div>
@@ -108,7 +116,9 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                       onClick={() =>
                         handleLinkClick("/services/occupationaltherapy")
                       }
-                      className={linkStyle("/services/occupationaltherapy")}
+                      className={servicesLinkStyle(
+                        "/services/occupationaltherapy"
+                      )}
                     >
                       Occupational Therapy
                     </div>
@@ -148,11 +158,11 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                 Contact Us
               </div>
             </Link>
-            <div className="flex-inline">
+            <div className="flex-inline ml-6">
               <Link href="/school">
                 <div
                   onClick={() => handleLinkClick("/school")}
-                  className={`flex items-center py-2 text-lg ${hoverEffect} ${
+                  className={`flex items-center py-2 text-2xl font-schoolbell ${hoverEffect} ${
                     currentPath === "/school" ? "text-blue-400" : "text-white"
                   }`}
                 >
@@ -162,7 +172,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                     alt="Pencil image for menu"
                     width={25}
                     height={25}
-                    className="ml-2"
+                    className="ml-2 animate-rock"
                   />
                 </div>
               </Link>
