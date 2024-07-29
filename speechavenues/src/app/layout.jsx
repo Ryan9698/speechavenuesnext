@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Speech Avenues Therapy - Home",
+  title: "Speech Avenues Therapy Co. - Home",
   description:
     "Speech Avenues Therapy Co offers speech therapy and occupational therapy services in Rockledge Florida. SATC offers an array of speech and communication services with a focus on Autism Spectrum Disorder (ASD), Downs Syndrome and Cerebral Palsy in both adults and children.",
   keywords: [
@@ -16,6 +16,8 @@ export const metadata = {
     "downs syndrome",
     "child with autism",
     "adult with autism",
+    "Speech Therapy Rockledge FL",
+    "ASD",
   ],
   icons: {
     icon: "/favicon.ico",

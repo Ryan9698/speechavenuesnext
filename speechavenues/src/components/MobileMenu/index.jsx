@@ -1,9 +1,14 @@
 "use client";
+import dynamic from "next/dynamic";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+
+const MotionDiv = dynamic(
+  () => import("framer-motion").then((mod) => mod.motion.div),
+  { ssr: false }
+);
 
 const menuVariants = {
   open: { opacity: 1, x: 0 },
@@ -52,7 +57,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
           )}
         </button>
       </div>
-      <motion.div
+      <MotionDiv
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
@@ -83,7 +88,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                 </svg>
               </button>
               {isServicesOpen && (
-                <motion.div
+                <MotionDiv
                   initial="closed"
                   animate={isServicesOpen ? "open" : "closed"}
                   variants={linkVariants}
@@ -108,7 +113,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                       Occupational Therapy
                     </div>
                   </Link>
-                </motion.div>
+                </MotionDiv>
               )}
             </div>
             <Link href="/staff">
@@ -164,7 +169,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
             </div>
           </nav>
         )}
-      </motion.div>
+      </MotionDiv>
     </div>
   );
 };
