@@ -47,13 +47,22 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Link styles on the Navbar based on state
   const linkStyle = (path) =>
     currentPath === path
-      ? "text-blue-400 font-semibold px-4 py-3"
-      : "text-gray-300 font-semibold px-4 py-3 hover:bg-gray-700 hover:text-white rounded transition duration-300";
+      ? "text-blue-500 text-xl font-sans px-4 py-3"
+      : "text-gray-300 text-xl font-sans px-4 py-3 hover:animate-pulse hover:text-blue-400 rounded transition duration-300";
+
+  // Separate variable made for school link to accommodate the font
+
+  const schoolLinkStyle = () =>
+    currentPath === "/school"
+      ? "text-blue-500 font-schoolbell text-md px-4 py-3"
+      : "text-gray-300 font-schoolbell text-md px-4 py-3 hover:animate-pulse hover:text-blue-400 rounded transition duration-300";
 
   return (
-    <nav>
+    <nav className="">
+      {/* Mobile Menu Import and Container */}
       <div className="md:hidden z-50 fixed top-6 right-8">
         <MobileMenu
           isOpen={isOpen}
@@ -62,7 +71,7 @@ const Navbar = () => {
         />
       </div>
       <div className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md fixed w-full z-30 top-0 left-0">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+        <div className="max-w-8xl mx-auto px-2 sm:px-6 md:px-8 flex justify-between h-20 items-center">
           <div className="flex items-center">
             <Link
               href="/"
@@ -88,11 +97,14 @@ const Navbar = () => {
                 Our Staff
               </div>
             </Link>
+
+            {/* Services Dropdown Menu */}
             <div className="relative">
+              {/* Services Button and Styling */}
               <button
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="text-gray-300 hover:bg-gray-700 hover:text-white rounded px-4 py-3 text-base font-medium transition duration-300 inline-flex items-center"
+                className="text-gray-300 hover:animate-pulse hover:text-blue-400 rounded px-4 py-3 text-base text-xl font-sans transition duration-300 inline-flex items-center"
               >
                 Services
                 <svg
@@ -174,9 +186,9 @@ const Navbar = () => {
             </Link>
             <Link href="/school">
               <div
-                className={`${linkStyle(
+                className={`${schoolLinkStyle(
                   "/school"
-                )} schoolFont text-xl inline-flex items-center`}
+                )} font-serif text-2xl inline-flex items-center group`}
                 onClick={() => setCurrentPath("/school")}
               >
                 School
@@ -185,7 +197,7 @@ const Navbar = () => {
                   alt="Pencil"
                   width={40}
                   height={40}
-                  className="ml-2"
+                  className="ml-2 filter hue-rotate-120 animate-rock"
                 />
               </div>
             </Link>

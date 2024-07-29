@@ -1,29 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Schoolbell&display=swap");
+
+/* Tailwind base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Chalk font */
+/* Fonts stored in Repository */
 @font-face {
   font-family: "Rob Graves";
   src: url("/fonts/Robgraves-lKYV.ttf");
   font-display: swap;
 }
-/* Header Font URL */
+
 @font-face {
   font-family: "Dancing Script";
-  src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+  src: url("/fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 700;
   font-display: swap;
 }
-/* Header Cursive Font */
-.cursiveFont {
-  font-family: "Dancing Script", cursive;
-}
-/* Chalk-like Font */
-.schoolFont {
-  font-family: "Rob Graves", cursive;
-}
 
-/* Global Styling (Used to have footer fixed at the bottom of the viewport or content*/
+/* Global Styling (Used to have footer fixed at the bottom of the viewport or content) */
 html,
 body {
   height: 100%;
@@ -34,10 +30,21 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: sans-serif; /* Use the default sans-serif font, not Montserrat */
 }
 
 main {
   flex: 1;
+}
+
+/* Header Cursive Font */
+.cursiveFont {
+  font-family: "Dancing Script", cursive;
+}
+
+/* Chalk-like Font */
+.font-schoolbell {
+  font-family: "Schoolbell", cursive;
 }
 
 /* Hamburger Mobile Icon */
@@ -80,8 +87,8 @@ main {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
-/* Carousel */
 
+/* Carousel */
 .float-right {
   float: right;
 }
@@ -134,10 +141,17 @@ main {
 .fade-out {
   animation: fadeOut 2s forwards;
 }
-/* End Logo Animation */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /* React-Image-Gallery Styles */
-
 .gallery-overlay {
   position: fixed; /* Full-screen overlay */
   top: 0;
