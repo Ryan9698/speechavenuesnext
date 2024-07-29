@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Speech Avenues School Program",
+  title: "Speech Avenues - School",
   description:
     "Speech Avenues offers a comprehensive educational experience for learners with communication disorders.",
 };
