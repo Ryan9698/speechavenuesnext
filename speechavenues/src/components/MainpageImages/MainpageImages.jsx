@@ -31,24 +31,26 @@ export default function MainpageImages() {
   }, []);
 
   return (
-    <div className="relative w-full h-96 md:h-96">
-      {images.map((image, index) => (
-        <Image
-          key={index}
-          src={image}
-          alt={`Image ${index}`}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className={classNames(
-            "absolute top-0 left-0 transition-opacity duration-1000",
-            {
-              "opacity-100": index === currentImageIndex && fade,
-              "opacity-0": index !== currentImageIndex || !fade,
-            }
-          )}
-          priority={index === 0} // Add priority to the first image
-        />
-      ))}
+    <div className="relative w-full h-96 md:h-96 bg-white overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-end">
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            src={image}
+            alt={`Image ${index}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className={classNames(
+              "transition-opacity duration-1000 object-contain",
+              {
+                "opacity-100": index === currentImageIndex && fade,
+                "opacity-0": index !== currentImageIndex || !fade,
+              }
+            )}
+            priority={index === 0} // Add priority to the first image
+          />
+        ))}
+      </div>
     </div>
   );
 }
