@@ -52,7 +52,7 @@ export default function OccupationalTherapy() {
         </div>
       </div>
       {/* New Container for Services Provided Section */}
-      <div className="bg-white p-6 flex flex-col space-y-3 mt-8 -mt-7">
+      <div className="bg-white p-6 flex flex-col space-y-3  -mt-7">
         <p className="font-medium">
           Services provided by our occupational therapists encompass a wide
           range of interventions, including: assessing and improving fine motor
