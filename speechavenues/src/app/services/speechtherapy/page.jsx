@@ -6,6 +6,7 @@ export const metadata = {
   title: "Speech Therapy - Speech Avenues Therapy Co.",
   description:
     "Speech Avenues Therapy Co (SATC) have a team of dedicated professionals with diverse strengths to target improve speech in adults and children. Speech Avenues works with a variety of different conditions including Autism Spectrum Disorder (ASD), Traumatic Brain Injury (TBI), Cerebral Palsy and more.",
+  canonical: "https://speechavenues.com/services/speechtherapy",
 };
 
 export default function SpeechTherapy() {
@@ -19,7 +20,7 @@ export default function SpeechTherapy() {
           <h1 className="cursiveFont text-4xl font-bold text-gray-800 my-4">
             Speech Therapy
           </h1>
-          <p className="text-justify flex text-wrap">
+          <h2 className="text-justify flex text-wrap">
             Our speech therapy services are dedicated to enhancing
             communication, cognitive communication, language development,
             articulation, voice, swallowing, feeding, and both expressive and
@@ -28,7 +29,7 @@ export default function SpeechTherapy() {
             offer AAC device services and training. This approach revolutionizes
             the way individuals express themselves, utilizing innovative
             technology solutions.
-          </p>
+          </h2>
           <p className="mt-4 text-justify lg:col-start-1 lg:col-span-7 lg:row-start-2">
             We go above and beyond to ensure communication thrives in every
             setting by customizing and programming devices, as well as providing

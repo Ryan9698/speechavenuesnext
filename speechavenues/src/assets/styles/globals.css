@@ -170,3 +170,18 @@ main {
   max-width: 1000px; /* Maximum size of the gallery */
   z-index: 20;
 }
+
+/* Custom Element Classes */
+
+/* h1 Style designed for the Staff Component for SEO purposes */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

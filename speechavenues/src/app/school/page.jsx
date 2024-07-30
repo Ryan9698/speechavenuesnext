@@ -5,6 +5,7 @@ export const metadata = {
   title: "Speech Avenues - School",
   description:
     "Speech Avenues offers a comprehensive educational experience for learners with communication disorders.",
+  canonical: "https://speechavenues.com/school",
 };
 
 export default function SchoolHome() {
@@ -27,13 +28,17 @@ export default function SchoolHome() {
               Education to Meet the Needs of Your Children
             </h1>
             <div className="bg-white rounded-lg p-6 max-w-prose md:max-w-xl">
-              <p className="text-justify mb-4">
+              <h2 className="text-justify mb-4">
                 We are working diligently to open up a brand new opportunity for
                 Brevard County learners with communication disorders. Our full
                 time program will provide a complete educational experience
                 within a therapeutic setting. Learners will work on independent
-                life skills in conjunction with individualized therapies. We
-                pride ourselves on providing a multisensory approach to
+                life skills in conjunction with individualized therapies.
+              </h2>
+
+              <p>
+                {" "}
+                We pride ourselves on providing a multisensory approach to
                 academics that meets children at their level of need. We focus
                 on relationship based learning which promotes social community
                 building between our individuals and our staff. This approach

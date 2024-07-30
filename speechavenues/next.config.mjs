@@ -14,6 +14,23 @@ const nextConfig = withBundleAnalyzer({
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/(.*)", // Match all routes
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+        ],
+      },
+    ];
+  },
 });
 
 export default nextConfig;

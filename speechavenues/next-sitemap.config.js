@@ -8,8 +8,8 @@ const config = {
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/" },
-      { userAgent: "*", disallow: "/forms" },
-      { userAgent: "*", disallow: "/gallery" },
+      //   { userAgent: "*", disallow: "/forms" },
+      //   { userAgent: "*", disallow: "/gallery" },
     ],
   },
 };

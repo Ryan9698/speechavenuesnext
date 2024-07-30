@@ -4,6 +4,7 @@ export const metadata = {
   title: "Speech Avenues Therapy - Contact Us",
   description:
     "Please contact us with any questions, comments, and concerns. We love feedback and are always looking for ways to improve our services at Speech Avenues. Thank you!",
+  canonical: "https://speechavenues.com/contact",
 };
 
 export default function Contact() {

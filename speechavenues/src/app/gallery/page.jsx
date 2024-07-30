@@ -7,6 +7,7 @@ export const metadata = {
   title: "Gallery - Speech Avenues Therapy Co.",
   description:
     "Picture gallery for Speech Avenues Therapy Co which showcases photos of staff, therapy services, classes, school and events.",
+  canonical: "https://speechavenues.com/gallery",
 };
 
 export default function Gallery() {

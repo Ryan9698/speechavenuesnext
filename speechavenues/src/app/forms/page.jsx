@@ -5,6 +5,7 @@ export const metadata = {
   title: "Intake Forms - Speech Avenues Therapy Co.",
   description:
     "Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive.",
+  canonical: "https://speechavenues.com/forms",
 };
 
 export default function Forms() {
@@ -16,11 +17,11 @@ export default function Forms() {
             Patient Intake Forms
           </h1>
         </div>
-        <p className="mt-4 leading-loose text-center md:text-left">
+        <h2 className="mt-4 leading-loose text-center md:text-left">
           Below you will find downloadable intake forms for our services. We ask
           that you please print out these forms and fill them out before you
           arrive.
-        </p>
+        </h2>
         <PacketList />
       </div>
     </>

@@ -6,6 +6,7 @@ export const metadata = {
   title: "Speech Avenues Occupational Therapy",
   description:
     "Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages to achieve independence and enhance their quality of life through meaningful everyday activities, known as occupations.",
+  canonical: "https://speechavenues.com/services/occupationaltherapy",
 };
 
 export default function OccupationalTherapy() {
@@ -25,7 +26,7 @@ export default function OccupationalTherapy() {
             Occupational Therapy
           </h1>
           <div className="bg-white p-6 flex flex-col space-y-3">
-            <p>
+            <h2>
               <span className="font-bold">Occupational Therapy (OT)</span> is a
               branch of healthcare with professionals dedicated to empowering
               patients of all ages to achieve independence and enhance their
@@ -33,7 +34,7 @@ export default function OccupationalTherapy() {
               occupations. Our OT practitioners work with individuals throughout
               all stages of life who may be facing various physical, cognitive,
               developmental, or emotional challenges.
-            </p>
+            </h2>
             <p>
               By collaborating with patients to set personalized goals and
               develop tailored treatment plans, occupational therapy facilitates
