@@ -2,14 +2,6 @@
 User-agent: *
 Allow: /
 
-# *
-User-agent: *
-Disallow: /forms
-
-# *
-User-agent: *
-Disallow: /gallery
-
 # Host
 Host: https://speechavenues.com
 
