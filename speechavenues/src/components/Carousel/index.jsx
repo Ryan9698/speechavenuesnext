@@ -1,5 +1,5 @@
 "use client";
-
+// Reused react image gallery to create a simplified carousel for Speech/Occupational Therapy.
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
