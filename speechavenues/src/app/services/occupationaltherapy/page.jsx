@@ -1,12 +1,14 @@
-import React from "react";
-import Carousel from "@/components/Carousel";
-import otSlides from "@/data/otpicturesdata/OTPictures";
+import React from 'react';
+import Carousel from '@/components/Carousel';
+import otSlides from '@/data/otpicturesdata/OTPictures';
 
 export const metadata = {
-  title: "Speech Avenues Occupational Therapy",
+  title: 'Speech Avenues Occupational Therapy',
   description:
-    "Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages to achieve independence and enhance their quality of life through meaningful everyday activities, known as occupations.",
-  canonical: "https://speechavenues.com/services/occupationaltherapy",
+    'Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages to achieve independence and enhance their quality of life through meaningful everyday activities, known as occupations.',
+  alternates: {
+    canonical: `/services/occupationaltherapy`,
+  },
 };
 
 export default function OccupationalTherapy() {

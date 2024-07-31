@@ -1,11 +1,13 @@
-import React from "react";
-import PacketList from "@/components/PacketList";
+import React from 'react';
+import PacketList from '@/components/PacketList';
 
 export const metadata = {
-  title: "Intake Forms - Speech Avenues Therapy Co.",
+  title: 'Intake Forms - Speech Avenues Therapy Co.',
   description:
-    "Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive.",
-  canonical: "https://speechavenues.com/forms",
+    'Downloadable intake forms for Speech Avenues services. Please fill them out before you arrive.',
+  alternates: {
+    canonical: `/forms`,
+  },
 };
 
 export default function Forms() {

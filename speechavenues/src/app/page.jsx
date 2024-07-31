@@ -1,11 +1,11 @@
 // app/page.jsx
-import React from "react";
-import PhoneIcon from "@/components/PhoneIcon";
-import dynamic from "next/dynamic";
+import React from 'react';
+import PhoneIcon from '@/components/PhoneIcon';
+import dynamic from 'next/dynamic';
 
 // Dynamically import MainpageImages component
 const MainpageImages = dynamic(
-  () => import("@/components/MainpageImages/MainpageImages"),
+  () => import('@/components/MainpageImages/MainpageImages'),
   {
     ssr: false, // Ensure it is only rendered on the client-side
   }
@@ -13,11 +13,13 @@ const MainpageImages = dynamic(
 
 export const metadata = {
   title: {
-    default: "Speech Avenues Therapy Co.",
+    default: 'Speech Avenues Therapy Co.',
   },
   description:
-    "Speech Avenues Therapy Co offers speech therapy and occupational therapy services in Rockledge Florida. SATC offers an array of speech and communication services with a focus on Autism Spectrum Disorder (ASD), Downs Syndrome and Cerebral Palsy in both adults and children.",
-  canonical: "https://speechavenues.com/",
+    'Speech Avenues Therapy Co offers speech therapy and occupational therapy services in Rockledge Florida. SATC offers an array of speech and communication services with a focus on Autism Spectrum Disorder (ASD), Downs Syndrome and Cerebral Palsy in both adults and children.',
+  alternates: {
+    canonical: `/`,
+  },
 };
 
 export default function Home() {

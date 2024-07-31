@@ -1,12 +1,14 @@
-import React from "react";
-import Carousel from "@/components/Carousel";
-import speechSlides from "@/data/speechpicturesdata/SpeechPictures";
+import React from 'react';
+import Carousel from '@/components/Carousel';
+import speechSlides from '@/data/speechpicturesdata/SpeechPictures';
 
 export const metadata = {
-  title: "Speech Therapy - Speech Avenues Therapy Co.",
+  title: 'Speech Therapy - Speech Avenues Therapy Co.',
   description:
-    "Speech Avenues Therapy Co (SATC) have a team of dedicated professionals with diverse strengths to target improve speech in adults and children. Speech Avenues works with a variety of different conditions including Autism Spectrum Disorder (ASD), Traumatic Brain Injury (TBI), Cerebral Palsy and more.",
-  canonical: "https://speechavenues.com/services/speechtherapy",
+    'Speech Avenues Therapy Co (SATC) have a team of dedicated professionals with diverse strengths to target improve speech in adults and children. Speech Avenues works with a variety of different conditions including Autism Spectrum Disorder (ASD), Traumatic Brain Injury (TBI), Cerebral Palsy and more.',
+  alternates: {
+    canonical: `/services/speechtherapy`,
+  },
 };
 
 export default function SpeechTherapy() {
@@ -142,7 +144,7 @@ export default function SpeechTherapy() {
                   signs, and aided methods, such as speech-generating devices.
                 </p>
                 <p>
-                  To learn more about AAC and its benefits,{" "}
+                  To learn more about AAC and its benefits,{' '}
                   <a
                     href="https://www.asha.org/njc/aac/#:~:text=Augmentative%20and%20alternative%20communication%20(AAC)%20describes%20multiple%20ways%20to%20communicate,with%20severe%20expressive%20communication%20disorders."
                     target="_blank" // Open in a new tab

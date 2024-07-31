@@ -1,11 +1,13 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 export const metadata = {
-  title: "Speech Avenues - School",
+  title: 'Speech Avenues - School',
   description:
-    "Speech Avenues offers a comprehensive educational experience for learners with communication disorders.",
-  canonical: "https://speechavenues.com/school",
+    'Speech Avenues offers a comprehensive educational experience for learners with communication disorders.',
+  alternates: {
+    canonical: `/school`,
+  },
 };
 
 export default function SchoolHome() {
@@ -37,7 +39,7 @@ export default function SchoolHome() {
               </h2>
 
               <p>
-                {" "}
+                {' '}
                 We pride ourselves on providing a multisensory approach to
                 academics that meets children at their level of need. We focus
                 on relationship based learning which promotes social community

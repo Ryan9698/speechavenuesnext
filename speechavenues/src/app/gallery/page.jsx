@@ -1,13 +1,15 @@
 // pages/gallery.js
 
-import React from "react";
-import GalleryComponent from "@/components/GalleryComponent//GalleryComponent";
+import React from 'react';
+import GalleryComponent from '@/components/GalleryComponent//GalleryComponent';
 
 export const metadata = {
-  title: "Gallery - Speech Avenues Therapy Co.",
+  title: 'Gallery - Speech Avenues Therapy Co.',
   description:
-    "Picture gallery for Speech Avenues Therapy Co which showcases photos of staff, therapy services, classes, school and events.",
-  canonical: "https://speechavenues.com/gallery",
+    'Picture gallery for Speech Avenues Therapy Co which showcases photos of staff, therapy services, classes, school and events.',
+  alternates: {
+    canonical: `/gallery`,
+  },
 };
 
 export default function Gallery() {

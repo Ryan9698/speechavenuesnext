@@ -6,7 +6,9 @@ export const metadata = {
   title: 'Therapy Staff - Speech Avenues Therapy Co.',
   description:
     'Below you will find the diverse and talented staff at Speech Avenues to help the individual in your life achieve improved and lasting independence.',
-  canonical: 'https://speechavenues.com/staff',
+  alternates: {
+    canonical: `/staff`,
+  },
 };
 
 export default function StaffPage() {
