@@ -5,7 +5,7 @@ import otSlides from '@/data/otpicturesdata/OTPictures';
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',
   description:
-    'Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages to achieve independence and enhance their quality of life through meaningful everyday activities, known as occupations.',
+    'Speech Avenues Occupational Therapists are healthcare professionals dedicated to empowering patients of all ages to achieve independence and enhance their quality of life.',
   alternates: {
     canonical: `/services/occupationaltherapy`,
   },

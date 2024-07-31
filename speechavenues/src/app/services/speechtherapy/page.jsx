@@ -5,7 +5,7 @@ import speechSlides from '@/data/speechpicturesdata/SpeechPictures';
 export const metadata = {
   title: 'Speech Therapy - Speech Avenues Therapy Co.',
   description:
-    'Speech Avenues Therapy Co (SATC) have a team of dedicated professionals with diverse strengths to target improve speech in adults and children. Speech Avenues works with a variety of different conditions including Autism Spectrum Disorder (ASD), Traumatic Brain Injury (TBI), Cerebral Palsy and more.',
+    'Speech Avenues Therapy Co. has a team of gifted therapists who create personalized care plans to help patients reach their potential.',
   alternates: {
     canonical: `/services/speechtherapy`,
   },
