@@ -14,23 +14,24 @@ export default function SchoolHome() {
   return (
     <>
       <div className="container mx-auto p-6">
-        <div className="flex flex-col md:flex-row justify-center md:items-start ">
-          <div className="relative w-96 md:mr-2 mx-auto md:mt-6">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
+          <div className="relative w-full max-w-xs md:w-96 md:mr-2 mx-auto md:mt-6">
             <Image
               src="/images/mainpageimages/enrollacademy.png"
               alt="Speech Avenues Academy offers personalized lesson plans tailored to your child's individual needs"
+              layout="responsive"
               width={600}
               height={600}
               priority={true}
               className="rounded-lg"
             />
           </div>
-          <div className="flex flex-col items-center md:items-start mx-auto">
-            <h1 className="text-3xl font-bold text-gray-800 mt-6 cursiveFont text-center md:text-left md:px-6">
+          <div className="flex flex-col items-center md:items-start mx-auto mt-6 md:mt-0">
+            <h1 className="text-3xl font-bold text-gray-800 cursiveFont text-center md:text-left md:px-6">
               Education to Meet the Needs of Your Children
             </h1>
             <div className="bg-white rounded-lg p-6 max-w-prose md:max-w-xl mx-auto">
-              <h2 className="text-justify mb-4">
+              <h2 className="text-center md:text-justify mb-4">
                 We are working diligently to open up a brand new opportunity for
                 Brevard County learners with communication disorders. Our full
                 time program will provide a complete educational experience
@@ -38,8 +39,7 @@ export default function SchoolHome() {
                 life skills in conjunction with individualized therapies.
               </h2>
 
-              <p>
-                {' '}
+              <p className="text-center md:text-justify">
                 We pride ourselves on providing a multisensory approach to
                 academics that meets children at their level of need. We focus
                 on relationship based learning which promotes social community

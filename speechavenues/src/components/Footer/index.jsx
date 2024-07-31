@@ -1,14 +1,14 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 const Footer = () => {
-  const address = "107 Longwood Ave, Rockledge, FL 32955";
+  const address = '107 Longwood Ave, Rockledge, FL 32955';
   const encodedAddress = encodeURIComponent(address);
-  const facebookUrl = "https://www.facebook.com/speechavenuestherapyco/";
+  const facebookUrl = 'https://www.facebook.com/speechavenuestherapyco/';
 
   return (
     <footer className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md">
-      <div className="container mx-auto md:px-4 py-6 md:py-8">
+      <div className="container mx-auto md:px-4 py-10 md:py-8">
         <div className="flex flex-col md:flex-row items-center md:justify-between space-y-3">
           {/* Address */}
           <a
@@ -61,12 +61,12 @@ const Footer = () => {
               rights reserved.
             </div>
             <div className="text-gray-500 text-sm mt-1">
-              Web Design by{" "}
+              Web Design by{' '}
               <a
                 href="https://www.ryancaltabiano.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:underline"
+                className="text-gray-300 hover:underline"
               >
                 Ryan Caltabiano
               </a>
