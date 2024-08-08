@@ -37,7 +37,10 @@ export const metadata = {
     'downs syndrome',
     'child with autism',
     'adult with autism',
+    'Speech therapy near me',
+    'occupational therapy near me',
     'Speech Therapy Rockledge FL',
+    'occupational therapy rockledge fl',
     'ASD',
   ],
   robots: {

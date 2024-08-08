@@ -20,6 +20,22 @@ export const metadata = {
   alternates: {
     canonical: `/`,
   },
+  keywords: [
+    'Speech Avenues',
+    'speech therapy near me',
+    'occupational therapy near me rockledge',
+    'speech therapy near me rockledge',
+    'speech avenues therapy',
+    'speech therapy',
+    'occupational therapy',
+    'feeding therapy',
+    'autism',
+    'cerebral palsy',
+    'downs syndrome',
+    'adult with autism',
+    'child with autism',
+    'ASD',
+  ],
 };
 
 export default function Home() {
