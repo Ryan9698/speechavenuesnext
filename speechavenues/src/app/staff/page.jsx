@@ -9,6 +9,21 @@ export const metadata = {
   alternates: {
     canonical: `/staff`,
   },
+  keywords: [
+    'Speech Avenues',
+    'speech therapy near me',
+    'occupational therapy near me rockledge',
+    'speech therapy near me rockledge',
+    'speech avenues therapy',
+    'speech avenues staff',
+    'feeding therapy',
+    'satc staff',
+    'autism',
+    'cerebral palsy',
+    'downs syndrome',
+    'adult with autism',
+    'ASD',
+  ],
 };
 
 export default function StaffPage() {
@@ -18,8 +33,10 @@ export default function StaffPage() {
       {/* h1/h2 elements for SEO purposes, may incorporate a meaningful one later */}
       <h1 className="visually-hidden">Speech and Occupational Therapy Staff</h1>
       <h2 className="visually-hidden">
-        This is a placeholder paragraph using a visually-hidden class for SEO
-        purposes.
+        These are our skilled and diverse staff at Speech Avenues, dedicated to
+        helping you or a loved on attain your goals. Our staff members are
+        highly skilled in their respective fields with years of experience in
+        different areas.
       </h2>
       {/* Grid Styling for Staff Cards */}
       <div className="flex justify-center">
