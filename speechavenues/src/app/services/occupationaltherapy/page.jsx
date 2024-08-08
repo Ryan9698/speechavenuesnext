@@ -9,6 +9,22 @@ export const metadata = {
   alternates: {
     canonical: `/services/occupationaltherapy`,
   },
+  keywords: [
+    'Occupational Therapy',
+    'occupational therapy near me',
+    'occupational therapist near me rockledge',
+    'occupational therapy near me rockledge',
+    'occupational therapy near me florida',
+    'occupational therapy rockledge',
+    'adult occupational therapy',
+    'child occupational therapy',
+    'autism',
+    'cerebral palsy',
+    'downs syndrome',
+    'adult with autism',
+    'ASD',
+    'satc',
+  ],
 };
 
 export default function OccupationalTherapy() {
@@ -57,10 +73,10 @@ export default function OccupationalTherapy() {
       {/* New Container for Services Provided Section */}
       <div className="bg-white p-6 flex flex-col space-y-3  -mt-7">
         <p className="font-medium">
-          Services provided by our occupational therapists encompass a wide
-          range of interventions, including: assessing and improving fine motor
-          skills, balance, emotional regulation, self-care abilities, cognitive
-          functions, and more.
+          Services provided by our occupational therapists here at SATC
+          encompass a wide range of interventions, including: assessing and
+          improving fine motor skills, balance, emotional regulation, self-care
+          abilities, cognitive functions, and more.
         </p>
         <div>
           Additionally, our occupational therapists specialize in sensory
