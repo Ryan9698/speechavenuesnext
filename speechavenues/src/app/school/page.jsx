@@ -8,6 +8,20 @@ export const metadata = {
   alternates: {
     canonical: `/school`,
   },
+  keywords: [
+    'Speech Avenues',
+    'speech therapy school',
+    'speech avenues school',
+    'school for autism',
+    'k-12 autism',
+    'speech avenue school',
+    'school for autism',
+    'autism',
+    'cerebral palsy',
+    'downs syndrome',
+    'ASD',
+    'ASD school',
+  ],
 };
 
 export default function SchoolHome() {
