@@ -9,6 +9,23 @@ export const metadata = {
   alternates: {
     canonical: `/services/speechtherapy`,
   },
+  keywords: [
+    'Speech Therapy',
+    'speech therapy near me',
+    'speech therapy near me florida',
+    'adult speech therapy',
+    'child speech therapy',
+    'feeding therapy',
+    'satc',
+    'aac',
+    'aac rockledge florida',
+    'autism',
+    'cerebral palsy',
+    'downs syndrome',
+    'adult with autism',
+    'Speech Therapy Rockledge',
+    'ASD',
+  ],
 };
 
 export default function SpeechTherapy() {
