@@ -54,8 +54,8 @@ const nextConfig = {
   },
   images: {
     domains: ['res.cloudinary.com'],
-    deviceSizes: [320, 420, 768, 1024, 1200, 1440, 1920, 2560, 3200],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512],
+    deviceSizes: [320, 420, 768, 1024, 1200, 1440],
+    imageSizes: [16, 32, 48, 64, 96, 128],
     path: '/_next/image',
     loader: 'default',
   },

@@ -1,15 +1,15 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import classNames from "classnames";
+'use client';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import classNames from 'classnames';
 
 const images = [
-  "/images/mainpageimages/logo.jpg",
-  "/images/mainpageimages/enrollacademy.png",
-  "/images/mainpageimages/summerintensives.jpg",
-  "/images/mainpageimages/whatweoffer.png",
-  "/images/mainpageimages/feedingtherapy.png",
-  "/images/mainpageimages/hoursofoperation.png",
+  '/images/mainpageimages/logo.jpg',
+  // "/images/mainpageimages/enrollacademy.png",
+  // "/images/mainpageimages/summerintensives.jpg",
+  '/images/mainpageimages/whatweoffer.png',
+  '/images/mainpageimages/feedingtherapy.png',
+  '/images/mainpageimages/hoursofoperation.png',
 ];
 
 export default function MainpageImages() {
@@ -41,10 +41,10 @@ export default function MainpageImages() {
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className={classNames(
-              "transition-opacity duration-1000 object-contain",
+              'transition-opacity duration-1000 object-contain',
               {
-                "opacity-100": index === currentImageIndex && fade,
-                "opacity-0": index !== currentImageIndex || !fade,
+                'opacity-100': index === currentImageIndex && fade,
+                'opacity-0': index !== currentImageIndex || !fade,
               }
             )}
             priority={index === 0} // Add priority to the first image
