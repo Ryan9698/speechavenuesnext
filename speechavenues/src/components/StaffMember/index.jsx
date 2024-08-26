@@ -18,7 +18,7 @@ export default function StaffMember({
   return (
     <div className="max-w-xs rounded shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white mx-auto sm:mx-4 md:mx-auto">
       {/* Image Container for Sizing Image */}
-      <div className="relative w-100 h-[60vh]">
+      <div className="relative w-100 h-[35vh]">
         {/* Image Properties for the container */}
         <Image
           className="object-cover object-center rounded-t-lg"
@@ -34,7 +34,7 @@ export default function StaffMember({
       </div>
       <div className="px-3 py-1 bg-gray-300">
         <div className="font-sans text-2xl text-gray-800 1">{name}</div>
-        <p className="text-gray-600 text-sm font-sans font-bold text-base">
+        <p className=" text-gray-600 text-sm font-sans font-bold text-base">
           {role}
         </p>
       </div>

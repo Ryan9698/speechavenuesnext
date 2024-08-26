@@ -30,13 +30,13 @@ export default function StaffPage() {
   return (
     // Global Container
     <div className="container mx-auto px-4 pb-4">
-      {/* h1/h2 elements for SEO purposes, may incorporate a meaningful one later */}
-      <h1 className="visually-hidden">Speech and Occupational Therapy Staff</h1>
-      <h2 className="visually-hidden">
-        These are our skilled and diverse staff at Speech Avenues, dedicated to
+      <h1 className="flex justify-center items-center p-2 text-slate-800 font-dancing text-2xl">
+        Speech and Occupational Therapy Staff
+      </h1>
+      <h2 className="flex justify-center items-center text-center px-2 text-slate-800 font-sans text-sm mx-24 pb-6">
+        These are the skilled and diverse staff at Speech Avenues, dedicated to
         helping you or a loved on attain your goals. Our staff members are
-        highly skilled in their respective fields with years of experience in
-        different areas.
+        highly skilled in their respective fields with years of experience.
       </h2>
       {/* Grid Styling for Staff Cards */}
       <div className="flex justify-center">

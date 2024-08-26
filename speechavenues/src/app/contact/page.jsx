@@ -7,6 +7,11 @@ export const metadata = {
   alternates: {
     canonical: `/contact`,
   },
+  keywords: [
+    'Speech Avenues Contact Us',
+    'Speech Avenues Rockledge Phone Number',
+    'SATC phone number',
+  ],
 };
 
 export default function Contact() {
