@@ -30,7 +30,7 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
         />
       </div>
       <div className="px-3 py-1 bg-gray-300">
-        <div className="font-sans text-2xl text-gray-800">{name}</div>
+        <div className="font-sans text-2xl text-gray-800 1">{name}</div>
         <p className="text-gray-600 text-sm font-sans font-bold text-base">
           {role}
         </p>
