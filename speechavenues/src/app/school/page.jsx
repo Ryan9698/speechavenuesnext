@@ -17,7 +17,6 @@ export const metadata = {
     'speech avenue school',
     'school for autism',
     'autism',
-    'cerebral palsy',
     'downs syndrome',
     'ASD',
     'ASD school',

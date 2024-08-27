@@ -33,7 +33,6 @@ export const metadata = {
     'satc',
     'school for autism',
     'autism',
-    'cerebral palsy',
     'downs syndrome',
     'child with autism',
     'adult with autism',

@@ -30,7 +30,6 @@ export const metadata = {
     'occupational therapy',
     'feeding therapy',
     'autism',
-    'cerebral palsy',
     'downs syndrome',
     'adult with autism',
     'child with autism',

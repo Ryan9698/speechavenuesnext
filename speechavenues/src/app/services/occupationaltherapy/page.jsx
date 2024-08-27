@@ -19,7 +19,6 @@ export const metadata = {
     'adult occupational therapy',
     'child occupational therapy',
     'autism',
-    'cerebral palsy',
     'downs syndrome',
     'adult with autism',
     'ASD',

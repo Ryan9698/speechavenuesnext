@@ -59,6 +59,9 @@ const nextConfig = {
     path: '/_next/image',
     loader: 'default',
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 export default nextConfig;

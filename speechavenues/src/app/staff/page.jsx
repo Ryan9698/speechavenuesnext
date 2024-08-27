@@ -19,7 +19,6 @@ export const metadata = {
     'feeding therapy',
     'satc staff',
     'autism',
-    'cerebral palsy',
     'downs syndrome',
     'adult with autism',
     'ASD',
@@ -30,14 +29,6 @@ export default function StaffPage() {
   return (
     // Global Container
     <div className="container mx-auto px-4 pb-4">
-      {/* h1/h2 elements for SEO purposes, may incorporate a meaningful one later */}
-      <h1 className="visually-hidden">Speech and Occupational Therapy Staff</h1>
-      <h2 className="visually-hidden">
-        These are our skilled and diverse staff at Speech Avenues, dedicated to
-        helping you or a loved on attain your goals. Our staff members are
-        highly skilled in their respective fields with years of experience in
-        different areas.
-      </h2>
       {/* Grid Styling for Staff Cards */}
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
