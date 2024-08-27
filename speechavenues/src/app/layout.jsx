@@ -54,7 +54,7 @@ export const metadata = {
     siteName: 'Speech Avenues Therapy Co.',
     images: [
       {
-        url: '/images/mainpageimages/logo.jpg',
+        url: '/images/mainpageimages/logo.webp',
         width: 600,
         height: 400,
         alt: 'Speech Avenues Academy offers personalized speech and occupational therapy services in Rockledge, Florida',
@@ -84,7 +84,7 @@ export const metadata = {
       'Speech Avenues Therapy Co offers speech and occupational therapy services to adults and children in Rockledge, FL. Let us help you achieve your goals!',
     images: [
       {
-        url: '/images/mainpageimages/logo.jpg',
+        url: '/images/mainpageimages/logo.webp',
         alt: 'Speech Avenues Therapy Company',
       },
     ],

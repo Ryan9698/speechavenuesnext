@@ -34,7 +34,7 @@ export default function StaffPage() {
       </h1>
       <h2 className="flex justify-center items-center text-center px-2 text-slate-800 font-sans text-sm md:mx-24 md:pb-6">
         These are the skilled and diverse staff at Speech Avenues, dedicated to
-        helping you or a loved on attain your goals. Our staff members are
+        helping you or a loved one attain your goals. Our staff members are
         highly skilled in their respective fields with years of experience.
       </h2>
       {/* Grid Styling for Staff Cards */}

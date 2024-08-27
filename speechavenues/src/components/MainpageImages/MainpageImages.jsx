@@ -4,10 +4,10 @@ import Image from 'next/image';
 import classNames from 'classnames';
 
 const images = [
-  '/images/mainpageimages/logo.jpg',
+  '/images/mainpageimages/logo.webp',
   // "/images/mainpageimages/enrollacademy.png",
   // "/images/mainpageimages/summerintensives.jpg",
-  '/images/mainpageimages/whatweoffer.png',
+  // '/images/mainpageimages/whatweoffer.png',
   '/images/mainpageimages/feedingtherapy.png',
   '/images/mainpageimages/hoursofoperation.png',
 ];
