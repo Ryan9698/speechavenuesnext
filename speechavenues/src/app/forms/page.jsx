@@ -8,6 +8,7 @@ export const metadata = {
   alternates: {
     canonical: `/forms`,
   },
+  keywords: ['speech avenues intake forms', 'satc intake forms'],
 };
 
 export default function Forms() {

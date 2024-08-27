@@ -10,6 +10,7 @@ export const metadata = {
   alternates: {
     canonical: `/gallery`,
   },
+  keywords: ['satc gallery', 'satc what we do', 'satc events'],
 };
 
 export default function Gallery() {
