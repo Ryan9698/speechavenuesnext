@@ -1,14 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 
 export default function StaffMember({ name, role, bio, imageUrl, alt }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [hasMounted, setHasMounted] = useState(false);
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
 
   const toggleBio = () => {
     setIsExpanded((prevState) => !prevState);
@@ -18,7 +13,6 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
     <div className="mt-6 max-w-xs border-b-2 border-slate-200 rounded-xl shadow hover:shadow-2xl transition-shadow duration-600 bg-white mx-auto sm:mx-4 md:mx-auto">
       <div className="relative w-full h-[35vh]">
         <Image
-          // Use object-fill to stretch the image to fit the container
           className="object-fill object-center border-2 rounded-t-xl"
           src={imageUrl}
           alt={alt}
@@ -30,10 +24,9 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
         />
       </div>
       <div className="px-3 py-1 bg-gray-300">
-        <div className="font-sans text-2xl text-gray-800 1">{name}</div>
-        <p className="text-gray-600 text-sm font-sans font-bold text-base">
-          {role}
-        </p>
+        <div className="font-sans text-2xl text-gray-800">{name}</div>
+        {/* Make sure className is consistent between server and client */}
+        <p className="text-gray-600 text-sm font-sans font-bold">{role}</p>
       </div>
       <div className="px-4 py-1 mx-auto border-t">
         <p
@@ -46,7 +39,7 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
         <div className="flex justify-center mt-1">
           <button
             onClick={toggleBio}
-            className="text-gray-400 hover:text-blue-700 focus:outline-none font-sans text-xs text-end"
+            className="text-gray-400 hover:text-blue-700 focus:outline-none font-sans text-xs"
           >
             {isExpanded ? 'Read less..' : 'Read More..'}
           </button>
