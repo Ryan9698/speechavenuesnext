@@ -63,7 +63,7 @@ export default function Home() {
             {/* Adjusted margin to the right */}
             <div className="ml-5">
               <h1
-                className="text-6xl font-bold mb-6 text-center md:text-left p-4"
+                className="text-6xl font-bold mb-6 text-center md:text-left p-4 "
                 style={{ fontFamily: '"Dancing Script", cursive' }}
               >
                 Welcome!
