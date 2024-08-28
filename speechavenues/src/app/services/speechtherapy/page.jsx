@@ -246,6 +246,170 @@ export default function SpeechTherapy() {
                     </p>
                   </div>
                 </details>
+                <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
+                  <summary className="font-sans text-center text-lg cursor-pointer text-gray-800">
+                    Language Disorders
+                  </summary>
+                  <div className="mt-3 text-base text-gray-700 leading-relaxed">
+                    <p>
+                      Language disorders are diagnosed when children do not meet
+                      these milestones within 12 months of the specified
+                      development or there is a suspected birth defect, such as
+                      cerebral palsy, Down’s syndrome, etc.
+                    </p>
+                    <p className="mt-3">
+                      Language disorders can occur in children with or without
+                      any other co-occurring diagnosis (happening at the same
+                      time or causing the language disorder).
+                    </p>
+                    <p className="mt-3">
+                      Language disorders in children can be developmental in
+                      nature, meaning the child’s language is not developing or
+                      following the rules of the language system. It can also be
+                      caused by the environment the child is in. Usually,
+                      language disorders in children are caused when a child is
+                      developmentally delayed or there is a co-occurring
+                      diagnosis that is affecting speech or language
+                      development.
+                    </p>
+                    <p className="mt-3">
+                      After a developmental psychologist, speech-language
+                      pathologist, developmental pediatrician, neurologist,
+                      and/or geneticist determines the diagnosis, therapy should
+                      begin. Researchers have found that the younger a child
+                      receives consistent therapy, the better the outcome. This
+                      therapy is called habilitation.
+                    </p>
+                  </div>
+                </details>
+                <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
+                  <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
+                    Feeding and Swallowing
+                  </summary>
+                  <div className="mt-3 text-base text-gray-700 leading-relaxed">
+                    <p>
+                      The term feeding difficulties is a broad term used to
+                      describe a variety of feeding or mealtime behaviors
+                      perceived as problematic for a child or family.
+                    </p>
+                    <p>This may include behaviors such as:</p>
+
+                    {/* Two Column Layout for Behaviors */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <ul className="list-disc pl-5">
+                        <li>Picky eating</li>
+                        <li>Food fussiness</li>
+                        <li>Food refusal</li>
+                        <li>Food neophobia</li>
+                        <li>Restricted variety of foods</li>
+                      </ul>
+                      <ul className="list-disc pl-5">
+                        <li>Food fads</li>
+                        <li>Limited, excessive, or variable appetite</li>
+                        <li>Prolonged mealtimes</li>
+                        <li>Disruptive mealtime behaviors</li>
+                      </ul>
+                    </div>
+
+                    <p className="mt-3">
+                      To some extent, these behaviors are all considered to be
+                      part of typical feeding development and are usually
+                      transient. Children displaying a significant number of
+                      these behaviors or displaying a behavior to a greater
+                      extent for a prolonged period may be considered to have a
+                      ‘Feeding Difficulty.’ In other words, it is not merely the
+                      presence of a behavior but the severity and duration of
+                      behaviors that signifies a problem.
+                    </p>
+                    <p className="mt-3">
+                      Standard definitions of these terms are lacking; however,
+                      behaviors are generally considered to exist on a continuum
+                      from typical to more complex feeding and mealtime behavior
+                      problems.
+                    </p>
+                    <p className="mt-3">
+                      The term feeding difficulties is also used to describe
+                      children with oral motor difficulties in ingesting &
+                      swallowing foods and/or fluids. This may be combined with
+                      other difficult mealtime behaviors.
+                    </p>
+                    <p className="mt-3">
+                      Feeding Disorders are problems within the range of eating
+                      activities that may or may not include swallowing.
+                    </p>
+                    <p className="mt-3">
+                      Swallowing Disorders can occur when there is disruption in
+                      one or more of the four stages of swallowing. This is
+                      known as Dysphagia.
+                    </p>
+
+                    {/* Stages of Swallowing */}
+                    <div className="mt-4">
+                      <p>
+                        <strong>Stage I:</strong>
+                      </p>
+                      <p>
+                        Biting and chewing food takes place in the mouth. At
+                        this stage, lack of strength, control, or feeling in the
+                        mouth—due to stroke or muscle or nerve disease—may cause
+                        food or liquid to fall directly into the throat and
+                        cause choking.
+                      </p>
+
+                      <p className="mt-3">
+                        <strong>Stage II:</strong>
+                      </p>
+                      <p>
+                        The tongue pushes the food to the back of the mouth
+                        where a structure folds over the top of the windpipe to
+                        keep food out. At the back of the mouth, the presence of
+                        food triggers muscle contractions. At this stage, the
+                        muscle at the back of the mouth that opens to allow food
+                        into the esophagus may malfunction and cause aspiration
+                        (food passing into the windpipe), which results in
+                        choking.
+                      </p>
+
+                      <p className="mt-3">
+                        <strong>Stage III:</strong>
+                      </p>
+                      <p>
+                        Muscle contractions push food down the esophagus. At
+                        this stage, lack of or inadequate muscle contractions
+                        may cause food to stick in the chest.
+                      </p>
+
+                      <p className="mt-3">
+                        <strong>Stage IV:</strong>
+                      </p>
+                      <p>
+                        Food moves through the esophagus, and the lower
+                        esophageal sphincter muscle opens to let food pass into
+                        the stomach. At this stage, weakening of this sphincter
+                        muscle at the stomach opening may allow acidic stomach
+                        secretions to come back up into the esophagus from the
+                        stomach, a condition called reflux.
+                      </p>
+                    </div>
+
+                    {/* Causes of Swallowing Disorders */}
+                    <div className="mt-4">
+                      <p>
+                        <strong>Causes</strong>
+                      </p>
+                      <p>
+                        More than 15 million Americans have a swallowing
+                        disorder. They can occur at any age. Swallowing problems
+                        may be temporary, or they may be an indication of a
+                        serious medical problem. There are many causes,
+                        including nerve and muscle problems, head and neck
+                        injuries, and cancer. Or they may occur because of a
+                        stroke. Certain medications can also contribute to the
+                        disorder.
+                      </p>
+                    </div>
+                  </div>
+                </details>
               </div>
               {/* Text Content (What is Speech?)*/}
               <div className="w-full md:w-2/3">
