@@ -1,10 +1,9 @@
-// components/GalleryComponent.jsx
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css"; // Ensure CSS is imported for styling
-import images from "@/data/galleryimagesdata/galleryimages";
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import images from '@/data/galleryimagesdata/galleryimages';
 
 const GalleryComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +20,12 @@ const GalleryComponent = () => {
 
   return (
     <div className="container mx-auto px-4">
+      {/* Grid for thumbnails */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {images.map((image, index) => (
           <div
-            key={index}
-            className="relative w-full h-36 cursor-pointer transform transition-transform duration-400 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-gray-200 hover:rounded-md shadow-md"
+            key={`gallery-image-${index}`}
+            className="relative w-full h-56 cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-lg"
             onClick={() => openGallery(index)}
           >
             <Image
@@ -34,12 +34,13 @@ const GalleryComponent = () => {
               fill
               className="object-cover rounded-md"
               sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
-              priority={index === 0} // Add priority to the first image
+              priority={false} // Do not preload any images
             />
           </div>
         ))}
       </div>
 
+      {/* Modal for the image gallery */}
       {isOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
