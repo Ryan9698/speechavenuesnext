@@ -25,7 +25,7 @@ const GalleryComponent = () => {
         {images.map((image, index) => (
           <div
             key={`gallery-image-${index}`}
-            className="relative w-full h-56 cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+            className="relative w-full h-44 md:h-56 cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-lg"
             onClick={() => openGallery(index)}
           >
             <Image
