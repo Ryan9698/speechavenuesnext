@@ -71,28 +71,63 @@ const staffList = [
       Some of Selina's passions outside of work include traveling with her husband and fur baby Bear, trying new recipes, and enjoying a strong cup of coffee!
     `,
     imageUrl:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/silhouette_e2no3t.png',
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735407650/Speech%20Avenues/Bio%20Photos/Selina_K_xtc1xw.webp',
     alt: 'Portrait of Selina Karczewski',
     width: 300,
     height: 400,
   },
   {
     id: 6,
-    name: 'Ozzy',
-    role: 'Therapy Dog',
-    bio: `
-      Hi! My name is Ozzy, and I am a one-year-old Australian Shepherd Golden Retriever Mix. I am a Certified Therapy Dog registered with the AKC-recognized Alliance of Therapy Dogs.
-
-      I love to bring comfort and smiles to all ages! I enjoy pets, snuggling, playing games, and going for walks.
-
-      Feel free to say hi to me anytime!
-    `,
+    name: 'Taryn Byrnes',
+    role: 'COTA/L',
+    bio: 'Meet Taryn Byrnes, a dedicated and compassionate Certified Occupational Therapy Assistant (COTA) with a deep passion for improving lives through evidence-based therapy interventions. With a commitment to helping individuals achieve their highest level of independence and quality of life, Taryn has had the privilege of working with diverse populations in a variety of settings, including rehabilitation centers, schools, and within local communities. Taryn believes in the power of creating supportive, encouraging environments that empower individuals to overcome challenges and reach meaningful goals. Driven by a genuine passion for making a positive impact, she combines her expertise in evidence-based practice with a compassionate, person-centered approach to care. Her ultimate goal is to help each individual unlock their full potential and lead a fulfilling, independent life.',
     imageUrl:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066035/Speech%20Avenues/Bio%20Photos/ozzy_eevaez.jpg',
-    alt: 'Portrait of Ozzy, Therapy Dog',
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735408309/Speech%20Avenues/Bio%20Photos/TARYN_BYRNES_xlac8p.webp',
+    alt: 'Portrait of Taryn Byrnes',
+    width: 300,
+    height: 400,
+  },
+  {
+    id: 7,
+    name: 'Lisa Timrick',
+    role: 'COTA/L',
+    bio: 'Meet Lisa, our passionate Certified Occupational Therapy Assistant (COTA) graduate from City Colleges of Chicago, Illinois. She received her occupational therapy assistant degree in 2010. She has over 15 years’ experience working with children of all abilities, and truly finding her passion for occupational therapy while she was working at Shriners Hospital for Children in Chicago. In 2014, Lisa moved to Florida where she began her work as an occupational therapist assistant with medically fragile children. She discovered yoga and the importance of integrating movements into her therapy sessions to support children with learning and regulating their nervous system. She specializes in kids yoga & mindfulness, pediatric massage, sensory challenges and "DIRfloortime" approach. In her free time, Lisa spends time cooking with her family and friends. She enjoys researching and learning about Florida’s snakes and spiders of all kinds. Lisa’s other interests include traveling and training her dog Wrigley to "leave it".',
+    imageUrl:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735408310/Speech%20Avenues/Bio%20Photos/LISA_TIMRICK_ritbti.webp',
+    alt: 'Portrait of Lisa Timrick',
     width: 300,
     height: 400,
   },
 ];
+// {
+//   id: 6,
+//   name: 'Ozzy',
+//   role: 'Therapy Dog',
+//   bio: `
+//     Hi! My name is Ozzy, and I am a one-year-old Australian Shepherd Golden Retriever Mix. I am a Certified Therapy Dog registered with the AKC-recognized Alliance of Therapy Dogs.
+
+//     I love to bring comfort and smiles to all ages! I enjoy pets, snuggling, playing games, and going for walks.
+
+//     Feel free to say hi to me anytime!
+//   `,
+//   imageUrl:
+//     'https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066035/Speech%20Avenues/Bio%20Photos/ozzy_eevaez.jpg',
+//   alt: 'Portrait of Ozzy, Therapy Dog',
+//   width: 300,
+//   height: 400,
+// },
+
+////////////////////////////OBJECT TEMPLATE////////////////////////////
+// {
+//   id: ,
+//   name: ,
+//   role: ,
+//   bio: ,
+//   imageUrl: ,
+//   alt: ,
+//   width: 300,
+//   height: 400,
+// },
+// ];
 
 export default staffList;
