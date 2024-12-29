@@ -10,7 +10,7 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
   };
 
   return (
-    <div className="mt-6 max-w-xs border-b-2 border-slate-200 rounded-xl shadow hover:shadow-2xl transition-shadow duration-600 bg-white mx-auto sm:mx-4 md:mx-auto">
+    <div className="mt-2 max-w-xs border-b-2 border-slate-200 rounded-xl shadow hover:shadow-2xl transition-shadow duration-600 bg-white mx-auto sm:mx-4 md:mx-auto">
       <div className="relative w-full h-[35vh]">
         <Image
           className="object-fill object-center border-2 rounded-t-xl"
@@ -20,7 +20,6 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
           sizes="(max-width: 600px) 100vw, 
                  (max-width: 1200px) 50vw, 
                  33vw"
-          priority
         />
       </div>
       <div className="px-3 py-1 bg-gray-300">
@@ -31,7 +30,7 @@ export default function StaffMember({ name, role, bio, imageUrl, alt }) {
       <div className="px-4 py-1 mx-auto border-t">
         <p
           className={`text-gray-600 text-xs whitespace-pre-line overflow-hidden transition-max-height duration-500 ease-in-out ${
-            isExpanded ? 'max-h-full' : 'max-h-36'
+            isExpanded ? 'max-h-full' : 'max-h-32'
           }`}
         >
           {bio}

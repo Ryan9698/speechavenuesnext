@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://speechavenues.com/gallery</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com/forms</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com/staff</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com/services/speechtherapy</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com/services/occupationaltherapy</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com/contact</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://speechavenues.com/school</loc><lastmod>2024-08-27T01:46:40.510Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/contact</loc><lastmod>2024-12-29T23:00:57.667Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/school</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/services/adulttherapy</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/staff</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/services/speechtherapy</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/services/occupationaltherapy</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/forms</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://speechavenues.com/gallery</loc><lastmod>2024-12-29T23:00:57.668Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

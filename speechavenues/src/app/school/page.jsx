@@ -31,11 +31,10 @@ export default function SchoolHome() {
           <Image
             src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1724427658/Speech%20Avenues/School/SATC_CCA_zdjxpj.webp"
             alt="Speech Avenues Academy offers personalized lesson plans tailored to your child's individual needs"
-            layout="responsive"
             width={600}
             height={600}
-            priority={true}
             className="rounded-lg"
+            priority={true}
           />
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left">

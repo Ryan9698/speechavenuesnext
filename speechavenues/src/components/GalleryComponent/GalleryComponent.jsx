@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
@@ -29,12 +30,12 @@ const GalleryComponent = () => {
             onClick={() => openGallery(index)}
           >
             <Image
-              src={image.thumbnail}
+              src={image.thumbnail} // Dynamic thumbnail URL
               alt={image.alt}
               fill
               className="object-cover rounded-md"
               sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
-              priority={false} // Do not preload any images
+              loading="lazy" // Lazy load thumbnails
             />
           </div>
         ))}
@@ -63,6 +64,7 @@ const GalleryComponent = () => {
                 originalAlt: img.alt,
                 thumbnailAlt: img.alt,
               }))}
+              lazyLoad={true} // Lazy load full-size images
               startIndex={currentImage}
               onSlide={(currentIndex) => setCurrentImage(currentIndex)}
               showFullscreenButton={true}
