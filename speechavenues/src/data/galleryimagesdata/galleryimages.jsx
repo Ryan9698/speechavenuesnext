@@ -218,7 +218,7 @@ const images = [
   },
   {
     original:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735503004/Speech%20Avenues/Gallery%20Photos/Original/gallery12_hahamf.webp',
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735502995/Speech%20Avenues/Gallery%20Photos/Original/gallery11_ja5lgu.webp',
     thumbnail:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735503125/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery11_t94hrb.webp',
     alt: 'Child Therapy',
