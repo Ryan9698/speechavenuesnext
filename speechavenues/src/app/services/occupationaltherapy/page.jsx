@@ -27,7 +27,7 @@ export const metadata = {
   ],
 };
 
-const header = `font-bold text-gray-800 text-2xl mt-2 mt-8 font-dancing mx-auto text-center md:text-left md:mt-2 `;
+const header = `font-bold text-gray-800 text-3xl md:text-2xl mt-2 mt-8 font-dancing mx-auto text-center md:text-left md:mt-2 `;
 export default function OccupationalTherapy() {
   return (
     <div>
@@ -45,7 +45,7 @@ export default function OccupationalTherapy() {
               <h2 className="text-xl font-dancing text-gray-800 text-center">
                 Empowering Lives, One Session at a Time
               </h2>
-              <p className="mt-4 px-8 text-center">
+              <p className="mt-8 px-8 text-center">
                 At Speech Avenues Therapy Co, we specialize in occupational
                 therapy (OT) services that help individuals of all ages live
                 life to the fullest.
@@ -57,8 +57,8 @@ export default function OccupationalTherapy() {
                 accessible and enjoyable.
               </p>
             </div>
-            <div className="flex justify-center items-center">
-              <div className="w-96 h-96 md:w-80 md:h-80 mt-8">
+            <div className="flex justify-center items-center md:mr-12">
+              <div className="w-96 h-96 md:w-80 md:h-80 mt-8 ">
                 <Carousel slides={otSlides} className="" />
               </div>
             </div>
@@ -68,10 +68,10 @@ export default function OccupationalTherapy() {
         {/* Parent Container for Main Text Body */}
         <div className="">
           <div className="w-full">
-            <h3 className={`${header} mb-4`}>
+            <h3 className={`${header} md:mb-4 mb-6`}>
               What is Occupational Therapy(OT)?
             </h3>
-            <p className="mt-2 px-8">
+            <p className="mt-2 px-8 text-center md:text-left">
               Occupational Therapy is a patient-centered profession that focuses
               on improving a person’s ability to perform everyday tasks. Through
               personalized treatment plans, OT helps individuals regain skills,
@@ -109,7 +109,7 @@ export default function OccupationalTherapy() {
           <div className="container mx-auto">
             <h2 className={`${header} mb-4`}>What Do We Treat?</h2>
 
-            <div className="px-8 mb-3">
+            <div className="px-8 mb-3 text-center md:text-left">
               <p>
                 Our Occupational Therapists address a wide range of conditions,
                 from developmental delays/disorders to physical injuries and
@@ -120,7 +120,7 @@ export default function OccupationalTherapy() {
             <h3 className={`${header} mb-4`}>
               We Work With Patients Who May Have:
             </h3>
-            <ul className="list-disc pl-5 space-y-4 text-sm mb-8">
+            <ul className="list-disc pl-5 space-y-6 text-sm md:mb-8">
               <li className="px-4">
                 <strong>Sensory Processing Disorder (SPD):</strong> SPD may have
                 difficulty processing sensory input, which can lead to
@@ -200,27 +200,41 @@ export default function OccupationalTherapy() {
               </li>
             </ul>
 
-            {/* Why Choose Us Section */}
-            <Image
-              src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1735521679/Speech%20Avenues/Occupational%20Therapy/large/otpage_hhmy8s.webp"
-              alt="Child Occupational Therapy"
-              width={300}
-              height={300}
-              className="float-right mx-6 "
-            />
-            <h2 className={`${header} my-3`}>Why Choose Us?</h2>
-            <p className="px-8 mb-4">
-              At Speech Avenues Therapy Co, we are committed to making a
-              difference. Our team of experienced therapists use approaches
-              created for personalized treatment plans that support both
-              progress and long-term success. We are passionate about empowering
-              our patients to overcome barriers and become the best version of
-              who they are.
-            </p>
+            {/* Why Choose Us Section (Photo and Text) */}
+
+            <div className="container mx-auto">
+              <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6">
+                <div className="flex-1 text-center md:text-left mt-6 md:mt-0">
+                  <h2
+                    className={`font-bold text-gray-800 text-3xl font-dancing mx-auto text-center md:mt-8 md:mb-8 mb-4`}
+                  >
+                    Why Choose Us?
+                  </h2>
+                  <p className="px-8 text-center mb-4 md:mb-0">
+                    At Speech Avenues Therapy Co, we are committed to making a
+                    difference. Our team of experienced therapists use
+                    approaches created for personalized treatment plans that
+                    support both progress and long-term success. We are
+                    passionate about empowering our patients to overcome
+                    barriers and become the best version of who they are.
+                  </p>
+                </div>
+                {/* Therapy Image */}
+                <div className="flex-shrink-0">
+                  <Image
+                    src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1735521679/Speech%20Avenues/Occupational%20Therapy/large/otpage_hhmy8s.webp"
+                    alt="Child Occupational Therapy"
+                    width={300}
+                    height={300}
+                    className="mx-auto md:mr-8 md:mt-8"
+                  />
+                </div>
+              </div>
+            </div>
 
             {/* Facility Section */}
-            <h2 className={`${header} mb-3`}>Our Facility Includes:</h2>
-            <p className="px-8 mb-4">
+            <h2 className={`${header} mb-4`}>Our Facility Includes:</h2>
+            <p className="px-8 mb-4 text-center md:text-left">
               At Speech Avenues Therapy Co, we believe that having the right
               tools and environment is essential for effective therapy. That is
               why our facility is designed to provide a welcoming, fully
@@ -231,8 +245,8 @@ export default function OccupationalTherapy() {
             </p>
 
             {/* Call to Action */}
-            <h2 className={`${header} mb-3`}>Take the First Step Today!</h2>
-            <p className="px-8 mb-3">
+            <h2 className={`${header} mb-4`}>Take the First Step Today!</h2>
+            <p className="px-8 mb-4 text-center md:text-left">
               The path to a better tomorrow starts with the right support.
               Contact us now to schedule your evaluation and discover how
               occupational therapy can transform your life and the life of your
