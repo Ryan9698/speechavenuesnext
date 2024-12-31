@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Schoolbell&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Schoolbell&display=swap');
 
 /* Tailwind base, components, and utilities */
 @tailwind base;
@@ -7,14 +7,14 @@
 
 /* Fonts stored in Repository */
 @font-face {
-  font-family: "Rob Graves";
-  src: url("/fonts/Robgraves-lKYV.ttf");
+  font-family: 'Rob Graves';
+  src: url('/fonts/Robgraves-lKYV.ttf');
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Dancing Script";
-  src: url("/fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Dancing Script';
+  src: url('/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
   font-weight: 400 700;
   font-display: swap;
 }
@@ -39,12 +39,12 @@ main {
 
 /* Header Cursive Font */
 .cursiveFont {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Chalk-like Font */
 .font-schoolbell {
-  font-family: "Schoolbell", cursive;
+  font-family: 'Schoolbell', cursive;
 }
 
 /* Hamburger Mobile Icon */
@@ -173,8 +173,6 @@ main {
 
 /* Custom Element Classes */
 
-/* h1 Style designed for the Staff Component for SEO purposes */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -184,4 +182,28 @@ main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* Scrollbar */
+
+/* Custom scrollbar styles */
+.modal-content::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Tailwind's gray-200 */
+  border-radius: 8px; /* Rounds the track */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* Tailwind's gray-400 */
+  border-radius: 8px; /* Rounds the thumb */
+  border: 3px solid #e5e7eb; /* Adds space around thumb */
+}
+
+/* Firefox scrollbar styles */
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af #e5e7eb;
 }

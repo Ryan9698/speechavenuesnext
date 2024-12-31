@@ -1,7 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import Carousel from '@/components/Carousel';
 import otSlides from '@/data/otpicturesdata/OTPictures';
-import Image from 'next/image';
+import ModalClient from '@/components/Modal/ModalClient';
+import SensoryDisorder from './modalcontent/SensoryDisorder';
+import SensorySystem from './modalcontent/SensorySystem';
+import WhatIsAutism from './modalcontent/WhatIsAutism';
+import AACDevice from './modalcontent/AACDevice';
 
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',
@@ -120,7 +126,7 @@ export default function OccupationalTherapy() {
             <h3 className={`${header} mb-4`}>
               We Work With Patients Who May Have:
             </h3>
-            <ul className="list-disc pl-5 space-y-6 text-sm md:mb-8">
+            <ul className="list-disc pl-5 space-y-6 text-sm md:mb-4">
               <li className="px-4">
                 <strong>Sensory Processing Disorder (SPD):</strong> SPD may have
                 difficulty processing sensory input, which can lead to
@@ -200,6 +206,31 @@ export default function OccupationalTherapy() {
               </li>
             </ul>
 
+            {/* Modals with All Additional Information */}
+
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6">
+              <div className="">
+                <ModalClient triggerLabel="Sensory Processing Disorder">
+                  <SensoryDisorder />
+                </ModalClient>
+              </div>
+              <div className="">
+                <ModalClient triggerLabel="The Eight Sensory Systems">
+                  <SensorySystem />
+                </ModalClient>
+              </div>
+              <div className="">
+                <ModalClient triggerLabel="Autism Spectrum Disorder">
+                  <WhatIsAutism />
+                </ModalClient>
+              </div>
+              <div className="">
+                <ModalClient triggerLabel="AAC DEVICES: Augmentative and Alternative Communication">
+                  <AACDevice />
+                </ModalClient>
+              </div>
+            </div>
+
             {/* Why Choose Us Section (Photo and Text) */}
 
             <div className="container mx-auto">
@@ -248,10 +279,13 @@ export default function OccupationalTherapy() {
             <h2 className={`${header} mb-4`}>Take the First Step Today!</h2>
             <p className="px-8 mb-4 text-center md:text-left">
               The path to a better tomorrow starts with the right support.
-              Contact us now to schedule your evaluation and discover how
-              occupational therapy can transform your life and the life of your
-              loved one. Your goals are within reach ~ let us help you achieve
-              them!
+              <Link href="/contact" className="text-blue-500 hover:underline">
+                {' '}
+                Contact us
+              </Link>{' '}
+              now to schedule your evaluation and discover how occupational
+              therapy can transform your life and the life of your loved one.
+              Your goals are within reach ~ let us help you achieve them!
             </p>
           </div>
         </div>
@@ -259,86 +293,3 @@ export default function OccupationalTherapy() {
     </div>
   );
 }
-
-// export default function OccupationalTherapy() {
-//   return (
-//     // Global Container
-//     <div className="container mx-auto p-4 max-w-6xl">
-//       {/* Content Container */}
-//       <div className="flex flex-col md:flex-row md:items-start md:mt-8 md:ml-6">
-//         <div className="w-full md:w-80 md:mr-4">
-//           {/* Carousel Container */}
-//           <div className="md:w-full mt-2">
-//             <Carousel slides={otSlides} className="w-full h-full" />
-//           </div>
-//         </div>
-//         <div className="flex flex-col w-full md:w-2/3">
-//           <h1 className="text-4xl font-bold text-gray-800 mt-8 font-dancing mx-auto text-center md:text-left md:mt-0 md:mx-6">
-//             Occupational Therapy
-//           </h1>
-//           <div className="bg-white p-6 flex flex-col space-y-3">
-//             <h2>
-//               <span className="font-bold">Occupational Therapy (OT)</span> is a
-//               branch of healthcare with professionals dedicated to empowering
-//               patients of all ages to achieve independence and enhance their
-//               quality of life through meaningful everyday activities, known as
-//               occupations. Our OT practitioners work with individuals throughout
-//               all stages of life who may be facing various physical, cognitive,
-//               developmental, or emotional challenges.
-//             </h2>
-//             <p>
-//               By collaborating with patients to set personalized goals and
-//               develop tailored treatment plans, occupational therapy facilitates
-//               individuals' engagement in daily activities, promotes overall
-//               well-being, and maximizes independence across all life domains. At
-//               SATC, supporting individuals in reaching their fullest potential
-//               is our priority and passion.
-//             </p>
-//             <a
-//               href="https://www.aota.org/about/what-is-ot"
-//               className="text-blue-500 hover:text-blue-600 transition duration-300 ease-in-out"
-//             >
-//               Learn more about Occupational Therapy
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//       {/* New Container for Services Provided Section */}
-//       <div className="bg-white p-6 flex flex-col space-y-3  -mt-7">
-//         <p className="font-medium">
-//           Services provided by our occupational therapists here at SATC
-//           encompass a wide range of interventions, including: assessing and
-//           improving fine motor skills, balance, emotional regulation, self-care
-//           abilities, cognitive functions, and more.
-//         </p>
-//         <div>
-//           Additionally, our occupational therapists specialize in sensory
-//           integration techniques:
-//           <ul className="list-disc pl-5 mt-2">
-//             <li>
-//               Sensory integration is the brain's ability to process and make
-//               sense of sensory information.
-//             </li>
-//             <li>
-//               Techniques aim to regulate sensory input, improve body awareness,
-//               coordination, and overall self-regulation.
-//             </li>
-//           </ul>
-//         </div>
-//         <a
-//           href="https://asatonline.org/for-parents/learn-more-about-specific-treatments/sensory-integrative-therapy-sensory-integration-si-or-sit/"
-//           className="text-blue-500 hover:text-blue-600 transition duration-300 ease-in-out"
-//         >
-//           Learn more about Sensory Integrative Therapy
-//         </a>
-//         <p>
-//           Lastly, being able to work alongside our wonderful Speech-Language
-//           Pathologists (SLPs), our Occupational Therapists are able to support
-//           and treat individuals in improving speech, language techniques,
-//           communication, and expression skills by addressing possible underlying
-//           sensory and motor components.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
