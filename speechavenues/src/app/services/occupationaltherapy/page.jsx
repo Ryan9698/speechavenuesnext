@@ -235,7 +235,7 @@ export default function OccupationalTherapy() {
 
             <div className="container mx-auto">
               <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6">
-                <div className="flex-1 text-center md:text-left mt-6 md:mt-0">
+                <div className="flex-1 text-center md:text-left mt-6 md:mt-0 md:mt-8">
                   <h2
                     className={`font-bold text-gray-800 text-3xl font-dancing mx-auto text-center md:mt-8 md:mb-8 mb-4`}
                   >
@@ -257,7 +257,7 @@ export default function OccupationalTherapy() {
                     alt="Child Occupational Therapy"
                     width={300}
                     height={300}
-                    className="mx-auto md:mr-8 md:mt-8"
+                    className="mx-auto md:mr-8 md:mt-8 rounded"
                   />
                 </div>
               </div>
@@ -276,7 +276,11 @@ export default function OccupationalTherapy() {
             </p>
 
             {/* Call to Action */}
-            <h2 className={`${header} mb-4`}>Take the First Step Today!</h2>
+            <h2
+              className={`font-bold text-gray-800 text-3xl  mb-4 mt-8 font-dancing mx-auto text-center md:mt-2 `}
+            >
+              Take the First Step Today!
+            </h2>
             <p className="px-8 mb-4 text-center md:text-left">
               The path to a better tomorrow starts with the right support.
               <Link href="/contact" className="text-blue-500 hover:underline">

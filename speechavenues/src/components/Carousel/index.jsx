@@ -19,4 +19,3 @@ const Carousel = ({ slides }) => {
 };
 
 export default Carousel;
-
