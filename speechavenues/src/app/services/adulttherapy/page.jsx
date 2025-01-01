@@ -1,6 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import Carousel from '@/components/Carousel';
-// import otSlides from '@/data/otpicturesdata/OTPictures';
+import adultSlides from '@/data/adultpicturesdata/AdultPictures';
+import AdultDropdown from './Dropdown';
+import SpeakOut from './SpeakOut';
 
 export const metadata = {
   title: 'Speech Avenues Adult Therapy',
@@ -29,20 +33,21 @@ export const metadata = {
 export default function AdultTherapy() {
   return (
     // Global Container
-    <div className="container mx-auto p-4 max-w-6xl">
+    <div className="container mx-auto max-w-4xl">
       {/* Content Container */}
       <div className="flex flex-col md:flex-row md:items-start md:mt-8 md:ml-6">
-        <div className="w-full md:w-80 md:mr-4">
+        <div className="w-full sm:w-96 md:w-[500px] md:mr-4 md:mx-4">
           {/* Carousel Container */}
-          <div className="md:w-full mt-2">
-            {/* <Carousel slides={otSlides} className="w-full h-full" /> */}
+          <div className="md:w-full mt-2 mx-2 md:mx-2">
+            <Carousel slides={adultSlides} className="w-full h-full" />
           </div>
         </div>
-        <div className="flex flex-col w-full md:w-2/3">
-          <h1 className="text-4xl font-bold text-gray-800 mt-8 font-dancing mx-auto text-center md:text-left md:mt-0 md:mx-6">
+
+        <div className="flex flex-col marker:w-full md:w-2/3">
+          <h1 className="text-4xl font-bold text-gray-800 mt-8 font-dancing mx-auto text-center md:text-left md:mt-0 md:mx-6 md:pt-5 md:pl-6">
             Adult Therapy
           </h1>
-          <div className="bg-white p-6 flex flex-col space-y-3">
+          <div className="p-2 pl-6 mb-4 md:mb-0">
             <h2>
               {/* <span className="font-bold">Data goes here</span> */}
               Adults acquire speech and language disabilities through organic
@@ -61,42 +66,22 @@ export default function AdultTherapy() {
           </div>
         </div>
       </div>
-      {/* New Container for Services Provided Section */}
-      {/* <div className="bg-white p-6 flex flex-col space-y-3  -mt-7">
-        <p className="font-medium">
-          Services provided by our occupational therapists here at SATC
-          encompass a wide range of interventions, including: assessing and
-          improving fine motor skills, balance, emotional regulation, self-care
-          abilities, cognitive functions, and more.
-        </p>
-        <div>
-          Additionally, our occupational therapists specialize in sensory
-          integration techniques:
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Sensory integration is the brain's ability to process and make
-              sense of sensory information.
-            </li>
-            <li>
-              Techniques aim to regulate sensory input, improve body awareness,
-              coordination, and overall self-regulation.
-            </li>
-          </ul>
+
+      {/* Speak Out Banner and Dropdowns*/}
+      <div className="flex flex-col md:flex-row md:w-full md:mt-4 md:mx-4">
+        {/* Dropdowns Section */}
+        <div className="flex-grow md:basis-1/2">
+          <AdultDropdown />
         </div>
-        <a
-          href="https://asatonline.org/for-parents/learn-more-about-specific-treatments/sensory-integrative-therapy-sensory-integration-si-or-sit/"
-          className="text-blue-500 hover:text-blue-600 transition duration-300 ease-in-out"
+
+        {/* SpeakOut Section */}
+        <div
+          className="flex-grow md:basis-1/2"
+          style={{ minHeight: '200px' }} // Prevent shifting by fixing the height
         >
-          Learn more about Sensory Integrative Therapy
-        </a>
-        <p>
-          Lastly, being able to work alongside our wonderful Speech-Language
-          Pathologists (SLPs), our Occupational Therapists are able to support
-          and treat individuals in improving speech, language techniques,
-          communication, and expression skills by addressing possible underlying
-          sensory and motor components.
-        </p>
-      </div> */}
+          <SpeakOut />
+        </div>
+      </div>
     </div>
   );
 }

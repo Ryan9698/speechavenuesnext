@@ -156,18 +156,16 @@ const Navbar = () => {
                         Occupational Therapy
                       </div>
                     </Link>
-                    {/* <Link href="/services/adulttherapy">
+                    <Link href="/services/adulttherapy">
                       <div
                         className={linkStyle('/services/adulttherapy')}
                         onClick={() =>
-                          handleDropdownLinkClick(
-                            '/services/adulttherapy'
-                          )
+                          handleDropdownLinkClick('/services/adulttherapy')
                         }
                       >
                         Adult Therapy
                       </div>
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               )}
