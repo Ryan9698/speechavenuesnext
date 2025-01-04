@@ -270,7 +270,7 @@ const images = [
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008889/Speech%20Avenues/Gallery%20Photos/Original/gallery-speech1_dtsd2m.webp',
     thumbnail:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008878/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery-speech1_jij1pz.webp',
-    alt: 'Child speech therapy with Speech Pathologist Gail Waleter',
+    alt: 'Child speech therapy with Speech Pathologist Gail Walter',
   },
   {
     original:
@@ -307,6 +307,60 @@ const images = [
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008874/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery30_knwfxt.webp',
     alt: 'Ozzy the SATC Therapy Dog',
   },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014054/Speech%20Avenues/Gallery%20Photos/Original/gallery31_ef4e3w.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014022/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery31_mbvgs5.webp',
+    alt: 'Speech Therapy AAC Device',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014050/Speech%20Avenues/Gallery%20Photos/Original/gallery32_eb4u1g.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014022/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery32_cesbtj.webp',
+    alt: 'Speech Therapy',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014051/Speech%20Avenues/Gallery%20Photos/Original/gallery35_hgazcl.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014021/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery35_qnnogy.webp',
+    alt: 'Child Occupational Therapy',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014051/Speech%20Avenues/Gallery%20Photos/Original/gallery37_ddtxdj.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014021/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery37_fqj9tg.webp',
+    alt: 'SATC Children Playing',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014053/Speech%20Avenues/Gallery%20Photos/Original/gallery36_ve3ai4.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014021/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery36_kyik08.webp',
+    alt: 'SATC Child Smile',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014052/Speech%20Avenues/Gallery%20Photos/Original/gallery33_bkyn9z.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014023/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery33_sztzz2.webp',
+    alt: 'SATC Child Therapy',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014052/Speech%20Avenues/Gallery%20Photos/Original/gallery34_uexmuk.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736014023/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery34_lfnskl.webp',
+    alt: 'SATC Child Bubbles',
+  },
+  // {
+  //   original: '',
+  //   thumbnail: '',
+  //   alt: '',
+  // },
   // {
   //   original: '',
   //   thumbnail: '',

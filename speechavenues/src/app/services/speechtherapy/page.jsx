@@ -3,6 +3,7 @@ import Carousel from '@/components/Carousel';
 import speechSlides from '@/data/speechpicturesdata/SpeechPictures';
 import VideoEmbed from '@/components/VideoEmbed/VideoEmbed';
 import Link from 'next/link';
+import Image from 'next/image';
 import SpeechDropdown from './SpeechDropdown';
 import SpeakOutFooter from './SpeakOutFooter';
 
@@ -87,14 +88,14 @@ export default function SpeechTherapy() {
       </div>
 
       {/* Second Row: Content, Video, and Dropdowns */}
-      <div className="mt-2">
+      <div className="mt-8">
         <div className="flex flex-col md:flex-row md:gap-6">
           {/* Main Content */}
           <div className="flex flex-col w-full ">
             <div className="mt-3 text-gray-700 leading-relaxed">
               {/* Floating Video Section and Dropdowns */}
               <div className="float-right w-full md:w-1/2 md:ml-4 mb-4 space-y-2">
-                <div className="shadow-lg rounded-lg overflow-hidden">
+                <div className="shadow-lg rounded-lg overflow-hidden mb-6">
                   <VideoEmbed
                     videoId="dCoWv8yV8qk"
                     width={640}
@@ -108,18 +109,18 @@ export default function SpeechTherapy() {
                 <SpeechDropdown />
               </div>
               {/* Text Content (What is Speech?)*/}
-              <div className="w-full md:w-2/3">
-                <h3 className="text-2xl font-dancing font-bold md:text-start text-center text-gray-800 p-3 md:p-0">
+              <div className="w-full md:w-2/3 md:ml-6">
+                <h3 className="text-4xl font-dancing font-bold md:text-start text-center text-gray-800 m:mx-2 md:p-0 md:mt-2 mb-8">
                   What is Speech?
                 </h3>
-                <p>
+                <p className="mb-10">
                   Speech is the expressive production of sounds and involves a
                   highly coordinated motor process of breathing, voice
                   production, and articulation of the mouth, lips, and tongue.
                   It's a vital part of human communication and includes several
                   key components:
                 </p>
-                <ul className="list-disc pl-5 mt-4 space-y-2">
+                <ul className="list-disc pl-5 mt-4 space-y-6 md:mb-6">
                   <li>
                     <strong>Articulation:</strong> The way we produce individual
                     sounds and words. Precise movement of the mouth, lips, and
@@ -149,6 +150,30 @@ export default function SpeechTherapy() {
                   specialize in diagnosing and treating various speech disorders
                   to help individuals communicate clearly and confidently.
                 </p>
+              </div>
+              {/* Image Row Container */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 my-8 md:my-10 mx-auto justify-items-center items-center">
+                <Image
+                  src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736015242/Speech%20Avenues/Speech%20Therapy/speechpage2_fywv7x.webp"
+                  alt="Child speech therapy with Speech Pathologist Gail Walter"
+                  height={400}
+                  width={400}
+                  className="rounded"
+                />
+                <Image
+                  src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736015078/Speech%20Avenues/Speech%20Therapy/speechpage1_j1cmak.webp"
+                  alt="Child speech therapy with Speech Pathologist Gail Walter"
+                  height={400}
+                  width={400}
+                  className="rounded"
+                />
+                <Image
+                  src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736015537/Speech%20Avenues/Speech%20Therapy/speechpage3_bt5qea.webp"
+                  alt="Child speech therapy with Speech Pathologist Gail Walter"
+                  height={400}
+                  width={400}
+                  className="rounded"
+                />
               </div>
             </div>
           </div>
