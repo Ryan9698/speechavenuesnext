@@ -50,6 +50,7 @@ export default function AdultTherapy() {
           </h1>
           <div className="p-2 pl-6 mb-4 md:mb-0">
             <h2>
+              {/* <span className="font-bold">Data goes here</span> */}
               Adults acquire speech and language disabilities through organic
               and nonorganic causes, such as a stroke, Parkinson’s, dementia,
               etc. Treatment for adults is known as rehabilitation. It is
@@ -70,14 +71,17 @@ export default function AdultTherapy() {
       {/* Speak Out Banner and Dropdowns*/}
       <div className="flex flex-col md:flex-row md:w-full md:mt-4 md:mx-4">
         {/* Dropdowns Section */}
-        <div className="flex flex-col md:flex-row w-1/2 mb-6">
+        <div className="flex-grow md:basis-1/2">
           <AdultDropdown />
         </div>
 
         {/* SpeakOut Section */}
-      </div>
-      <div className="w-full max-w-4xl flex flex-col md:flex-row mx-auto md:ml-4">
-        <SpeakOutAlt />
+        <div
+          className="flex-grow md:basis-1/2"
+          style={{ minHeight: '200px' }} // Prevent shifting by fixing the height
+        >
+          <SpeakOut />
+        </div>
       </div>
     </div>
   );

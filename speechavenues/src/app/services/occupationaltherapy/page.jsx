@@ -292,7 +292,7 @@ export default function OccupationalTherapy() {
 
             {/* Facility Section */}
             <h2 className={`${header}`}>Our Facility Includes:</h2>
-            <p className="px-8 mb-8 text-center md:text-left">
+            <p className="px-8 mb-10 text-center md:text-left">
               At Speech Avenues Therapy Co, we believe that having the right
               tools and environment is essential for effective therapy. That is
               why our facility is designed to provide a welcoming, fully
@@ -305,7 +305,7 @@ export default function OccupationalTherapy() {
             {/* Call to Action */}
             <div className="">
               <h2
-                className={`font-bold text-gray-800 text-3xl  mb-6 mt-8 font-dancing mx-auto text-center md:mt-2 border-b-2 border-gray-800`}
+                className={`font-bold text-gray-800 text-3xl  mb-8 mt-8 font-dancing mx-auto text-center md:mt-2 border-b-2 border-gray-800`}
               >
                 Take the First Step Today!
               </h2>

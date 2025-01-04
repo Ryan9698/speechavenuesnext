@@ -152,7 +152,7 @@ export default function SpeechTherapy() {
                 </p>
               </div>
               {/* Image Row Container */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 my-8 md:my-10 mx-auto justify-items-center items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 md:my-10 mx-auto justify-items-center items-center">
                 <Image
                   src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736015242/Speech%20Avenues/Speech%20Therapy/speechpage2_fywv7x.webp"
                   alt="Child speech therapy with Speech Pathologist Gail Walter"

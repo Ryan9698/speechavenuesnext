@@ -29,18 +29,24 @@ export const metadata = {
   ],
 };
 
+const subHeading = `flex justify-center items-center text-center px-2 text-slate-800 font-sans text-sm md:mx-24`;
 export default function StaffPage() {
   return (
     // Global Container
-    <div className="container mx-auto px-4 pb-4">
-      <h1 className="flex justify-center items-center p-2 text-slate-800 font-dancing text-4xl font-bold">
-        Our Team
-      </h1>
-      <h2 className="flex justify-center items-center text-center px-2 text-slate-800 font-sans text-sm md:mx-24 md:pb-6">
-        These are the skilled and diverse staff at Speech Avenues, dedicated to
-        helping you or a loved one attain your goals. Our staff members are
-        highly skilled in their respective fields with years of experience.
-      </h2>
+    <div className="container mx-auto px-4 mb-4">
+      <div className="flex flex-col lg:mx-20 text-center">
+        <h1 className="flex justify-center items-center  text-slate-800 font-dancing text-4xl font-bold my-8">
+          Our Team
+        </h1>
+        <h2 className={`${subHeading} mb-4`}>
+          These are the skilled and diverse staff at Speech Avenues, dedicated
+          to helping you or a loved one attain your goals.
+        </h2>
+        <h3 className={`${subHeading} mb-8`}>
+          Our staff members are highly skilled in their respective fields with
+          years of experience.
+        </h3>
+      </div>
       {/* Grid Styling for Staff Cards */}
 
       {/* Speech Therapist Group */}
