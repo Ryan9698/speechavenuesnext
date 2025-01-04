@@ -28,6 +28,7 @@ export const metadata = {
     'Speech Avenues Therapy Co offers speech and occupational therapy services to adults and children in Rockledge, FL. Let us help you achieve your goals!',
   keywords: [
     'Speech Avenues',
+    'speech pathologist',
     'speech therapy',
     'occupational therapy',
     'satc',
@@ -37,6 +38,7 @@ export const metadata = {
     'child with autism',
     'adult with autism',
     'Speech therapy near me',
+    'speech rockledge',
     'occupational therapy near me',
     'Speech Therapy Rockledge FL',
     'occupational therapy rockledge fl',

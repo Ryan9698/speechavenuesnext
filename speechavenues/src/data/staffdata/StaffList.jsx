@@ -9,7 +9,7 @@ const speechStaff = [
       Licensed by the Florida Department of Health and nationally certified by ASHA, Gail specializes in motor speech disorders, phonological deficits, developmental delays, traumatic brain injuries, memory deficits, feeding and swallowing disorders, AAC programming, cognitive disorders, a certified Speak Out Therapist for Parkinson’s, and so much more.
 
       With a Master of Science in Speech Language Pathology from Nova Southeastern University and a Bachelor's degree from the University of Central Florida, Gail is committed to enhancing lives through communication. As a mother, grandmother, wife, advocate for the neurodivergent community, avid surf skater, and amateur surfer who has participated in numerous competitions, she brings passion, kindness, patience, experience, and expertise to her therapy sessions. `,
-    imageUrl: `https://res.cloudinary.com/dfchcqbiq/image/upload/v1735511529/Speech%20Avenues/Bio%20Photos/Gail3-convert_k6eoyy.webp`,
+    imageUrl: `https://res.cloudinary.com/dfchcqbiq/image/upload/v1736005853/Speech%20Avenues/Bio%20Photos/Gail3_puseg0.webp`,
     alt: 'Portrait of Gail Walter',
     width: 300,
     height: 400,
@@ -31,7 +31,7 @@ const speechStaff = [
   {
     id: 3,
     name: 'Erica Gallinat',
-    role: 'MS CCC-SLP',
+    role: 'M.S. CCC-SLP',
     bio: `
       Meet Mrs. Erica Gallinat, MS CCC-SLP, your experienced Speech-Language Pathologist and ally in communication care. Erica has over a decade of expertise in aiding both pediatric patients and adults with communication disorders. Erica is fully licensed by the Florida State Department of Health and nationally certified by the American Speech and Hearing Association (ASHA). Her academic background includes a bachelor's and master's degree from the University of Connecticut in communication disorders and speech pathology.
 
@@ -47,7 +47,7 @@ const speechStaff = [
   {
     id: 4,
     name: 'Chris Whidden',
-    role: 'Clinical Fellow SLP',
+    role: 'M.A. CCC - SLP',
     bio: `
       Meet Chris Whidden, a dedicated Speech Language Pathologist Clinical Fellow with a passion for serving others and a perpetual smile on his face. With a "can-do" attitude, Chris tackles every challenge head-on, offering assistance in any way he can.
 
@@ -150,7 +150,7 @@ const nonTherapyStaff = [
 
       When she's not working or studying, Gabby enjoys exploring new places with her husband, connecting with nature, staying active, experimenting in the kitchen, reading a good book, and spending quality time with her trio of lovable fur babies.  `,
     imageUrl:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/silhouette_e2no3t.png',
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736006311/Speech%20Avenues/Bio%20Photos/Gabby_gxe2th.webp',
     alt: 'Portrait of Gabby, Administration Assistant',
     width: 300,
     height: 400,
@@ -164,7 +164,7 @@ const nonTherapyStaff = [
 
       When she's not spreading cheer around the office, Michelle enjoys crafting creative projects, baking delicious treats, spending time with her three wonderful daughters, and making memories out and about with friends and family. `,
     imageUrl:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1716066029/Speech%20Avenues/Bio%20Photos/silhouette_e2no3t.png',
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736006176/Speech%20Avenues/Bio%20Photos/michelle_f2zoyk.webp',
     alt: 'Portrait of Michelle, Front Desk/Reception',
     width: 300,
     height: 400,

@@ -8,6 +8,20 @@ const images = [
   },
   {
     original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008891/Speech%20Avenues/Gallery%20Photos/Original/satcsign_rb93at.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008877/Speech%20Avenues/Gallery%20Photos/Thumbnail/satcsign_yclcok.webp',
+    alt: 'Speech Avenues Building in Rockledge Florida. Specializing in Speech and Occupational Therapy Services for adults and children.',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008891/Speech%20Avenues/Gallery%20Photos/Original/satcback_b5ptpe.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008874/Speech%20Avenues/Gallery%20Photos/Thumbnail/satcback_vlckek.webp',
+    alt: 'Speech Avenues Building in Rockledge Florida. Specializing in Speech and Occupational Therapy Services for adults and children.',
+  },
+  {
+    original:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735502919/Speech%20Avenues/Gallery%20Photos/Original/satcfamily_uepkev.webp',
     thumbnail:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735503063/Speech%20Avenues/Gallery%20Photos/Thumbnail/satcfamily_sjfr43.webp',
@@ -237,11 +251,55 @@ const images = [
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735503130/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery0_m7ekzc.webp',
     alt: 'Adult Speech Therapy',
   },
-  // {
-  //   original: '',
-  //   thumbnail: '',
-  //   alt: '',
-  // },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008890/Speech%20Avenues/Gallery%20Photos/Original/gallery-ot1_oujdno.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008879/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery-ot1_dsofw4.webp',
+    alt: 'Child OT group therapy',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008889/Speech%20Avenues/Gallery%20Photos/Original/gallery-speech1_dtsd2m.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008878/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery-speech1_jij1pz.webp',
+    alt: 'Child speech therapy with Speech PAthalogist Gfail Waleter',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008890/Speech%20Avenues/Gallery%20Photos/Original/gallery26_l1fbet.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008876/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery26_cmrpoi.webp',
+    alt: 'SATC Costume Photo',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008891/Speech%20Avenues/Gallery%20Photos/Original/gallery27_paoidj.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008878/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery27_zrpyxa.webp',
+    alt: 'SATC Group Event',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008890/Speech%20Avenues/Gallery%20Photos/Original/gallery28_nr3el2.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008875/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery28_hs15uo.webp',
+    alt: 'SATC Group Event',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008891/Speech%20Avenues/Gallery%20Photos/Original/gallery29_bp1iti.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008873/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery29_p1yq2r.webp',
+    alt: 'SATC Group Event',
+  },
+  {
+    original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008890/Speech%20Avenues/Gallery%20Photos/Original/gallery30_iahwzi.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008874/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery30_knwfxt.webp',
+    alt: 'Ozzy the SATC Therapy Dog',
+  },
   // {
   //   original: '',
   //   thumbnail: '',
