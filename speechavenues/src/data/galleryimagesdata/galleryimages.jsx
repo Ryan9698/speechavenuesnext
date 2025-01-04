@@ -253,6 +253,13 @@ const images = [
   },
   {
     original:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736010232/Speech%20Avenues/Gallery%20Photos/Original/satcschool_evdo6y.webp',
+    thumbnail:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736010284/Speech%20Avenues/Gallery%20Photos/Thumbnail/satcschool_hsxjs9.webp',
+    alt: 'SATC School',
+  },
+  {
+    original:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008890/Speech%20Avenues/Gallery%20Photos/Original/gallery-ot1_oujdno.webp',
     thumbnail:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008879/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery-ot1_dsofw4.webp',
@@ -263,7 +270,7 @@ const images = [
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008889/Speech%20Avenues/Gallery%20Photos/Original/gallery-speech1_dtsd2m.webp',
     thumbnail:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008878/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery-speech1_jij1pz.webp',
-    alt: 'Child speech therapy with Speech PAthalogist Gfail Waleter',
+    alt: 'Child speech therapy with Speech Pathologist Gail Waleter',
   },
   {
     original:
@@ -300,11 +307,6 @@ const images = [
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736008874/Speech%20Avenues/Gallery%20Photos/Thumbnail/gallery30_knwfxt.webp',
     alt: 'Ozzy the SATC Therapy Dog',
   },
-  // {
-  //   original: '',
-  //   thumbnail: '',
-  //   alt: '',
-  // },
   // {
   //   original: '',
   //   thumbnail: '',
