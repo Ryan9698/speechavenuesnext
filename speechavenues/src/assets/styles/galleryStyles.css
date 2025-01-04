@@ -1,0 +1,9 @@
+.image-gallery-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.image-gallery {
+  border-radius: 1rem;
+  overflow: hidden;
+}

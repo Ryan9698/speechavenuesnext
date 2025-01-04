@@ -3,6 +3,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import '@/assets/styles/galleryStyles.css';
 
 const Carousel = ({ slides }) => {
   return (
@@ -14,6 +15,7 @@ const Carousel = ({ slides }) => {
       showPlayButton={false}
       showFullscreenButton={false}
       lazyLoad={true}
+      showNav={false}
     />
   );
 };
