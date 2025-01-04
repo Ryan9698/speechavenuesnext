@@ -33,7 +33,7 @@ export const metadata = {
   ],
 };
 
-const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 font-dancing mx-auto text-center md:text-left md:mt-8 mb-6`;
+const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 mb-8 font-dancing mx-auto text-center md:text-left md:mt-8 md:mb-6`;
 export default function OccupationalTherapy() {
   return (
     <div>
@@ -45,7 +45,7 @@ export default function OccupationalTherapy() {
           {/* First and Second Paragraphs */}
           <div className="flex flex-col md:flex-row">
             <div className="flex flex-col">
-              <h1 className="text-4xl font-bold text-gray-800 font-dancing text-center md:text-left md:mt-8 ">
+              <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold text-gray-800 font-dancing text-center md:text-left md:mt-8 ">
                 Occupational Therapy (OT):
               </h1>
               <h2 className="text-xl font-dancing text-gray-800 text-center">
@@ -56,14 +56,14 @@ export default function OccupationalTherapy() {
                 therapy (OT) services that help individuals of all ages live
                 life to the fullest.
               </p>
-              <p className="mt-2 px-8 text-center">
+              <p className="mt-2 px-8 text-center mb-4">
                 Whether it is enhancing daily skills, working on sensory
                 systems, improving motor functions, or teaching skills for
                 emotional regulation, OT is designed to make life more
                 accessible and enjoyable.
               </p>
             </div>
-            <div className="flex justify-center items-center md:mr-12">
+            <div className="flex justify-center items-center md:mr-12 md:p-2">
               <div className="w-96 h-96 md:w-80 md:h-80 mt-8 ">
                 <Carousel slides={otSlides} className="" />
               </div>
@@ -73,7 +73,7 @@ export default function OccupationalTherapy() {
 
         {/* Parent Container for Main Text Body */}
         <div className="">
-          <div className="w-full">
+          <div className="w-full md:mt-10">
             <h3 className={`${header}`}>What is Occupational Therapy(OT)?</h3>
             <p className="mt-2 px-8 text-center md:text-left">
               Occupational Therapy is a patient-centered profession that focuses
@@ -86,31 +86,42 @@ export default function OccupationalTherapy() {
             </p>
           </div>
 
-          {/* Fun Facts Section */}
+          {/* Fun Facts Section with Image*/}
 
-          <div className="p-2">
-            <h2 className={`${header}`}>Fun Facts:</h2>
-            <ul className="list-disc pl-5 space-y-2 px-8">
-              <li>
-                Occupational Therapy was founded in 1917, originally developed
-                as a form of therapeutic intervention for soldiers returning
-                from World War I who were dealing with physical and mental
-                challenges. ~ American Occupational Therapy Association (AOTA),
-                “History of Occupational Therapy”(2023)
-              </li>
-              <li>
-                Occupational Therapy doesn’t just focus on physical health- OTs
-                also address mental health by helping individuals develop coping
-                strategies, manage anxiety, and build routines for emotional
-                well-being. ~ American Occupational Therapy Association (AOTA) ~
-                “OTs Role in Mental Health”(2022)
-              </li>
-            </ul>
+          <div className="container flex flex-col md:flex-row gap-4 md:mt-8 md:mb-10">
+            <div className="md:basis-1/3 mx-auto mt-6 md:mb-4">
+              <Image
+                src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736019709/Speech%20Avenues/Occupational%20Therapy/large/otpage2_fmxf4n.webp"
+                alt="Child Occupational Therapy Writing"
+                height={250}
+                width={250}
+                className="rounded-lg m-auto shadow-xl order-last md:order-first h-96 w-96 md:h-auto md:w-auto"
+              />
+            </div>
+            <div className="flex flex-col md:basis-2/3 order-first md:order-last">
+              <h2 className={`${header}`}>Fun Facts:</h2>
+              <ul className="list-disc pl-5 space-y-2 px-8 text-sm">
+                <li>
+                  Occupational Therapy was founded in 1917, originally developed
+                  as a form of therapeutic intervention for soldiers returning
+                  from World War I who were dealing with physical and mental
+                  challenges. ~ American Occupational Therapy Association
+                  (AOTA), “History of Occupational Therapy”(2023)
+                </li>
+                <li>
+                  Occupational Therapy doesn’t just focus on physical health-
+                  OTs also address mental health by helping individuals develop
+                  coping strategies, manage anxiety, and build routines for
+                  emotional well-being. ~ American Occupational Therapy
+                  Association (AOTA) ~ “OTs Role in Mental Health”(2022)
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Services and Information Section */}
 
-          <div className="container mx-auto">
+          <div className="container mx-auto mt-12 md:mt-0">
             <h2 className={`${header}`}>What Do We Treat?</h2>
 
             <div className="px-8 mb-3 text-center md:text-left">
@@ -120,91 +131,111 @@ export default function OccupationalTherapy() {
                 neurological conditions.
               </p>
             </div>
-            <div></div>
-            <h3 className={`${header}`}>We Work With Patients Who May Have:</h3>
-            <ul className="list-disc pl-5 space-y-6 text-sm md:mb-8">
-              <li className="px-4">
-                <strong>Sensory Processing Disorder (SPD):</strong> SPD may have
-                difficulty processing sensory input, which can lead to
-                behavioral challenges, difficulty focusing, or aversions to
-                textures and sounds. Through sensory integration therapy, OT
-                will help regulate sensory experiences and improve the ability
-                to participate in daily activities.
-              </li>
-              <li className="px-4">
-                <strong>
-                  Autism Spectrum Disorder (ASD) / Neurodivergent Individuals:
-                </strong>
-                Patients with ASD and other neurodivergent individuals may often
-                face challenges with social skills, communication, transitions,
-                and repetitive behaviors. We develop therapy programs that focus
-                on improving interaction, enhancing motor skills, and building
-                independence through sensory and motor activities tailored to
-                each person's strengths.
-              </li>
-              <li className="px-4">
-                <strong>Developmental Delays:</strong> Patients with
-                developmental delays may struggle with fine and gross motor
-                skills, speech, or daily self-care tasks. Through play-based
-                therapy and exercises tailored to developmental milestones, we
-                help children gain confidence and achieve greater independence
-                at home and school.
-              </li>
-              <li className="px-4">
-                <strong>
-                  Neurological Disorders (e.g., Seizures / Epilepsy):
-                </strong>
-                Patients with seizure disorders often experience disruptions in
-                coordination, attention, and/or memory. Our therapists focus on
-                promoting safety, managing triggers, and teaching compensatory
-                techniques for cognitive and motor challenges. We help
-                individuals develop strategies to regain independence in daily
-                activities like work, self-care, and other community
-                involvement.
-              </li>
-              <li className="px-4">
-                <strong>
-                  Learning Disabilities (e.g., Dyslexia, Dysgraphia, Nonverbal
-                  Learning):
-                </strong>
-                Learning disabilities can impact a child’s ability to perform
-                school tasks, such as reading, writing, or processing and
-                retaining information. Our therapists use a combination of
-                cognitive strategies, handwriting training, and adaptive
-                learning tools to improve academic performance and boost
-                confidence. We also provide support for organizational and study
-                skills to help better manage classroom expectations.
-              </li>
-              <li className="px-4">
-                <strong>
-                  Orthopedic Injuries (e.g., Fractures, Post-Surgery):
-                </strong>{' '}
-                Whether recovering from a fracture, dealing with chronic
-                conditions like tendonitis, or rehabilitating after surgery,
-                orthopedic injuries can limit a certain range of motion and
-                strength.
-              </li>
-              <li className="px-4">
-                <strong>Cerebral Palsy:</strong> Patients with cerebral palsy
-                may have difficulties with movement, balance, or coordination.
-                Through therapeutic exercises, assistive devices, and adaptive
-                strategies, we help improve motor function, enabling greater
-                independence in daily tasks like dressing, eating, or
-                work/school activities.
-              </li>
-              <li className="px-4">
-                <strong>Traumatic Brain Injury (TBI):</strong> TBI can lead to
-                both physical and cognitive impairments, such as memory loss or
-                decreased coordination. We provide cognitive rehabilitation and
-                retrain motor skills, helping patients regain their functional
-                independence and reintegrate into social and professional
-                settings.
-              </li>
-            </ul>
 
+            {/* We Work with Patients Who May Have (and Images) Section */}
+            <div>
+              <h3 className={`${header}`}>
+                We Work With Patients Who May Have:
+              </h3>
+              <ul className="flex flex-col list-disc pl-5 space-y-6 text-sm md:mb-8 mb-10">
+                <li className="px-4">
+                  <strong>Sensory Processing Disorder (SPD):</strong> SPD may
+                  have difficulty processing sensory input, which can lead to
+                  behavioral challenges, difficulty focusing, or aversions to
+                  textures and sounds. Through sensory integration therapy, OT
+                  will help regulate sensory experiences and improve the ability
+                  to participate in daily activities.
+                </li>
+                <li className="px-4">
+                  <strong>
+                    Autism Spectrum Disorder (ASD) / Neurodivergent Individuals:
+                  </strong>
+                  Patients with ASD and other neurodivergent individuals may
+                  often face challenges with social skills, communication,
+                  transitions, and repetitive behaviors. We develop therapy
+                  programs that focus on improving interaction, enhancing motor
+                  skills, and building independence through sensory and motor
+                  activities tailored to each person's strengths.
+                </li>
+
+                {/* Container for List and Image Item (Inside UL)*/}
+                <div className="flex flex-col md:flex-row m-auto">
+                  <div className="md:basis-2/3 space-y-6 lg:space-y-8 lg:mt-3 pr-6 lg:mb-4 mb-8 md:mb-0">
+                    <li className="px-4">
+                      <strong>Developmental Delays:</strong> Patients with
+                      developmental delays may struggle with fine and gross
+                      motor skills, speech, or daily self-care tasks. Through
+                      play-based therapy and exercises tailored to developmental
+                      milestones, we help children gain confidence and achieve
+                      greater independence at home and school.
+                    </li>
+                    <li className="px-4">
+                      <strong>
+                        Neurological Disorders (e.g., Seizures / Epilepsy):
+                      </strong>
+                      Patients with seizure disorders often experience
+                      disruptions in coordination, attention, and/or memory. Our
+                      therapists focus on promoting safety, managing triggers,
+                      and teaching compensatory techniques for cognitive and
+                      motor challenges. We help individuals develop strategies
+                      to regain independence in daily activities like work,
+                      self-care, and other community involvement.
+                    </li>
+                    {/* Image Container inside List */}
+                  </div>
+                  <div className="md:basis-1/3 md:mr-6 lg:p-2 md:mt-6 lg:mt-0 mr-4 mb-4 sm:mb-0">
+                    <Image
+                      src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736020698/Speech%20Avenues/Occupational%20Therapy/large/otpage3_s1p6pw.webp"
+                      alt="Child Occupational Therapy Writing"
+                      height={250}
+                      width={250}
+                      className="rounded-lg mx-auto shadow-xl order-last h-96 w-96 md:h-auto md:w-auto md:order-none"
+                    />
+                  </div>
+                </div>
+                <li className="px-4">
+                  <strong>
+                    Learning Disabilities (e.g., Dyslexia, Dysgraphia, Nonverbal
+                    Learning):
+                  </strong>
+                  Learning disabilities can impact a child’s ability to perform
+                  school tasks, such as reading, writing, or processing and
+                  retaining information. Our therapists use a combination of
+                  cognitive strategies, handwriting training, and adaptive
+                  learning tools to improve academic performance and boost
+                  confidence. We also provide support for organizational and
+                  study skills to help better manage classroom expectations.
+                </li>
+                <li className="px-4">
+                  <strong>
+                    Orthopedic Injuries (e.g., Fractures, Post-Surgery):
+                  </strong>{' '}
+                  Whether recovering from a fracture, dealing with chronic
+                  conditions like tendonitis, or rehabilitating after surgery,
+                  orthopedic injuries can limit a certain range of motion and
+                  strength.
+                </li>
+                <li className="px-4">
+                  <strong>Cerebral Palsy:</strong> Patients with cerebral palsy
+                  may have difficulties with movement, balance, or coordination.
+                  Through therapeutic exercises, assistive devices, and adaptive
+                  strategies, we help improve motor function, enabling greater
+                  independence in daily tasks like dressing, eating, or
+                  work/school activities.
+                </li>
+                <li className="px-4">
+                  <strong>Traumatic Brain Injury (TBI):</strong> TBI can lead to
+                  both physical and cognitive impairments, such as memory loss
+                  or decreased coordination. We provide cognitive rehabilitation
+                  and retrain motor skills, helping patients regain their
+                  functional independence and reintegrate into social and
+                  professional settings.
+                </li>
+              </ul>
+            </div>
             {/* Modals with All Additional Information */}
 
-            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6 md:mt-10">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6 md:mt-10 mb-6 sm:mb-0 lg:p-4">
               <div className="">
                 <ModalClient triggerLabel="Sensory Processing Disorder">
                   <SensoryDisorder />
@@ -231,7 +262,7 @@ export default function OccupationalTherapy() {
 
             <div className="container mx-auto">
               <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6">
-                <div className="flex-1 text-center md:text-left mt-6 md:mt-8">
+                <div className="flex-1 text-center md:text-left mt-6 md:mt-8 lg:mt-20">
                   <h2
                     className={`font-bold text-gray-800 text-3xl font-dancing mx-auto text-center md:mt-8 md:mb-8 mb-4`}
                   >
@@ -247,13 +278,13 @@ export default function OccupationalTherapy() {
                   </p>
                 </div>
                 {/* Therapy Image */}
-                <div className="flex-shrink-0 mt-6">
+                <div className="flex-shrink-0 mt-6 mb-4 sm:mb-0">
                   <Image
                     src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1735521679/Speech%20Avenues/Occupational%20Therapy/large/otpage_hhmy8s.webp"
                     alt="Child Occupational Therapy"
                     width={275}
                     height={275}
-                    className="mx-auto md:mr-8 md:mt-8 rounded"
+                    className="mx-auto md:mr-8 md:mt-8 rounded-lg shadow-xl h-96 w-96 sm:h-auto sm:w-auto"
                   />
                 </div>
               </div>
@@ -272,11 +303,13 @@ export default function OccupationalTherapy() {
             </p>
 
             {/* Call to Action */}
-            <h2
-              className={`font-bold text-gray-800 text-3xl  mb-6 mt-8 font-dancing mx-auto text-center md:mt-2 `}
-            >
-              Take the First Step Today!
-            </h2>
+            <div className="">
+              <h2
+                className={`font-bold text-gray-800 text-3xl  mb-6 mt-8 font-dancing mx-auto text-center md:mt-2 border-b-2 border-gray-800`}
+              >
+                Take the First Step Today!
+              </h2>
+            </div>
             <p className="px-8 mb-4 text-center md:text-left">
               The path to a better tomorrow starts with the right support.
               <Link href="/contact" className="text-blue-500 hover:underline">
