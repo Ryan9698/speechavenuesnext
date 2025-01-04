@@ -33,7 +33,7 @@ export const metadata = {
   ],
 };
 
-const header = `font-bold text-gray-800 text-3xl md:text-2xl mt-2 mt-8 font-dancing mx-auto text-center md:text-left md:mt-2 `;
+const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 font-dancing mx-auto text-center md:text-left md:mt-8 mb-6`;
 export default function OccupationalTherapy() {
   return (
     <div>
@@ -45,7 +45,7 @@ export default function OccupationalTherapy() {
           {/* First and Second Paragraphs */}
           <div className="flex flex-col md:flex-row">
             <div className="flex flex-col">
-              <h1 className="text-4xl font-bold text-gray-800 font-dancing text-center md:text-left md:mt-8">
+              <h1 className="text-4xl font-bold text-gray-800 font-dancing text-center md:text-left md:mt-8 ">
                 Occupational Therapy (OT):
               </h1>
               <h2 className="text-xl font-dancing text-gray-800 text-center">
@@ -74,9 +74,7 @@ export default function OccupationalTherapy() {
         {/* Parent Container for Main Text Body */}
         <div className="">
           <div className="w-full">
-            <h3 className={`${header} md:mb-4 mb-6`}>
-              What is Occupational Therapy(OT)?
-            </h3>
+            <h3 className={`${header}`}>What is Occupational Therapy(OT)?</h3>
             <p className="mt-2 px-8 text-center md:text-left">
               Occupational Therapy is a patient-centered profession that focuses
               on improving a person’s ability to perform everyday tasks. Through
@@ -91,7 +89,7 @@ export default function OccupationalTherapy() {
           {/* Fun Facts Section */}
 
           <div className="p-2">
-            <h2 className={`${header} mb-4 font-bold`}>Fun Facts:</h2>
+            <h2 className={`${header}`}>Fun Facts:</h2>
             <ul className="list-disc pl-5 space-y-2 px-8">
               <li>
                 Occupational Therapy was founded in 1917, originally developed
@@ -113,7 +111,7 @@ export default function OccupationalTherapy() {
           {/* Services and Information Section */}
 
           <div className="container mx-auto">
-            <h2 className={`${header} mb-4`}>What Do We Treat?</h2>
+            <h2 className={`${header}`}>What Do We Treat?</h2>
 
             <div className="px-8 mb-3 text-center md:text-left">
               <p>
@@ -122,11 +120,9 @@ export default function OccupationalTherapy() {
                 neurological conditions.
               </p>
             </div>
-
-            <h3 className={`${header} mb-4`}>
-              We Work With Patients Who May Have:
-            </h3>
-            <ul className="list-disc pl-5 space-y-6 text-sm md:mb-4">
+            <div></div>
+            <h3 className={`${header}`}>We Work With Patients Who May Have:</h3>
+            <ul className="list-disc pl-5 space-y-6 text-sm md:mb-8">
               <li className="px-4">
                 <strong>Sensory Processing Disorder (SPD):</strong> SPD may have
                 difficulty processing sensory input, which can lead to
@@ -208,7 +204,7 @@ export default function OccupationalTherapy() {
 
             {/* Modals with All Additional Information */}
 
-            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6 md:mt-10">
               <div className="">
                 <ModalClient triggerLabel="Sensory Processing Disorder">
                   <SensoryDisorder />
@@ -235,7 +231,7 @@ export default function OccupationalTherapy() {
 
             <div className="container mx-auto">
               <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6">
-                <div className="flex-1 text-center md:text-left mt-6 md:mt-0 md:mt-8">
+                <div className="flex-1 text-center md:text-left mt-6 md:mt-8">
                   <h2
                     className={`font-bold text-gray-800 text-3xl font-dancing mx-auto text-center md:mt-8 md:mb-8 mb-4`}
                   >
@@ -251,12 +247,12 @@ export default function OccupationalTherapy() {
                   </p>
                 </div>
                 {/* Therapy Image */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 mt-6">
                   <Image
                     src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1735521679/Speech%20Avenues/Occupational%20Therapy/large/otpage_hhmy8s.webp"
                     alt="Child Occupational Therapy"
-                    width={300}
-                    height={300}
+                    width={275}
+                    height={275}
                     className="mx-auto md:mr-8 md:mt-8 rounded"
                   />
                 </div>
@@ -264,8 +260,8 @@ export default function OccupationalTherapy() {
             </div>
 
             {/* Facility Section */}
-            <h2 className={`${header} mb-4`}>Our Facility Includes:</h2>
-            <p className="px-8 mb-4 text-center md:text-left">
+            <h2 className={`${header}`}>Our Facility Includes:</h2>
+            <p className="px-8 mb-8 text-center md:text-left">
               At Speech Avenues Therapy Co, we believe that having the right
               tools and environment is essential for effective therapy. That is
               why our facility is designed to provide a welcoming, fully
@@ -277,7 +273,7 @@ export default function OccupationalTherapy() {
 
             {/* Call to Action */}
             <h2
-              className={`font-bold text-gray-800 text-3xl  mb-4 mt-8 font-dancing mx-auto text-center md:mt-2 `}
+              className={`font-bold text-gray-800 text-3xl  mb-6 mt-8 font-dancing mx-auto text-center md:mt-2 `}
             >
               Take the First Step Today!
             </h2>

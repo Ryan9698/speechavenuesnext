@@ -45,7 +45,7 @@ export default function SpeechTherapy() {
           <h1 className="text-4xl font-bold text-gray-800 mt-8 font-dancing mx-auto text-center md:text-left md:mt-0 md:mx-6">
             Speech Therapy
           </h1>
-          <div className="bg-white p-6 flex flex-col space-y-3">
+          <div className="bg-white p-6 flex flex-col space-y-5">
             <h2>
               <span className="font-bold">Speech Therapy</span> services are
               dedicated to enhancing communication, cognitive communication,
@@ -88,14 +88,14 @@ export default function SpeechTherapy() {
       </div>
 
       {/* Second Row: Content, Video, and Dropdowns */}
-      <div className="mt-8">
+      <div className="md:mt-8">
         <div className="flex flex-col md:flex-row md:gap-6">
           {/* Main Content */}
           <div className="flex flex-col w-full ">
             <div className="mt-3 text-gray-700 leading-relaxed">
               {/* Floating Video Section and Dropdowns */}
-              <div className="float-right w-full md:w-1/2 md:ml-4 mb-4 space-y-2">
-                <div className="shadow-lg rounded-lg overflow-hidden mb-6">
+              <div className="float-right w-full md:w-1/2 md:ml-4 mb-10 md:mb-4 space-y-2">
+                <div className="shadow-lg rounded-lg overflow-hidden mb-8">
                   <VideoEmbed
                     videoId="dCoWv8yV8qk"
                     width={640}
@@ -110,7 +110,7 @@ export default function SpeechTherapy() {
               </div>
               {/* Text Content (What is Speech?)*/}
               <div className="w-full md:w-2/3 md:ml-6">
-                <h3 className="text-4xl font-dancing font-bold md:text-start text-center text-gray-800 m:mx-2 md:p-0 md:mt-2 mb-8">
+                <h3 className="text-4xl font-dancing font-bold text-center text-gray-800 m:mx-2 md:p-0 mt-2 mb-8">
                   What is Speech?
                 </h3>
                 <p className="mb-10">
