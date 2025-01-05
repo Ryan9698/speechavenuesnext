@@ -17,11 +17,11 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <div className="container mx-auto mt-8 px-4 py-8 bg-white ">
+      <div className="container mx-auto mt-8 px-4 py-8 bg-white max-w-3xl ">
         <h1 className="text-6xl font-bold mb-10 cursiveFont text-center text-gray-800">
           Contact Us
         </h1>
-        <p className="text-center mb-4 text-gray-600 text-xl">
+        <p className="text-center mx-4 text-gray-600 text-xl mb-8">
           We value your input and if you have any suggestions on how to improve
           our services, please feel free to contact us at any time. We thank you
           for your support!
