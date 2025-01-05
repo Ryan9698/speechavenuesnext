@@ -34,7 +34,7 @@ export default function Home() {
     <>
       <div className="container mx-auto ">
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-2 md:space-x-6 mb-2">
-          <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div className="w-full md:w-1/2 mt-8 md:mt-0">
             {/* Component for cycling photos available here if needed */}
             {/* <MainpageImages /> */}
             <Image
@@ -44,20 +44,19 @@ export default function Home() {
               height={1080}
               className="mx-auto"
             />
-            <div className="w-full mt-4 md:mt-0">
-              {/* Testimonials component goes here. Needs data */}
-              {/* <Testimonials /> */}
-            </div>
+            {/* Testimonials component goes here. Needs data */}
+            {/* <Testimonials /> */}
           </div>
-          <div className="group prose prose-md max-w-none w-full md:w-1/2 mr-8">
-            <div className="">
+
+          <div className="mx-auto w-full md:w-1/2 mr-8">
+            <div className="mx-8">
               <h1
-                className="text-6xl font-bold mb-6 text-center md:text-left"
+                className="text-6xl font-bold mb-8 md:mb-6 text-center md:text-left"
                 style={{ fontFamily: '"Dancing Script", cursive' }}
               >
                 Welcome!
               </h1>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-8 md:space-y-4 text-sm">
                 <p>
                   Welcome to Speech Avenues Therapy Co. (
                   <span className="font-bold">S.A.T.C</span>), where we redefine
@@ -93,7 +92,7 @@ export default function Home() {
                   For inquiries or to book an appointment, please call:
                   <br />
                   <span className="">
-                    <PhoneIcon className="inline mr-1 " />
+                    <PhoneIcon className="inline mr-1 mb-2" />
                     <a
                       href="tel:+13213382419"
                       className="text-lg font-bold no-underline hover:text-blue-700"
