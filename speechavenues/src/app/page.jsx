@@ -32,13 +32,13 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto p-4 lg:pt-12 pb-16">
-        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-          <div className="w-full md:w-1/2 flex justify-center">
+      <div className="container mx-auto ">
+        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-2 md:space-x-6 mb-2">
+          <div className="w-full md:w-1/2 flex justify-center items-center">
             {/* Component for cycling photos available here if needed */}
             {/* <MainpageImages /> */}
             <Image
-              src="/images/mainpageimages/logo.webp"
+              src="/images/mainpageimages/logo169.webp"
               alt="Logo"
               width={1260}
               height={1080}
@@ -50,14 +50,14 @@ export default function Home() {
             </div>
           </div>
           <div className="group prose prose-md max-w-none w-full md:w-1/2 mr-8">
-            <div className="ml-5">
+            <div className="">
               <h1
-                className="text-6xl font-bold mb-6 text-center md:text-left p-4 "
+                className="text-6xl font-bold mb-6 text-center md:text-left"
                 style={{ fontFamily: '"Dancing Script", cursive' }}
               >
                 Welcome!
               </h1>
-              <div className="space-y-4">
+              <div className="space-y-2 text-sm">
                 <p>
                   Welcome to Speech Avenues Therapy Co. (
                   <span className="font-bold">S.A.T.C</span>), where we redefine
@@ -109,13 +109,13 @@ export default function Home() {
       </div>
 
       {/* Full Width Image at the Bottom */}
-      <div className="w-full">
+      <div className="relative w-full">
         <Image
           src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1724724710/Speech%20Avenues/WEBP%20Photos/satcfamily_wjfcrr.webp"
           alt="therapist"
           width={1920}
           height={1080}
-          className="object-cover w-full"
+          className="w-full h-auto object-cover"
         />
       </div>
     </>

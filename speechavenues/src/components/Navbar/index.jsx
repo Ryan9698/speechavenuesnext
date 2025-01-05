@@ -79,7 +79,7 @@ const Navbar = () => {
               onClick={() => setCurrentPath('/')}
             >
               <Image
-                src="/images/bannerlogo.png"
+                src="/images/navlogo.webp"
                 alt="Logo"
                 width={160}
                 height={160}
