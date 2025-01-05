@@ -53,7 +53,18 @@ const nextConfig = {
     ];
   },
   images: {
-    domains: ['res.cloudinary.com', 'img.youtube.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/**',
+      },
+    ],
     deviceSizes: [320, 420, 768, 1024, 1200, 1440],
     imageSizes: [16, 32, 48, 64, 96, 128],
     path: '/_next/image',
