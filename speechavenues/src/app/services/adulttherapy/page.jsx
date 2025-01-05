@@ -70,7 +70,7 @@ export default function AdultTherapy() {
       {/* Speak Out Banner and Dropdowns*/}
       <div className="flex flex-col md:flex-row md:w-full md:mt-4 md:mx-4">
         {/* Dropdowns Section */}
-        <div className="flex flex-col md:flex-row w-1/2 mb-6">
+        <div className="flex flex-col md:flex-row w-fullmd:w-1/2 mb-6">
           <AdultDropdown />
         </div>
 
