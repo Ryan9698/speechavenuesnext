@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <div className="container mx-auto ">
-        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-2 md:space-x-6 mb-2">
+        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-2 md:space-x-6 my-6">
           <div className="w-full md:w-1/2 mt-8 md:mt-0">
             {/* Component for cycling photos available here if needed */}
             {/* <MainpageImages /> */}

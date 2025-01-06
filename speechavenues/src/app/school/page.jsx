@@ -25,9 +25,9 @@ export const metadata = {
 
 export default function SchoolHome() {
   return (
-    <div className="container mx-auto p-6 flex flex-col items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center md:items-center w-full max-w-4xl gap-8">
-        <div className="relative w-full max-w-xs md:w-96">
+    <div className="container mx-auto flex flex-col items-center md:mt-10">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-4xl gap-6">
+        <div className="relative w-full max-w-xs md:w-96 mb-6 md:mb-0">
           <Image
             src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1724427658/Speech%20Avenues/School/SATC_CCA_zdjxpj.webp"
             alt="Speech Avenues Academy offers personalized lesson plans tailored to your child's individual needs"
@@ -38,7 +38,7 @@ export default function SchoolHome() {
           />
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="text-3xl font-bold text-gray-800 cursiveFont mb-4">
+          <h1 className="text-3xl font-bold text-gray-800 cursiveFont mb-4 md:mb-0 text-center md:ml-6">
             Education to Meet the Needs of Your Children
           </h1>
           <div className="bg-white rounded-lg p-6 max-w-prose">
