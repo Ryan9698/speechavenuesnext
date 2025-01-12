@@ -8,6 +8,7 @@ import SensoryDisorder from './modalcontent/SensoryDisorder';
 import SensorySystem from './modalcontent/SensorySystem';
 import WhatIsAutism from './modalcontent/WhatIsAutism';
 import AACDevice from './modalcontent/AACDevice';
+import TherapeuticYoga from './modalcontent/TherapeuticYoga';
 
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',
@@ -254,6 +255,11 @@ export default function OccupationalTherapy() {
               <div className="">
                 <ModalClient triggerLabel="AAC DEVICES: Augmentative and Alternative Communication">
                   <AACDevice />
+                </ModalClient>
+              </div>
+              <div className="">
+                <ModalClient triggerLabel="Therapeutic Yoga">
+                  <TherapeuticYoga />
                 </ModalClient>
               </div>
             </div>

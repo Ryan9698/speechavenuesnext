@@ -133,7 +133,7 @@ const otStaff = [
     
       In her free time, Lisa spends time cooking with her family and friends. She enjoys researching and learning about Florida’s snakes and spiders of all kinds. Lisa’s other interests include traveling and training her dog Wrigley to "leave it".`,
     imageUrl:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735510797/Speech%20Avenues/Bio%20Photos/LISA-Convert_ad7gwo.webp',
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1736659114/Speech%20Avenues/Bio%20Photos/lisa-2ndconvert_aloso0.webp',
     alt: 'Portrait of Lisa Timrick',
     width: 300,
     height: 400,

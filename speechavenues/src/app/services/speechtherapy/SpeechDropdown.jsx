@@ -304,6 +304,58 @@ export default function SpeechDropdown() {
           </div>
         </div>
       </details>
+      <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
+        <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
+          What is Myofunctional Therapy (OMT)?
+        </summary>
+        <div className="mt-3 text-base text-gray-700 leading-relaxed space-y-4">
+          <p>
+            At SATC, we combine Oral Placement Therapy (OPT) with Myofunctional
+            Therapy (OMT) to address a variety of issues related to feeding,
+            swallowing, and speech clarity. One of the key areas we focus on is{' '}
+            <span className="font-bold">tongue thrust</span>, a condition that
+            is often confused with a <span className="font-bold">lisp</span>.
+          </p>
+          <p>
+            A lisp is a speech disorder where a person has difficulty producing
+            the sounds <span className="font-bold">/s/</span> and{' '}
+            <span className="font-bold">/z/</span>. There are four different
+            types of lisps—interdental, dental, palatal, and lateral.
+          </p>
+          <p>
+            <span className="font-bold">Tongue thrust</span>, on the other hand,
+            is a condition where the tongue moves forward during activities like
+            eating, swallowing, or speaking. This can affect the production of
+            sounds such as{' '}
+            <span className="font-bold">/s/, /z/, /sh/, /zh/, /ch/,</span> and{' '}
+            <span className="font-bold">/j/</span>.
+          </p>
+          <p>
+            <span className="font-bold">Oral Placement Therapy (OPT)</span> was
+            developed by Sara Rosenfeld-Johnson of{' '}
+            <span className="italic">TalkTools (rights reserved)</span> and has
+            proven to be an effective tool in improving or even eliminating
+            tongue thrust. In many cases, with consistent therapy over a 6–8
+            month period, we’ve seen significant progress. Some children have
+            even been able to avoid the need for braces or dental surgery.
+          </p>
+          <p>
+            At SATC, our therapists use OPT to help children understand the
+            concepts of{' '}
+            <span className="font-bold">air flow, oral imitation</span>, and{' '}
+            <span className="font-bold">phoneme placement</span>. We've
+            successfully integrated OPT with OMT to help children with{' '}
+            <span className="font-bold">
+              severe childhood apraxia of speech
+            </span>
+            .
+          </p>
+          <p>
+            By using tools like whistles and Apraxia blocks, we support these
+            children in developing clearer, more precise speech.
+          </p>
+        </div>
+      </details>
     </div>
   );
 }

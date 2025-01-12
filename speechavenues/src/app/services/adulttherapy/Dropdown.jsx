@@ -1,6 +1,6 @@
 export default function AdultDropdown() {
   return (
-    <div className="space-y-1 px-6 pr-4 mb-4 md:mb-0">
+    <div className="space-y-1 mx-auto  mb-4 md:mb-0 w-full">
       {/* What is Voice Therapy? Dropdown */}
       <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
         <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
