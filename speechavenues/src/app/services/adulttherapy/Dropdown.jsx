@@ -76,7 +76,7 @@ export default function AdultDropdown() {
       {/* What is Dysphasia? Dropdown */}
       <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
         <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
-          What is Dysphasia?
+          What is Dysphagia?
         </summary>
         <div className="mt-3 text-base text-gray-700 leading-relaxed space-y-3">
           <p>
