@@ -46,9 +46,9 @@ export default function AdultTherapy() {
 
           {/* Spotify Player Component (Needs Playlist) */}
 
-          {/* <div className="md:mt-12 ml-2 w-full order-2 md:order-none flex justify-center items-center">
-            <SpotifyPlayer url="https://open.spotify.com/embed/playlist/6pLvwniLaaDRHJfZj0IH7m?utm_source=generator&theme=0" />
-          </div> */}
+          <div className="md:mt-12 ml-2 w-full order-2 md:order-none flex justify-center items-center">
+            <SpotifyPlayer url="https://open.spotify.com/embed/playlist/6tz582Yhm1naPsb0LnwvXa?utm_source=generator&theme=0" />
+          </div>
         </div>
 
         <div className="flex flex-col marker:w-full md:w-2/3 order-1 md:order-none">
