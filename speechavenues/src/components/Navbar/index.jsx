@@ -70,7 +70,7 @@ const Navbar = () => {
           currentPath={currentPath}
         />
       </div>
-      <div className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md fixed w-full z-30 top-0 left-0">
+      <div className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md w-full z-30 top-0 left-0">
         <div className="max-w-8xl mx-auto px-2 sm:px-6 md:px-8 flex justify-between h-20 items-center">
           <div className="flex items-center">
             <Link
@@ -83,7 +83,7 @@ const Navbar = () => {
                 alt="Logo"
                 width={160}
                 height={160}
-                className="h-40 w-40 fixed -top-4 left-4"
+                className="h-40 w-40 z-30 "
                 priority
               />
             </Link>
@@ -214,7 +214,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="h-24 md:h-24"></div>
+      {/* <div className="h-24 md:h-24"></div> */}
     </nav>
   );
 };

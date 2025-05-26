@@ -32,23 +32,19 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto ">
-        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-2 md:space-x-6 my-6">
-          <div className="w-full md:w-1/2 mt-8 md:mt-0">
-            {/* Component for cycling photos available here if needed */}
-            {/* <MainpageImages /> */}
-            <Image
-              src="/images/mainpageimages/logo169.webp"
-              alt="Logo"
-              width={1260}
-              height={1080}
-              className="mx-auto"
-            />
-            {/* Testimonials component goes here. Needs data */}
-            {/* <Testimonials /> */}
-          </div>
+      <div className="mx-auto">
+        <div className="w-full">
+          <Image
+            src="/images/mainpageimages/satcbannernew.webp"
+            alt="Logo"
+            width={1920}
+            height={1080}
+            className="mx-auto"
+          />
+        </div>
 
-          <div className="mx-auto w-full md:w-1/2 mr-8">
+        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-2 md:space-x-6 my-6">
+          <div className="mx-auto w-full mr-8">
             <div className="mx-8">
               <h1
                 className="text-6xl font-bold mb-8 md:mb-6 text-center md:text-left"
@@ -108,7 +104,7 @@ export default function Home() {
       </div>
 
       {/* Full Width Image at the Bottom */}
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <Image
           src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1724724710/Speech%20Avenues/WEBP%20Photos/satcfamily_wjfcrr.webp"
           alt="therapist"
@@ -116,7 +112,7 @@ export default function Home() {
           height={1080}
           className="w-full h-auto object-cover"
         />
-      </div>
+      </div> */}
     </>
   );
 }
