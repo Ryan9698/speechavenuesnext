@@ -10,7 +10,4 @@ v 1.0.0 (2024) - First iteration of project with completed pages using react ima
 
 Credits:
 
-Phone SVG:
-https://iconscout.com/icons/phone
-Phone by The Icon Z on IconScout
-https://iconscout.com/contributors/theiconz"
+Lucide-react icons were used in this project.

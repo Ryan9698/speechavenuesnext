@@ -2,6 +2,7 @@
 
 import React from 'react';
 import GalleryComponent from '@/components/GalleryComponent//GalleryComponent';
+import { TransitionWrapper } from '@/components/Animations';
 
 export const metadata = {
   title: 'Gallery - Speech Avenues Therapy Co.',
@@ -16,12 +17,14 @@ export const metadata = {
 export default function Gallery() {
   return (
     <>
-      <div>
-        <h1 className="text-6xl font-bold mt-8 mb-8 cursiveFont text-center  pb-2">
-          Gallery
-        </h1>
-        <GalleryComponent />
-      </div>
+      <TransitionWrapper>
+        <div>
+          <h1 className="text-6xl font-bold mt-8 mb-8 cursiveFont text-center  pb-2">
+            Gallery
+          </h1>
+          <GalleryComponent />
+        </div>
+      </TransitionWrapper>
     </>
   );
 }

@@ -26,7 +26,7 @@ export default function ModalClient({ triggerLabel, children }) {
             >
               {/* Modal Content */}
               <motion.div
-                className="modal-content bg-white rounded-md shadow-lg w-11/12 max-w-3xl p-6 overflow-y-auto max-h-[70vh] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-800 scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
+                className="modal-content bg-white rounded-md shadow-lg w-11/12 max-w-3xl p-6 overflow-y-auto max-h-[70vh]"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
