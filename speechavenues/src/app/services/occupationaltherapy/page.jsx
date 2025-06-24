@@ -38,7 +38,7 @@ const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 mb-8 font-danc
 export default function OccupationalTherapy() {
   return (
     <div>
-      <div className="container p-4 mx-auto md:max-w-3xl lg:max-w-4xl">
+      <div className="container p-4 mx-auto md:max-w-3xl lg:max-w-4xl mt-12">
         {/* Parent Flex Container */}
         <div className="flex flex-col md:flex-row gap-6">
           {/* Carousel Image Container*/}
@@ -96,7 +96,7 @@ export default function OccupationalTherapy() {
                 alt="Child Occupational Therapy Writing"
                 height={250}
                 width={250}
-                className="rounded-lg m-auto shadow-xl order-last md:order-first h-96 w-96 md:h-auto md:w-auto"
+                className="rounded-full m-auto shadow-xl order-last md:order-first h-96 w-96 md:h-auto md:w-auto"
               />
             </div>
             <div className="flex flex-col md:basis-2/3 order-first md:order-last">

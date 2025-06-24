@@ -1,7 +1,13 @@
 import '@/assets/styles/globals.css';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/Analytics/Analytics';
+import {
+  nunitoSans,
+  quicksand,
+  schoolbell,
+  dancingScript,
+} from '@/data/fontImports';
 
 // Set viewport
 
@@ -95,8 +101,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full">
-      <body className="flex flex-col min-h-screen">
+    <html
+      lang="en"
+      className={`${quicksand.variable} ${nunitoSans.variable} ${schoolbell.variable} ${dancingScript.variable} h-full`}
+    >
+      <body className="flex flex-col min-h-screen font-nunito">
         <GoogleAnalytics />
         <Navbar />
         <main className="flex-grow">{children}</main>

@@ -34,7 +34,7 @@ export const metadata = {
 
 export default function SpeechTherapy() {
   return (
-    <div className="container mx-auto p-4 max-w-6xl">
+    <div className="container mx-auto p-4 max-w-6xl mt-12">
       {/* First Row: Carousel and Paragraph */}
       <div className="flex flex-col md:flex-row md:items-start md:mt-8 md:ml-6">
         <div className="w-full h-1/2 md:w-96 md:mr-4">

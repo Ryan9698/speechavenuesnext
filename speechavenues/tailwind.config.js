@@ -44,9 +44,10 @@ module.exports = {
         192: '48rem',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        dancing: ['Dancing Script', 'cursive'],
-        schoolbell: ['Schoolbell', 'cursive'],
+        quicksand: ['var(--font-quicksand)', 'sans-serif'],
+        nunito: ['var(--font-nunito-sans)', 'sans-serif'],
+        schoolbell: ['var(--font-schoolbell)', 'cursive'],
+        dancing: ['var(--font-dancing-script)', 'cursive'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
