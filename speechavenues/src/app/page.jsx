@@ -31,16 +31,6 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="relative w-full max-w-7xl mx-auto mt-16 overflow-hidden rounded-xl">
-        <Image
-          src="/images/mainpageimages/satcbannernew.webp"
-          alt="Logo"
-          width={1440}
-          height={617}
-          className="w-full h-auto object-cover"
-          priority
-        />
-      </div>
       <IntroSection />
     </>
   );

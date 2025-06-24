@@ -1,8 +1,8 @@
-import { Phone } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 
 export default function CallToAction() {
   return (
-    <div className="text-center p-4 bg-blue-100 rounded-lg border border-blue-300 shadow-sm">
+    <div className="flex flex-col gap-2 items-center text-center p-4 bg-blue-100 rounded-lg border border-blue-300 shadow-sm">
       <p className="font-semibold text-lg mb-2">
         For inquiries or appointments:
       </p>
@@ -12,6 +12,13 @@ export default function CallToAction() {
       >
         <Phone size={20} />
         321-338-2419
+      </a>
+      <a
+        href="mailto:admin@speechavenues.com"
+        className="inline-flex items-center gap-2 justify-center text-xl font-bold text-blue-700 hover:underline"
+      >
+        <Mail size={20} className="text-blue-700" />
+        admin@speechavenues.com
       </a>
     </div>
   );
