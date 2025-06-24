@@ -1,8 +1,6 @@
 import React from 'react';
-import PhoneIcon from '@/components/PhoneIcon';
 import Image from 'next/image';
-import Link from 'next/link';
-import IntroSection from '@/components/IntroSection/IntroSection';
+import { IntroSection } from '@/components/HomepageContent';
 
 export const metadata = {
   title: {
@@ -33,18 +31,16 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      {/* Image Banner */}
-      <div className="w-full mt-16">
+      <div className="relative w-full max-w-7xl mx-auto mt-16 overflow-hidden rounded-xl">
         <Image
           src="/images/mainpageimages/satcbannernew.webp"
           alt="Logo"
-          width={1920}
-          height={1080}
-          className=""
+          width={1440}
+          height={617}
+          className="w-full h-auto object-cover"
+          priority
         />
       </div>
-
-      {/* Introduction Content */}
       <IntroSection />
     </>
   );
