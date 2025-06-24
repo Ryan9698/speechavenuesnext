@@ -33,7 +33,7 @@ const subHeading = `flex justify-center items-center text-center px-2 text-slate
 export default function StaffPage() {
   return (
     // Global Container
-    <div className="container mx-auto px-4 mb-4">
+    <div className="container mx-auto px-4 mb-4 mt-12">
       <div className="flex flex-col lg:mx-20 text-center">
         <h1 className="flex justify-center items-center  text-slate-800 font-dancing text-4xl font-bold my-8">
           Our Team

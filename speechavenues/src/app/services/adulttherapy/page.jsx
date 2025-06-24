@@ -34,30 +34,29 @@ export const metadata = {
 
 export default function AdultTherapy() {
   return (
-    // Global Container
-    <div className="container mx-auto max-w-4xl">
-      {/* Content Container */}
+    <div className="container mx-auto max-w-4xl mt-20">
+      {/* Main Flex Container */}
       <div className="flex flex-col md:flex-row md:items-start md:mt-8 md:ml-6">
-        <div className="w-full sm:w-96 md:w-[500px] md:mr-4 md:mx-4">
-          {/* Carousel Container */}
-          <div className="md:w-full mt-2 mx-2 md:mx-2">
+        {/* Left Column: Carousel and Spotify Player */}
+        <div className="flex flex-col w-full sm:w-96 md:w-[500px] md:mr-4 md:mx-4">
+          {/* Carousel */}
+          <div className="md:w-full mt-2 mx-auto md:mx-2 order-2 md:order-1">
             <Carousel slides={adultSlides} className="w-full h-full" />
           </div>
-
-          {/* Spotify Player Component (Needs Playlist) */}
-
-          <div className="md:mt-12 ml-2 w-full order-2 md:order-none flex justify-center items-center">
+          {/* Spotify Player */}
+          <div className="order-last flex justify-center items-center bg-gray-200 p-2 pt-4">
             <SpotifyPlayer url="https://open.spotify.com/embed/playlist/6tz582Yhm1naPsb0LnwvXa?utm_source=generator&theme=0" />
           </div>
         </div>
 
-        <div className="flex flex-col marker:w-full md:w-2/3 order-1 md:order-none">
-          <h1 className="text-5xl font-bold text-gray-800 mt-8 font-dancing mx-auto text-center md:text-left md:mt-4 md:mx-6 md:mb-6">
+        {/* Right Column: Text Content */}
+        <div className="flex flex-col w-full md:w-2/3 order-last md:order-2">
+          <h1 className="text-5xl font-bold text-gray-800 mt-12 font-quicksand mx-auto text-center md:text-left md:mt-4 md:mx-6 md:mb-6">
             Adult Therapy
           </h1>
-          <div className=" mb-4 md:mb-0">
+          <div className="mb-4 md:mb-0">
             <div className="md:space-y-4 md:ml-6 md:mb-6">
-              <h2>
+              <h2 className="p-4 mt-6">
                 Adults acquire speech and language disabilities through organic
                 and nonorganic causes, such as a stroke, Parkinson’s, dementia,
                 etc. Treatment for adults is known as rehabilitation. It is
@@ -65,11 +64,42 @@ export default function AdultTherapy() {
                 the previously learned skill. A nonorganic cause might be
                 traumatic head injury from a car accident.
               </h2>
-              <p className="">
+              <p className="p-4 bg-sky-500/20 rounded">
                 Although every case is different, communication disorders seen
-                most in treating adults are voice disorders, motor speech
-                disorders, other neurologically based communicative disorders,
-                and non-neurological disorders.
+                most in treating adults are{' '}
+                <strong>
+                  voice disorders, motor speech disorders, other neurologically
+                  based communicative disorders, and non-neurological disorders
+                </strong>
+                .
+              </p>
+
+              <p>
+                SATC is proud to offer an array of{' '}
+                <Link
+                  href="/services/speechtherapy"
+                  className="text-blue-500 hover:text-blue-600"
+                >
+                  speech
+                </Link>{' '}
+                and{' '}
+                <Link
+                  href="/services/occupationaltherapy"
+                  className="text-blue-500 hover:text-blue-600"
+                >
+                  occupational
+                </Link>{' '}
+                therapy services to adults to enhance their quality of life.
+                We've included some of our adult services and helpful
+                information below. Click to learn more! If you're interested in
+                further information or would like to call to schedule an
+                appointment, you can find our contact information{' '}
+                <Link
+                  href="/contact"
+                  className="text-blue-500 hover:text-blue-600"
+                >
+                  here
+                </Link>{' '}
               </p>
             </div>
             <div className="flex flex-col md:flex-row md:w-full md:mt-4 md:mx-4">
@@ -77,17 +107,9 @@ export default function AdultTherapy() {
               <div className="flex flex-col md:flex-row w-full mb-6 justify-center items-center">
                 <AdultDropdown />
               </div>
-
-              {/* SpeakOut Section*/}
             </div>
           </div>
-          {/* Spotify Player */}
         </div>
-      </div>
-
-      {/* Speak Out Banner and Dropdowns*/}
-      <div className="w-full max-w-4xl flex flex-col md:flex-row mx-auto md:ml-4">
-        <SpeakOutAlt />
       </div>
     </div>
   );
