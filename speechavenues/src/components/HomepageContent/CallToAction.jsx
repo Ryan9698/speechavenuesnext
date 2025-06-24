@@ -2,7 +2,7 @@ import { Phone } from 'lucide-react';
 
 export default function CallToAction() {
   return (
-    <div className="text-center lg:text-left p-4 bg-blue-100 rounded-lg border border-blue-300 shadow-sm">
+    <div className="text-center p-4 bg-blue-100 rounded-lg border border-blue-300 shadow-sm">
       <p className="font-semibold text-lg mb-2">
         For inquiries or appointments:
       </p>
