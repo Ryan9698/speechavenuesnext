@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Carousel from '@/components/Carousel';
-import adultSlides from '@/data/adultpicturesdata/AdultPictures';
+import adultSlides from '@/data/adultpicturesdata/adultCarousel';
 import AdultDropdown from './Dropdown';
 import SpeakOut from './SpeakOut';
 import SpeakOutAlt from './SpeakOutAlt';

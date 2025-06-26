@@ -1,5 +1,5 @@
 'use client';
-import { ShieldCheck, HeartHandshake, UserCheck, MapPin } from 'lucide-react';
+import { ShieldCheck, HeartHandshake, UserCheck, Activity } from 'lucide-react';
 
 export default function TrustBadges({ className = '' }) {
   const items = [
@@ -14,7 +14,11 @@ export default function TrustBadges({ className = '' }) {
       className: 'text-emerald-600',
       label: 'Licensed Therapists',
     },
-    { Icon: MapPin, className: 'text-indigo-600', label: 'Locally Owned' },
+    {
+      Icon: Activity,
+      className: 'text-indigo-600',
+      label: 'Neurodiversity Inclusive',
+    },
   ];
 
   return (

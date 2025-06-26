@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Carousel from '@/components/Carousel';
-import otSlides from '@/data/otpicturesdata/OTPictures';
+import otSlides from '@/data/otpicturesdata/otCarousel';
 import ModalClient from '@/components/Modal/ModalClient';
 import SensoryDisorder from './modalcontent/SensoryDisorder';
 import SensorySystem from './modalcontent/SensorySystem';

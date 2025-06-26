@@ -1,0 +1,1 @@
+export { speechSlides } from './speechCarousel';

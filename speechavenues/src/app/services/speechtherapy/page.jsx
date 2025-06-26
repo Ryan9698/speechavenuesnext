@@ -1,6 +1,6 @@
 import React from 'react';
-import Carousel from '@/components/Carousel';
-import speechSlides from '@/data/speechpicturesdata/SpeechPictures';
+import { TherapyCarousel } from '@/components';
+import { speechSlides } from '@/data';
 import VideoEmbed from '@/components/VideoEmbed/VideoEmbed';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -37,15 +37,18 @@ export default function SpeechTherapy() {
   return (
     <>
       <TransitionWrapper>
-        <div className="container mx-auto p-4 max-w-6xl mt-12">
+        <div className="container mx-auto p-4 max-w-5xl mt-12">
           {/* First Row: Carousel and Paragraph */}
           <div className="flex flex-col md:flex-row md:items-start md:mt-8 md:ml-6">
             <div className="w-full h-1/2 md:w-96 md:mr-4">
               {/* Carousel Container */}
-              <Carousel slides={speechSlides} className="w-full h-full" />
+              <TherapyCarousel
+                slides={speechSlides}
+                className="w-full h-full"
+              />
             </div>
             <div className="flex flex-col w-full md:w-2/3">
-              <h1 className="text-4xl font-bold text-gray-800 mt-8 font-dancing mx-auto text-center md:text-left md:mt-0 md:mx-6">
+              <h1 className="text-4xl font-bold text-gray-800 mt-8 font-nunito mx-auto text-center md:text-left md:mt-0 md:mx-6">
                 Speech Therapy
               </h1>
               <div className="bg-white p-6 flex flex-col space-y-5">
@@ -78,7 +81,7 @@ export default function SpeechTherapy() {
                   </strong>
                   .
                 </h2>
-                <p>
+                {/* <p>
                   We tailor communication strategies to break barriers and
                   foster independence, ensuring that each client can reach their
                   full potential.
@@ -86,7 +89,7 @@ export default function SpeechTherapy() {
                 <p className="italic">
                   “The most important thing in communication is hearing what
                   isn't being said.” - Peter Drucker
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
