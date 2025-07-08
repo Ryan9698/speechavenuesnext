@@ -1,1 +1,1 @@
-export { default as otSlides } from './otCarousel';
+export { otSlides } from './otCarousel';

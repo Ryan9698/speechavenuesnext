@@ -1,1 +1,1 @@
-export { default as adultSlides } from './adultCarousel';
+export { adultSlides } from './adultCarousel';
