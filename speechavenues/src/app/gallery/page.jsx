@@ -17,14 +17,16 @@ export const metadata = {
 export default function Gallery() {
   return (
     <>
-      <TransitionWrapper>
-        <div>
-          <h1 className="text-6xl font-bold mt-8 mb-8 cursiveFont text-center  pb-2">
-            Gallery
-          </h1>
-          <GalleryComponent />
-        </div>
-      </TransitionWrapper>
+      <div>
+        <h1 className="mt-24 text-6xl font-bold mb-8 font-nunito text-center font-gray-800 pb-2">
+          Gallery
+        </h1>
+        <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto px-6 md:px-0">
+          Explore moments from our staff, therapy sessions, and community
+          events.
+        </p>
+        <GalleryComponent />
+      </div>
     </>
   );
 }

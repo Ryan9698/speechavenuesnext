@@ -1,10 +1,13 @@
 export default function WhatIsOT() {
-  const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 mb-8 font-nunito mx-auto text-center md:text-left md:mt-8 md:mb-6`;
-
   return (
-    <div className="w-full md:mt-10">
-      <h3 className={`${header}`}>What is Occupational Therapy(OT)?</h3>
-      <p className="mt-2 px-8 text-center md:text-left">
+    <section className="border-l-4 border-indigo-500 bg-blue-50/50 rounded-md px-6 py-10 sm:px-10 max-w-4xl mx-auto my-12 shadow-sm">
+      <h2 className="text-3xl font-bold text-slate-800 dark:text-white text-center mb-4 font-nunito">
+        What is Occupational Therapy?
+      </h2>
+      <p className="text-center text-indigo-600 italic text-lg mb-6 font-nunito">
+        A whole-person approach to life skills and independence
+      </p>
+      <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-center md:text-left font-nunito">
         Occupational Therapy is a patient-centered profession that focuses on
         improving a person’s ability to perform everyday tasks. Through
         personalized treatment plans, OT helps individuals regain skills, build
@@ -13,6 +16,6 @@ export default function WhatIsOT() {
         and their environment to ensure they can thrive at home, school, work,
         and within other areas of the community.
       </p>
-    </div>
+    </section>
   );
 }

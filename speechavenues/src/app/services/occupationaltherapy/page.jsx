@@ -20,6 +20,7 @@ import OurFacility from './OurFacility';
 import CTA from './CTA';
 import FAQLinks from '@/components/FAQLinks/FAQLinks';
 import { otFaqTopics } from './faq/otFaqData';
+import { AnimatedWrapper } from '@/components/Animations';
 
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',
@@ -52,18 +53,20 @@ export default function OccupationalTherapy() {
       <TransitionWrapper>
         <div className="container p-4 mx-auto md:max-w-3xl lg:max-w-4xl mt-12">
           <OTHeader />
-          <WhatIsOT />
-
+          <AnimatedWrapper>
+            <WhatIsOT />
+          </AnimatedWrapper>
           {/* Fun Facts Section with Image*/}
 
           <FunFacts />
 
           {/* Services and Information Section */}
-
-          <WhoDoWeTreat />
+          <div className="bg-slate-100 py-16 px-4">
+            <WhoDoWeTreat />
+          </div>
           {/* Modals with All Additional Information */}
 
-          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6 md:mt-10 mb-6 sm:mb-0 lg:p-4">
+          {/* <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6 md:mt-10 mb-6 sm:mb-0 lg:p-4">
             <div className="">
               <ModalClient triggerLabel="Sensory Processing Disorder">
                 <SensoryDisorder />
@@ -89,7 +92,7 @@ export default function OccupationalTherapy() {
                 <TherapeuticYoga />
               </ModalClient>
             </div>
-          </div>
+          </div> */}
 
           <FAQLinks
             topics={otFaqTopics}
