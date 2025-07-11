@@ -1,0 +1,1 @@
+export { otSlides } from './otCarousel';

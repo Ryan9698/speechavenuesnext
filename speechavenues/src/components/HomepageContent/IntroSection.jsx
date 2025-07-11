@@ -9,7 +9,7 @@ export default function IntroSection() {
   return (
     <>
       <section className="max-w-5xl mx-auto px-4 mt-6 text-gray-800 mb-14">
-        <BannerImage className="mt-24 mb-12 rounded-xl" />
+        <BannerImage className="mt-24 md:mb-12 mb-8 rounded-xl" />
 
         <div className="flex flex-col lg:flex-row gap-10 items-start">
           {/* Main Content on the Left */}

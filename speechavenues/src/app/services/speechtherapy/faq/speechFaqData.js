@@ -1,94 +1,9 @@
-export default function SpeechDropdown() {
-  return (
-    <div className="space-y-1">
-      {/* <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
-                  <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
-                    Adult Therapy
-                  </summary>
-                  <div className="mt-3 text-base text-gray-700 leading-relaxed space-y-3">
-                    <p>
-                      Adults acquire speech and language disabilities through
-                      organic and nonorganic causes, such as a stroke,
-                      Parkinson’s, dementia, etc. Treatment for adults is known
-                      as rehabilitation. It is rehabilitation because the
-                      therapist is attempting to restore the previously learned
-                      skill. A nonorganic cause might be traumatic head injury
-                      from a car accident.
-                    </p>
-                    <p>
-                      Although every case is different, communication disorders
-                      seen most in treating adults are voice disorders, motor
-                      speech disorders, other neurologically based communicative
-                      disorders, and non-neurological disorders.
-                    </p>
-                    <h2 className="font-sans text-lg md:text-left text-center">
-                      Adult Dysphagia
-                    </h2>
-                    <p>
-                      Difficulty swallowing (<strong>dysphagia</strong>) means
-                      it takes more time and effort to move food or liquid from
-                      your mouth to your stomach. Dysphagia may also be
-                      associated with pain. In some cases, swallowing may be
-                      impossible. Occasional difficulty swallowing, which may
-                      occur when you eat too fast or do not chew your food well
-                      enough, usually is not a cause for concern, but persistent
-                      dysphagia may indicate a serious medical condition
-                      requiring treatment. Dysphagia can occur at any age, but
-                      it is more common in older adults. The causes of
-                      swallowing problems vary, and treatment depends on the
-                      cause.
-                    </p>
-                    <p className="font-sans text-center underline">
-                      Signs of dysphagia may include:
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2">
-                      <li>Drooling and poor oral management.</li>
-                      <li>
-                        Food or liquid remaining in the oral cavity after
-                        swallowing.
-                      </li>
-                      <li>
-                        Inability to maintain lip closure, leading to food
-                        and/or liquids leaking from the oral cavity.
-                      </li>
-                      <li>
-                        Food and/or liquids leaking from the nasal cavity.
-                      </li>
-                      <li>Complaints of food "sticking".</li>
-                      <li>
-                        Globus sensation or complaints of a "fullness" in the
-                        neck.
-                      </li>
-                      <li>Complaints of pain when swallowing.</li>
-                      <li>
-                        Wet or gurgled-sounding voice during or after eating or
-                        drinking.
-                      </li>
-                      <li>
-                        Coughing during or right after eating or drinking.
-                      </li>
-                      <li>Difficulty coordinating breathing and swallowing.</li>
-                      <li>
-                        Recurring aspiration pneumonia/respiratory infection
-                        and/or fever.
-                      </li>
-                      <li>Extra effort or time needed to chew or swallow.</li>
-                      <li>
-                        Changes in eating habits—specifically, avoidance of
-                        certain foods/drinks.
-                      </li>
-                      <li>
-                        Weight loss or dehydration from not being able to eat
-                        enough.
-                      </li>
-                    </ul>
-                  </div>
-                </details> */}
-
-      <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
-        <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
-          What is a Speech Disorder?
-        </summary>
+export const faqTopics = [
+  {
+    slug: 'what-is-a-speech-disorder',
+    title: 'What is a Speech Disorder?',
+    content: () => (
+      <>
         <div className="mt-3 text-base text-gray-700 leading-relaxed">
           <p>
             A speech disorder refers to difficulties in producing sounds
@@ -121,12 +36,14 @@ export default function SpeechDropdown() {
             approximate it as closely as possible.
           </p>
         </div>
-      </details>
-
-      <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
-        <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
-          What is Augmentative and Alternative Communication (AAC)?
-        </summary>
+      </>
+    ),
+  },
+  {
+    slug: 'what-is-aac',
+    title: 'What is Augmentative and Alternative Communication (AAC)?',
+    content: () => (
+      <>
         <div className="mt-3 text-base text-gray-700 leading-relaxed">
           <p>
             AAC is employed by individuals who cannot always depend on speech.
@@ -149,11 +66,14 @@ export default function SpeechDropdown() {
             </a>
           </p>
         </div>
-      </details>
-      <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
-        <summary className="font-sans text-center text-lg cursor-pointer text-gray-800">
-          Language Disorders
-        </summary>
+      </>
+    ),
+  },
+  {
+    slug: 'language-disorders',
+    title: 'Language Disorders',
+    content: () => (
+      <>
         <div className="mt-3 text-base text-gray-700 leading-relaxed">
           <p>
             Language disorders are diagnosed when children do not meet specific
@@ -183,11 +103,14 @@ export default function SpeechDropdown() {
             better the outcome. This therapy is called habilitation.
           </p>
         </div>
-      </details>
-      <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
-        <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
-          Feeding and Swallowing
-        </summary>
+      </>
+    ),
+  },
+  {
+    slug: 'feeding-and-swallowing',
+    title: 'Feeding and Swallowing',
+    content: () => (
+      <>
         <div className="mt-3 text-base text-gray-700 leading-relaxed">
           <p>
             The term feeding difficulties is a broad term used to describe a
@@ -303,11 +226,14 @@ export default function SpeechDropdown() {
             </p>
           </div>
         </div>
-      </details>
-      <details className="bg-white border border-gray-200 rounded-lg p-4 shadow-md">
-        <summary className="text-lg font-sans text-center cursor-pointer text-gray-800">
-          What is Myofunctional Therapy (OMT)?
-        </summary>
+      </>
+    ),
+  },
+  {
+    slug: 'myofunctional-therapy',
+    title: 'Myofunctional Therapy (OMT)',
+    content: () => (
+      <>
         <div className="mt-3 text-base text-gray-700 leading-relaxed space-y-4">
           <p>
             At SATC, we combine Oral Placement Therapy (OPT) with Myofunctional
@@ -355,7 +281,7 @@ export default function SpeechDropdown() {
             children in developing clearer, more precise speech.
           </p>
         </div>
-      </details>
-    </div>
-  );
-}
+      </>
+    ),
+  },
+];
