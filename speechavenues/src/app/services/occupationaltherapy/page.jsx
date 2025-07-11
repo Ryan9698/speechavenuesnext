@@ -21,6 +21,7 @@ import CTA from './CTA';
 import FAQLinks from '@/components/FAQLinks/FAQLinks';
 import { otFaqTopics } from './faq/otFaqData';
 import { AnimatedWrapper } from '@/components/Animations';
+import { WindowSize, AnimationLogger, DebugMount } from '@/components';
 
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',
@@ -50,6 +51,9 @@ const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 mb-8 font-nuni
 export default function OccupationalTherapy() {
   return (
     <>
+      <WindowSize />
+      <AnimationLogger name="OT" />
+      <DebugMount name="OT" />
       <TransitionWrapper>
         <div className="container p-4 mx-auto md:max-w-3xl lg:max-w-4xl mt-12">
           <OTHeader />
@@ -60,10 +64,8 @@ export default function OccupationalTherapy() {
 
           <FunFacts />
 
-          {/* Services and Information Section */}
-          <div className="bg-slate-100 py-16 px-4">
-            <WhoDoWeTreat />
-          </div>
+          <WhoDoWeTreat />
+
           {/* Modals with All Additional Information */}
 
           {/* <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly gap-2 mt-6 md:mt-10 mb-6 sm:mb-0 lg:p-4">

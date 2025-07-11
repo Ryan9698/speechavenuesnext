@@ -17,7 +17,7 @@ export default function TherapyCarousel({ slides }) {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full max-w-3xl aspect-[16/9] mx-auto overflow-hidden rounded-xl shadow-lg">
+    <div className="relative w-full max-w-3xl aspect-[4/3] mx-auto overflow-hidden rounded-xl shadow-lg">
       <AnimatePresence mode="wait">
         <motion.div
           key={index}

@@ -3,6 +3,7 @@
 import React from 'react';
 import GalleryComponent from '@/components/GalleryComponent//GalleryComponent';
 import { TransitionWrapper } from '@/components/Animations';
+// import { AnimationLogger, DebugMount } from '@/components';
 
 export const metadata = {
   title: 'Gallery - Speech Avenues Therapy Co.',
@@ -17,6 +18,8 @@ export const metadata = {
 export default function Gallery() {
   return (
     <>
+      {/* <DebugMount name="Gallery" />
+      <AnimationLogger name="Gallery" /> */}
       <div>
         <h1 className="mt-24 text-6xl font-bold mb-8 font-nunito text-center font-gray-800 pb-2">
           Gallery
