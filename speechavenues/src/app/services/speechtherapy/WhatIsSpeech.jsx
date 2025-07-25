@@ -3,7 +3,7 @@ import VideoEmbed from '@/components/VideoEmbed/VideoEmbed';
 
 export default function WhatIsSpeech() {
   return (
-    <div className="bg-blue-100/70 dark:bg-gray-900 rounded mx-6 mb-2 p-4 pb-6">
+    <section className="bg-indigo-50/70 border-r-4 border-indigo-300 shadow-sm rounded py-12 px-6 mt-12 mb-12">
       <h3 className="text-4xl font-nunito font-bold text-center text-gray-800 mb-4">
         What is Speech?
       </h3>
@@ -23,13 +23,13 @@ export default function WhatIsSpeech() {
         </li>
 
         {/* YOUTUBE VIDEO COMPONENT */}
-        <div className="float-right w-full md:w-1/2 md:ml-8 mb-10 md:mb-4 space-y-2">
-          <div className="shadow-lg rounded-lg overflow-hidden mb-8 w-full md:w-96">
+        <div className="float-right w-full md:max-w-sm lg:max-w-md md:ml-8 mb-6 lg:p-4">
+          <div className="shadow-lg rounded-lg overflow-hidden">
             <VideoEmbed
               videoId="dCoWv8yV8qk"
               width={640}
               height={360}
-              className="w-full h-auto"
+              className="w-full aspect-video"
             />
           </div>
         </div>
@@ -60,6 +60,6 @@ export default function WhatIsSpeech() {
         various speech disorders to help individuals communicate clearly and
         confidently.
       </p>
-    </div>
+    </section>
   );
 }

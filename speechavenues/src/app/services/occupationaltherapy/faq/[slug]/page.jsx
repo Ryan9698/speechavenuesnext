@@ -1,18 +1,19 @@
-// app/speechtherapy/faq/[slug]/page.jsx
+// app/occupationaltherapy/faq/[slug]/page.jsx
 
 import { otFaqTopics } from '../otFaqData';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
-export function generateMetadata({ params }) {
-  const topic = otFaqTopics.find((t) => t.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const topic = otFaqTopics.find((t) => t.slug === slug);
   if (!topic) return {};
 
   return {
     title: `${topic.title} | Occupational Therapy FAQs`,
     description: `Learn about ${topic.title.toLowerCase()} and how it relates to occupational therapy and developmental support.`,
     alternates: {
-      canonical: `/services/occupationaltherapy/faq/${topic.slug}`,
+      canonical: `/services/occupationaltherapy/faq/${slug}`,
     },
   };
 }
@@ -21,13 +22,9 @@ export async function generateStaticParams() {
   return otFaqTopics.map((t) => ({ slug: t.slug }));
 }
 
-export default function FAQTopicPage({ params }) {
-  console.log('params.slug:', params.slug);
-  console.log(
-    'faqTopics:',
-    otFaqTopics.map((t) => t.slug)
-  );
-  const topic = otFaqTopics.find((t) => t.slug === params.slug);
+export default async function FAQTopicPage({ params }) {
+  const { slug } = await params;
+  const topic = otFaqTopics.find((t) => t.slug === slug);
 
   if (!topic) return notFound();
 

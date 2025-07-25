@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { Mic } from 'lucide-react';
 import Image from 'next/image';
 
-export default function SpeakOutFooter() {
+export default function SpeakOut() {
   return (
-    <section className="bg-indigo-50/70 py-10 border-r-4 border-indigo-400 rounded-md shadow-md px-8 flex flex-col xl:flex-row items-center gap-8 mb-10">
+    <section className="bg-indigo-50/70 py-10 border-r-4 border-indigo-400 rounded-md shadow-md px-8 flex flex-col xl:flex-row items-center gap-8 ">
       <Image
         src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1735691402/Speech%20Avenues/Adult%20Therapy/adult1_ebjfnm.webp"
         alt="PAtient with Speak Out literature"

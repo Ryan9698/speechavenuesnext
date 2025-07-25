@@ -51,14 +51,13 @@ const header = `font-bold text-gray-800 text-3xl md:text-3xl mt-8 mb-8 font-nuni
 export default function OccupationalTherapy() {
   return (
     <>
-      <WindowSize />
-      <AnimationLogger name="OT" />
-      <DebugMount name="OT" />
       <TransitionWrapper>
-        <div className="container p-4 mx-auto md:max-w-3xl lg:max-w-4xl mt-12">
+        <div className="container p-4 mx-auto md:max-w-3xl lg:max-w-4xl space-y-16 my-12">
           <OTHeader />
           <AnimatedWrapper>
-            <WhatIsOT />
+            <div className="">
+              <WhatIsOT />
+            </div>
           </AnimatedWrapper>
           {/* Fun Facts Section with Image*/}
 
@@ -95,12 +94,12 @@ export default function OccupationalTherapy() {
               </ModalClient>
             </div>
           </div> */}
-
-          <FAQLinks
-            topics={otFaqTopics}
-            basePath="/services/occupationaltherapy/faq"
-          />
-
+          <div className="">
+            <FAQLinks
+              topics={otFaqTopics}
+              basePath="/services/occupationaltherapy/faq"
+            />
+          </div>
           {/* Why Choose Us Section (Photo and Text) */}
 
           <WhyChooseUs />
@@ -109,6 +108,7 @@ export default function OccupationalTherapy() {
           <OurFacility />
 
           {/* Call to Action */}
+
           <CTA />
         </div>
       </TransitionWrapper>

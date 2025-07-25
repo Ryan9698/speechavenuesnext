@@ -1,7 +1,7 @@
 'use client';
 import { ShieldCheck, HeartHandshake, UserCheck, Activity } from 'lucide-react';
 
-export default function TrustBadges({ className = '' }) {
+export default function TrustBadges({ horizontal = false }) {
   const items = [
     { Icon: ShieldCheck, className: 'text-sky-600', label: 'HIPAA Compliant' },
     {
@@ -23,7 +23,11 @@ export default function TrustBadges({ className = '' }) {
 
   return (
     <div
-      className={`grid grid-cols-2 gap-6 sm:gap-x-10 sm:gap-y-8 justify-items-center ${className}`}
+      className={
+        horizontal
+          ? 'flex flex-wrap gap-6 justify-center sm:justify-start'
+          : 'grid grid-cols-2 gap-6 sm:gap-x-10 sm:gap-y-8 justify-items-center'
+      }
     >
       {items.map(({ Icon, label, className }) => (
         <div key={label} className="flex flex-col items-center text-center">

@@ -2,7 +2,7 @@ export default function WhatIsOT() {
   return (
     <section
       aria-labelledby="what-is-occupational-therapy"
-      className="border-l-4 border-indigo-500 bg-blue-50/50 rounded-md px-6 py-10 sm:px-10 max-w-4xl mx-auto my-12 shadow-sm"
+      className="border-l-4 border-indigo-300 bg-indigo-50/70 rounded-md px-6 py-10 sm:px-10 max-w-4xl mx-auto shadow-sm"
     >
       {/* WhatIsOT Header */}
       <header>

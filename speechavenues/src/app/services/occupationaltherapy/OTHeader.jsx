@@ -31,7 +31,7 @@ export default function OTHeader() {
       </div>
 
       {/* OT Carousel */}
-      <div className="flex-shrink-0 w-full max-w-[300px] sm:max-w-[340px] md:max-w-[300px] aspect-[4/3] rounded-xl overflow-hidden shadow-lg mx-auto md:mt-8 ">
+      <div className="flex-shrink-0 w-full max-w-[300px] sm:max-w-[340px] md:max-w-[300px] aspect-[4/3] rounded-xl overflow-hidden shadow-lg mx-auto md:mt-12 ">
         <TherapyCarousel slides={otSlides} />
       </div>
     </section>

@@ -5,18 +5,20 @@ export default function FunFacts() {
   return (
     <section
       aria-labelledby="fun-facts"
-      className="bg-indigo-50/30 rounded-xl px-6 py-10 mt-12 shadow max-w-5xl mx-auto mb-12"
+      className="bg-white rounded-xl px-6 max-w-5xl mx-auto "
     >
       <div className="flex flex-col md:flex-row items-center gap-8">
         {/* Left: Image */}
         <div className="flex justify-center md:w-1/3">
-          <Image
-            src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736019709/Speech%20Avenues/Occupational%20Therapy/large/otpage2_fmxf4n.webp"
-            alt="Child Occupational Therapy Writing"
-            height={300}
-            width={300}
-            className="rounded-full shadow-xl max-w-[300px] w-full h-auto"
-          />
+          <div className="w-[250px] sm:w-[280px] md:w-[300px]">
+            <Image
+              src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736019709/Speech%20Avenues/Occupational%20Therapy/large/otpage2_fmxf4n.webp"
+              alt="Child Occupational Therapy Writing"
+              height={300}
+              width={300}
+              className="rounded-full shadow-xl w-full h-auto"
+            />
+          </div>
         </div>
 
         {/* Right: Content */}

@@ -1,78 +1,120 @@
-import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTiktok,
+} from 'react-icons/fa';
+import { Phone, Mail, MapPin } from 'lucide-react'; // Keep for contact info icons
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   const address = '107 Longwood Ave, Rockledge, FL 32955';
   const encodedAddress = encodeURIComponent(address);
-  const facebookUrl = 'https://www.facebook.com/speechavenuestherapyco/';
 
   return (
-    <footer className="bg-gradient-to-r from-black to-gray-800 text-white shadow-md">
-      <div className="container mx-auto md:px-4 py-10 md:py-8">
-        <div className="flex flex-col md:flex-row items-center md:justify-between space-y-3">
-          {/* Address */}
-          <a
-            href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:underline flex-1"
-          >
-            {address}
-          </a>
-
-          {/* Social Media Icons */}
-          <div className="flex items-center space-x-4 flex-grow justify-center">
-            <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/PNG Icons/256/Facebook.png"
-                alt="Facebook"
-                width={36}
-                height={36}
-                className="hover:scale-150 transition-transform duration-200"
-              />
+    <footer className="bg-gradient-to-r from-black to-gray-800 text-gray-300 pt-10 pb-6 mt-12">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Column 1: Logo + Address + Contact */}
+        <div className="space-y-4">
+          <p className="flex items-center gap-2">
+            <MapPin size={18} className="text-indigo-400" />
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {address}
             </a>
-            <Image
-              src="/PNG Icons/256/Instagram.png"
-              alt="Instagram"
-              width={36}
-              height={36}
-              className="hover:scale-150 transition-transform duration-200"
-            />
-            <Image
-              src="/PNG Icons/256/Linkedin.png"
-              alt="LinkedIn"
-              width={36}
-              height={36}
-              className="hover:scale-150 transition-transform duration-200"
-            />
-            <Image
-              src="/PNG Icons/256/TikTok.png"
-              alt="TikTok"
-              width={36}
-              height={36}
-              className="hover:scale-150 transition-transform duration-200"
-            />
-          </div>
+          </p>
+          <p className="flex items-center gap-2">
+            <Phone size={18} className="text-indigo-400" />
+            <a href="tel:+13213382419" className="hover:underline">
+              (321) 338-2419
+            </a>
+          </p>
+          <p className="flex items-center gap-2">
+            <Mail size={18} className="text-indigo-400" />
+            <a
+              href="mailto:admin@speechavenues.com"
+              className="hover:underline"
+            >
+              admin@speechavenues.com
+            </a>
+          </p>
+        </div>
 
-          {/* Copyright and Website By */}
-          <div className="flex flex-col items-center text-center flex-1">
-            <div className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} Speech Avenues Therapy. All
-              rights reserved.
-            </div>
-            <div className="text-gray-500 text-sm mt-1">
-              Web Design by{' '}
-              <a
-                href="https://www.ryancaltabiano.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:underline"
-              >
-                Ryan Caltabiano
-              </a>
-            </div>
+        {/* Column 2: Quick Links */}
+        <div>
+          <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/services" className="hover:text-indigo-400">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link href="/forms" className="hover:text-indigo-400">
+                Intake Forms
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-indigo-400">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="/gallery" className="hover:text-indigo-400">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link href="/school" className="hover:text-indigo-400">
+                School
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 3: Social Media */}
+        <div>
+          <h3 className="text-white text-lg font-semibold mb-4">Follow Us</h3>
+          <div className="flex space-x-4 text-xl">
+            <a
+              href="https://www.facebook.com/speechavenuestherapyco/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-indigo-400 transition"
+            >
+              <FaFacebookF />
+            </a>
+            <a href="#" className="hover:text-indigo-400 transition">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-indigo-400 transition">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" className="hover:text-indigo-400 transition">
+              <FaTiktok />
+            </a>
           </div>
         </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-500">
+        &copy; {year} Speech Avenues Therapy Co. All rights reserved. | Web
+        Design by{' '}
+        <a
+          href="https://webpulsedesigns.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-indigo-400"
+        >
+          Webpulse
+        </a>
       </div>
     </footer>
   );

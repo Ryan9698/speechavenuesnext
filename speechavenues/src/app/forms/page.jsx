@@ -18,11 +18,11 @@ export default function Forms() {
       <TransitionWrapper>
         <div className="container mx-auto p-4 max-w-3xl">
           <div>
-            <h1 className="text-5xl font-bold mb-6 cursiveFont text-center mt-6 md:mt-2">
+            <h1 className="text-5xl text-gray-800 font-bold mb-6 font-nunito tracking-tight text-center my-20">
               Patient Intake Forms
             </h1>
           </div>
-          <h2 className="mt-4 leading-loose text-center md:text-left">
+          <h2 className="mt-4 text-gray-700 leading-loose text-center md:text-left">
             Below you will find downloadable intake forms for our services. We
             ask that you please print out these forms and fill them out before
             you arrive.

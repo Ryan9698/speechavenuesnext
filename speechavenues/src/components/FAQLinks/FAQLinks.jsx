@@ -3,10 +3,10 @@ import { HelpCircle } from 'lucide-react';
 
 export default function FAQLinks({ topics = [], basePath = '' }) {
   return (
-    <section aria-labelledby="faqs" className="mt-16 px-4 md:px-6">
+    <section aria-labelledby="faqs" className=" px-4 md:px-6">
       <h2
         id="faq-heading"
-        className="text-2xl font-bold text-gray-900 mb-6 text-center md:text-left font-nunito"
+        className="text-2xl font-bold text-gray-900  text-center md:text-left font-nunito mb-10"
       >
         General Information and Frequently Asked Questions
       </h2>

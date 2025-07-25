@@ -14,7 +14,7 @@ export default function WhoDoWeTreat() {
   return (
     <section
       aria-labelledby="what-do-we-treat"
-      className="bg-indigo-50/30 rounded-md px-y py-6 md:px-8 lg:px-12 xl:px-20 max-w-screen-xl mx-auto"
+      className="bg-indigo-50/70 border-r-4 border-indigo-300 shadow-sm rounded-md px-y py-12 md:px-8 lg:px-12 xl:px-20 max-w-screen-xl mx-auto"
     >
       <h2 className={`${header}`}>What Do We Treat?</h2>
 
@@ -72,13 +72,13 @@ export default function WhoDoWeTreat() {
 
         {/* Neurological Disorders w/ Image */}
         <li className="relative px-2 md:px-4">
-          <div className="md:float-right md:ml-6 md:mb-4 mb-12 max-w-[250px] w-full shrink-0 mx-auto">
+          <div className="md:float-right md:ml-6 md:mb-4 mb-12 w-[250px] sm:w-[280px] md:w-[300px] shrink-0 mx-auto">
             <Image
               src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1736020698/Speech%20Avenues/Occupational%20Therapy/large/otpage3_s1p6pw.webp"
               alt="Child Occupational Therapy Writing"
-              width={250}
-              height={250}
-              className="rounded-full shadow-xl w-full h-auto"
+              width={300}
+              height={300}
+              className="rounded-full shadow-xl w-full h-auto md:-mt-8"
             />
           </div>
           <div className="flex gap-2 items-start">

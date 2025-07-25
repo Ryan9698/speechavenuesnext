@@ -2,16 +2,15 @@ import Image from 'next/image';
 
 export default function WhyChooseUs() {
   return (
-    <section>
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6">
-          <div className="flex-1 text-center md:text-left mt-6 md:mt-8 lg:mt-20">
-            <h2
-              className={`font-bold text-gray-800 text-3xl font-nunito mx-auto text-center md:mt-8 md:mb-8 mb-4`}
-            >
+    <section className="bg-indigo-50/70 border-r-4 border-indigo-300 shadow-sm rounded py-12 px-6 mt-16 mb-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:items-start gap-10 lg:gap-16">
+          {/* Text */}
+          <div className="flex-1 text-center lg:text-left">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 font-nunito mb-6">
               Why Choose Us?
             </h2>
-            <p className="px-8 text-center mb-4 md:mb-0">
+            <p className="text-base text-gray-700 leading-relaxed max-w-prose mx-auto lg:mx-0">
               At Speech Avenues Therapy Co, we are committed to making a
               difference. Our team of experienced therapists use approaches
               created for personalized treatment plans that support both
@@ -20,14 +19,18 @@ export default function WhyChooseUs() {
               who they are.
             </p>
           </div>
-          {/* Therapy Image */}
-          <div className="flex-shrink-0 mt-6 mb-4 sm:mb-0">
+
+          {/* Image */}
+          <div className="flex-shrink-0 w-64 sm:w-64 md:w-80 lg:w-80 xl:w-72">
             <Image
               src="https://res.cloudinary.com/dfchcqbiq/image/upload/v1735521679/Speech%20Avenues/Occupational%20Therapy/large/otpage_hhmy8s.webp"
               alt="Child Occupational Therapy"
-              width={275}
-              height={275}
-              className="mx-auto md:mr-8 md:mt-8 rounded-lg shadow-xl h-96 w-96 sm:h-auto sm:w-auto"
+              className="rounded-full object-cover shadow-xl w-full max-w-[18rem] md:max-w-sm lg:max-w-md"
+              width={0}
+              height={0}
+              sizes="(min-width: 1024px) 320px, 100vw"
+              priority
+              style={{ height: 'auto' }}
             />
           </div>
         </div>
