@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 export default function AACDevice() {
   return (
-    <div className="p-6 bg-white text-gray-800 rounded-lg max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
+    <div className="px-6 bg-white text-gray-800 rounded-lg max-w-4xl mx-auto">
+      {/* <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
         What is an AAC Device? How do we use it?
-      </h2>
+      </h2> */}
       <p className="mb-4">
         The{' '}
         <span className="italic">

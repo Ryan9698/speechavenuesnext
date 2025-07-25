@@ -7,7 +7,7 @@ import WhatIsAutism from '../faqcontent/WhatIsAutism';
 export const otFaqTopics = [
   {
     slug: 'sensory-processing-disorder',
-    title: 'Sensory Processing Disorder',
+    title: 'What is Sensory Processing Disorder?',
     content: () => <SensoryDisorder />,
   },
   {

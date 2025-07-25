@@ -4,9 +4,9 @@ import Link from 'next/link';
 export default function SensoryDisorder() {
   return (
     <div className="md:p-6 bg-white text-gray-800 max-h-[70vh]">
-      <h2 className="text-3xl text-center font-bold mb-4 text-gray-800">
+      {/* <h2 className="text-3xl text-center font-bold mb-4 text-gray-800">
         What is Sensory Processing Disorder (SPD)?
-      </h2>
+      </h2> */}
       <p className="mb-4">
         Per{' '}
         <Link

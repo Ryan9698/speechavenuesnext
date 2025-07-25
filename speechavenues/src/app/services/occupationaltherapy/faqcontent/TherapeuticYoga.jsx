@@ -3,9 +3,9 @@ import React from 'react';
 export default function TherapeuticYoga() {
   return (
     <div className="flex flex-col md:p-6 bg-white text-gray-800">
-      <h2 className="text-3xl text-center font-bold mb-4 text-gray-800">
+      {/* <h2 className="text-3xl text-center font-bold mb-4 text-gray-800">
         Therapeutic Yoga
-      </h2>
+      </h2> */}
 
       <p className="mb-4">
         Speech Avenues incorporates evidence-based practices from yoga into

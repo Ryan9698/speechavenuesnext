@@ -4,9 +4,9 @@ import Link from 'next/link';
 export default function WhatIsAutism() {
   return (
     <div className="flex flex-col md:p-6 bg-white text-gray-800">
-      <h2 className="text-3xl text-center font-bold mb-4 text-gray-800">
+      {/* <h2 className="text-3xl text-center font-bold mb-4 text-gray-800">
         What is Autism Spectrum Disorder (ASD)?
-      </h2>
+      </h2> */}
 
       <p className="mb-4">
         Per the{' '}
