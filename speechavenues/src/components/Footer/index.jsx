@@ -51,8 +51,27 @@ const Footer = () => {
           <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/services" className="hover:text-indigo-400">
-                Services
+              <Link
+                href="/services/speechtherapy"
+                className="hover:text-indigo-400"
+              >
+                Speech Therapy
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/occupationaltherapy"
+                className="hover:text-indigo-400"
+              >
+                Occupational Therapy
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/adulttherapy"
+                className="hover:text-indigo-400"
+              >
+                Adult Therapy
               </Link>
             </li>
             <li>
