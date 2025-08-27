@@ -1,4 +1,5 @@
 import '@/assets/styles/globals.css';
+import { Suspense } from 'react';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics/GoogleAnalytics';
@@ -112,10 +113,17 @@ export default function RootLayout({ children }) {
         <GoogleAnalytics />
         <ConsentProvider>
           <ConsentBanner />
-          <AnalyticsProvider />
-          <Navbar />
+          <Suspense fallback={null}>
+            <AnalyticsProvider />
+          </Suspense>
+
+          <Suspense fallback={null}>
+            <Navbar />
+          </Suspense>
           <main className="flex-grow">{children}</main>
-          <Footer />
+          <Suspense fallback={null}>
+            <Footer />
+          </Suspense>
         </ConsentProvider>
       </body>
     </html>

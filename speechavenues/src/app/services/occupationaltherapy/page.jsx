@@ -21,7 +21,6 @@ import CTA from './CTA';
 import FAQLinks from '@/components/FAQLinks/FAQLinks';
 import { otFaqTopics } from './faq/otFaqData';
 import { AnimatedWrapper } from '@/components/Animations';
-import { WindowSize, AnimationLogger, DebugMount } from '@/components';
 
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',

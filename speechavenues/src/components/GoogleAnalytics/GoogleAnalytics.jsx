@@ -45,10 +45,10 @@ export default function GoogleAnalytics() {
       <Script
         id="gtag-src"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_IDS[0]}`}
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       {/* Init dataLayer + deny-by-default consent + multi-ID config */}
-      <Script id="gtag-init" strategy="beforeInteractive">
+      <Script id="gtag-init" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){ dataLayer.push(arguments); }
