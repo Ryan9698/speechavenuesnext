@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return faqTopics.map((t) => ({ slug: t.slug }));
 }
 

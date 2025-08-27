@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return adultFaqTopics.map((t) => ({ slug: t.slug }));
 }
 
