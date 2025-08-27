@@ -1,7 +1,10 @@
 import '@/assets/styles/globals.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
-import GoogleAnalytics from '@/components/Analytics/Analytics';
+import GoogleAnalytics from '@/components/GoogleAnalytics/GoogleAnalytics';
+import AnalyticsProvider from './analytics-provider';
+import { ConsentProvider } from '@/components/ConsentProvider/ConsentProvider';
+import ConsentBanner from '@/components/ConsentBanner/ConsentBanner';
 import {
   nunitoSans,
   quicksand,
@@ -107,9 +110,13 @@ export default function RootLayout({ children }) {
     >
       <body className="flex flex-col min-h-screen font-nunito">
         <GoogleAnalytics />
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <ConsentProvider>
+          <ConsentBanner />
+          <AnalyticsProvider />
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </ConsentProvider>
       </body>
     </html>
   );
