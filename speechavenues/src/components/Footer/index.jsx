@@ -11,7 +11,9 @@ import { Phone, Mail, MapPin } from 'lucide-react'; // Keep for contact info ico
 const Footer = () => {
   const year = new Date().getFullYear();
   const address = '107 Longwood Ave, Rockledge, FL 32955';
+  const address2 = '1071 Port Malabar Blvd, Suite 206, Palm Bay FL 32905';
   const encodedAddress = encodeURIComponent(address);
+  const encodedAddress2 = encodeURIComponent(address2);
 
   return (
     <footer className="bg-gradient-to-r from-black to-gray-800 text-gray-300 pt-10 pb-6 mt-12">
@@ -27,6 +29,17 @@ const Footer = () => {
               className="hover:underline"
             >
               {address}
+            </a>
+          </p>
+          <p className="flex items-center gap-2">
+            <MapPin size={18} className="text-indigo-400" />
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress2}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {address2}
             </a>
           </p>
           <p className="flex items-center gap-2">

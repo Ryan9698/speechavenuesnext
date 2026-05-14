@@ -10,9 +10,9 @@ export default function IntroSection() {
       {/* Banner */}
       <BannerImage className="mt-24 md:mb-12 mb-8 rounded-xl" />
 
-      <div className="flex flex-col lg:flex-row gap-12  items-start">
+      <div className="flex flex-col lg:flex-row gap-12  justify-center">
         {/* Left Column: Intro Text + CTA + Badges */}
-        <div className="lg:w-2/3 w-full space-y-8 text-base md:text-lg text-gray-700 leading-relaxed">
+        <div className="w-full space-y-8 text-base md:text-lg text-gray-700 leading-relaxed">
           <p>
             Welcome to <strong>Speech Avenues Therapy Co. (S.A.T.C)</strong>,
             where we redefine possibilities through our professional{' '}
@@ -41,7 +41,7 @@ export default function IntroSection() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start ">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <a
               href="tel:+13213382419"
               className="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-lg"
@@ -59,13 +59,13 @@ export default function IntroSection() {
           </div>
 
           {/* Trust Badges in Horizontal Row */}
-          <div className="mt-6 flex flex-wrap gap-6 justify-center sm:justify-start">
+          <div className="mt-6 flex flex-wrap gap-6 justify-center ">
             <TrustBadges horizontal />
           </div>
         </div>
 
         {/* Right Column: Office Image */}
-        <div className="lg:w-1/3 w-full">
+        {/* <div className="lg:w-1/3 w-full">
           <Image
             src="/images/mainpageimages/newoffice.webp"
             alt="Speech Avenues Office"
@@ -74,7 +74,7 @@ export default function IntroSection() {
             className="rounded-xl shadow-md object-cover w-full"
             priority
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
