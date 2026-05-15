@@ -8,6 +8,7 @@ import WhatIsSpeech from './WhatIsSpeech';
 import SpeechHeader from './SpeechHeader';
 import { FAQLinks } from '@/components';
 import { faqTopics } from './faq/speechFaqData';
+import JoinTeamCTA from '@/components/JoinTeamCTA/JoinTeamCTA';
 
 export const metadata = {
   title: 'Speech Therapy - Speech Avenues Therapy Co.',
@@ -52,6 +53,7 @@ export default function SpeechTherapy() {
           </div>
           <div className="mt-16 mb-12">
             <SpeakOut />
+            <JoinTeamCTA className="mt-16 border-l-4 border-indigo-400" />
           </div>
         </div>
       </TransitionWrapper>

@@ -9,6 +9,7 @@ import AdultHeader from './AdultHeader';
 import { adultFaqTopics } from './faq/adultFaqData';
 import FAQLinks from '@/components/FAQLinks/FAQLinks';
 import { SpeakOut } from '@/components';
+import JoinTeamCTA from '@/components/JoinTeamCTA/JoinTeamCTA';
 
 export const metadata = {
   title: 'Speech Avenues Adult Therapy',
@@ -48,6 +49,7 @@ export default function AdultTherapy() {
           </div>
           <div className="">
             <SpeakOut />
+            <JoinTeamCTA className="mt-16 border-l-4 border-indigo-400" />
           </div>
         </div>
       </TransitionWrapper>

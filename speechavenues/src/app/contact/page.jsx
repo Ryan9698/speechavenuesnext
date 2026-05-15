@@ -83,6 +83,21 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <section className="mx-auto px-6 max-w-3xl text-center">
+          <h2 className="text-2xl font-bold text-gray-800">
+            Interested in Joining Our Team?
+          </h2>
+          <p className="mt-3 text-gray-700">
+            For information about potential opportunities with Speech Avenues
+            Therapy Co., please contact our office directly.
+          </p>
+          <a
+            href="tel:+13213382419"
+            className="mt-5 inline-flex rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white"
+          >
+            Call 321-338-2419
+          </a>
+        </section>
       </TransitionWrapper>
     </>
   );

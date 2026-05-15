@@ -21,6 +21,7 @@ import CTA from './CTA';
 import FAQLinks from '@/components/FAQLinks/FAQLinks';
 import { otFaqTopics } from './faq/otFaqData';
 import { AnimatedWrapper } from '@/components/Animations';
+import JoinTeamCTA from '@/components/JoinTeamCTA/JoinTeamCTA';
 
 export const metadata = {
   title: 'Speech Avenues Occupational Therapy',
@@ -109,6 +110,7 @@ export default function OccupationalTherapy() {
           {/* Call to Action */}
 
           <CTA />
+          <JoinTeamCTA className="mt-16 border-r-4 border-indigo-400" />
         </div>
       </TransitionWrapper>
     </>

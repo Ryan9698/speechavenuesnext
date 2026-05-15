@@ -12,7 +12,7 @@ export default function IntroSection() {
 
       <div className="flex flex-col lg:flex-row gap-12  justify-center">
         {/* Left Column: Intro Text + CTA + Badges */}
-        <div className="w-full space-y-8 text-base md:text-lg text-gray-700 leading-relaxed">
+        <div className="w-full max-w-2xl mx-auto space-y-10 text-base md:text-lg text-gray-700 leading-relaxed">
           <p>
             Welcome to <strong>Speech Avenues Therapy Co. (S.A.T.C)</strong>,
             where we redefine possibilities through our professional{' '}

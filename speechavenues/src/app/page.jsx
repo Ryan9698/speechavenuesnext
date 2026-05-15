@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { IntroSection } from '@/components/HomepageContent';
+import JoinTeamCTA from '@/components/JoinTeamCTA/JoinTeamCTA';
 
 export const metadata = {
   title: {
@@ -32,6 +33,7 @@ export default function Home() {
   return (
     <>
       <IntroSection />
+      <JoinTeamCTA className="mt-16" />
     </>
   );
 }
