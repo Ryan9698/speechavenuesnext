@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function JoinTeamCTA({ className = '' }) {
   return (
     <section
-      className={`mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-blue-50/70 px-6 py-8 text-center shadow-sm ${className}`}
+      className={`mx-auto max-w-3xl rounded-2xl border border-blue-100 bg-blue-50/70 px-6 py-8 text-center shadow-sm ${className}`}
     >
       <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">
         Careers at Speech Avenues

@@ -1,5 +1,6 @@
 import React from 'react';
 import { TransitionWrapper } from '@/components/Animations';
+import GoogleReviewCTA from '@/components/GoogleReviewCTA/GoogleReviewCTA';
 
 export const metadata = {
   title: 'Speech Avenues Therapy - Contact Us',
@@ -83,7 +84,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <section className="mx-auto px-6 max-w-3xl text-center">
+        <section className="mx-auto px-6 max-w-3xl text-center mb-12">
           <h2 className="text-2xl font-bold text-gray-800">
             Interested in Joining Our Team?
           </h2>
@@ -98,6 +99,7 @@ export default function Contact() {
             Call 321-338-2419
           </a>
         </section>
+        <GoogleReviewCTA />
       </TransitionWrapper>
     </>
   );
