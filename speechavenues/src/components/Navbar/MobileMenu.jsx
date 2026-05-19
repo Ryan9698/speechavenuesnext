@@ -17,7 +17,7 @@ const navLinks = [
   { href: '/forms', label: 'Forms' },
   { href: '/contact', label: 'Contact' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/school', label: 'School', isSchool: true },
+  { href: 'https://satc-cca.org', label: 'School', isSchool: true },
 ];
 
 export default function MobileMenu({ isOpen, setIsOpen }) {
@@ -89,7 +89,12 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
                   </AnimatePresence>
                 </div>
               ) : (
-                <Link key={href} href={href}>
+                <Link
+                  key={href}
+                  href={href}
+                  target={isSchool ? '_blank' : undefined}
+                  rel={isSchool ? 'noopener noreferrer' : undefined}
+                >
                   <span
                     onClick={() => setIsOpen(false)}
                     className={`${
@@ -99,7 +104,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
                     {label}
                   </span>
                 </Link>
-              )
+              ),
             )}
           </nav>
         </motion.div>

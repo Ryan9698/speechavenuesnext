@@ -103,7 +103,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/school" className="hover:text-indigo-400">
+              <Link
+                href="https://satc-cca.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-indigo-400"
+              >
                 School
               </Link>
             </li>

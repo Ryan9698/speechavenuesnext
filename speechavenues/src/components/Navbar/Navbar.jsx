@@ -19,7 +19,7 @@ const navLinks = [
   { href: '/forms', label: 'Forms' },
   { href: '/contact', label: 'Contact' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/school', label: 'School', isSchool: true },
+  { href: 'https://satc-cca.org', label: 'School', isSchool: true },
 ];
 
 export default function Navbar() {
@@ -104,7 +104,12 @@ export default function Navbar() {
                   </AnimatePresence>
                 </div>
               ) : (
-                <Link key={href} href={href}>
+                <Link
+                  key={href}
+                  href={href}
+                  target={isSchool ? '_blank' : undefined}
+                  rel={isSchool ? 'noopener noreferrer' : undefined}
+                >
                   <span
                     className={`${linkStyle(href)} ${
                       isSchool ? 'font-schoolbell text-2xl' : 'text-xl'
@@ -113,7 +118,7 @@ export default function Navbar() {
                     {label}
                   </span>
                 </Link>
-              )
+              ),
             )}
           </div>
 
