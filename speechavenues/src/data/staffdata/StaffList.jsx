@@ -1,3 +1,5 @@
+import { image } from 'framer-motion/client';
+
 const speechStaff = [
   {
     id: 1,
@@ -58,6 +60,19 @@ const speechStaff = [
     width: 300,
     height: 400,
   },
+  {
+    id: 5,
+    name: 'Valessa',
+    role: 'SLPA',
+    bio: `Meet Valessa, our Speech-Language Pathology Assistant (SLPA)! Originally from South Florida and now based in Central Florida, Valessa began her career working with children with Autism Spectrum Disorder as a Registered Behavior Technician (RBT). That experience introduced her to speech-language pathology and sparked her passion for pediatric speech therapy. She is excited to continue growing in the field and hopes to one day become a pediatric Speech-Language Pathologist (SLP).
+
+Outside of work, Valessa enjoys attending concerts, spending time at the beach, and making memories with friends and family.`,
+    imageUrl:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1780343093/Speech%20Avenues/Bio%20Photos/valessa_vl9k76.webp',
+    alt: 'Portrait of Valessa',
+    width: 300,
+    height: 400,
+  },
   // {
   //   id: 5,
   //   name: 'Lorymar Mendez',
@@ -88,6 +103,30 @@ const otStaff = [
     imageUrl:
       'https://res.cloudinary.com/dfchcqbiq/image/upload/v1735510565/Speech%20Avenues/Bio%20Photos/KAILEY-Convert_s79isd.webp',
     alt: 'Portrait of Kailey Watson',
+    width: 300,
+    height: 400,
+  },
+  {
+    id: 2,
+    name: 'Jasmine',
+    role: 'COTA',
+    bio: `Meet Jasmine, our newest Certified Occupational Therapy Assistant (COTA)! Before entering the therapy field, she worked in human services, but she quickly realized she couldn’t imagine herself doing anything else. Her passion for helping others began at a young age when teachers often asked her to assist classmates with physical limitations. She also spent summers helping her grandmother with daily living activities, which further inspired her love for occupational therapy.
+
+Outside of work, Jasmine is a devoted mom to her two boys and cherishes spending quality family time together on her days off. She also enjoys traveling, cooking, and staying active in her community.`,
+    imageUrl:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1780343092/Speech%20Avenues/Bio%20Photos/jasmine_v6rxkf.webp',
+    alt: 'Portrait of Jasmine',
+    width: 300,
+    height: 400,
+  },
+  {
+    id: 3,
+    name: 'Lizzie',
+    role: 'COTA',
+    bio: `Miss Lizzie is a compassionate Certified Occupational Therapy Assistant (COTA) who graduated from Keiser University and has a true passion for helping others reach their fullest potential. She works with both pediatric and geriatric populations, focusing on improving independence, functional skills, fine motor development, sensory integration, and daily living activities through individualized, patient-centered care. Miss Lizzie values building strong connections with her clients and families while creating fun, engaging, and meaningful therapy experiences. Outside of work, she is a devoted wife and mother who loves traveling and spending time with her family.`,
+    imageUrl:
+      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1780343092/Speech%20Avenues/Bio%20Photos/lizzie_r4ymk6.webp',
+    alt: 'Portrait of Lizzie',
     width: 300,
     height: 400,
   },
