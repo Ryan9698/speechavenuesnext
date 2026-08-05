@@ -27,8 +27,10 @@ const GalleryComponent = () => {
   }, []);
 
   const openGallery = (index) => {
-    const globalIndex = (currentPage - 1) * imagesPerPage + index;
-    setCurrentImage(globalIndex);
+    // const globalIndex = (currentPage - 1) * imagesPerPage + index;
+    // setCurrentImage(globalIndex);
+    // setIsOpen(true);
+    setCurrentImage(index);
     setIsOpen(true);
   };
 
@@ -87,8 +89,9 @@ const GalleryComponent = () => {
                   alt={image.alt}
                   fill
                   className="object-cover rounded-md"
-                  sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
+                  // sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 25vw, 20vw"
                   loading="lazy"
+                  unoptimized
                 />
               </motion.div>
             ))}
