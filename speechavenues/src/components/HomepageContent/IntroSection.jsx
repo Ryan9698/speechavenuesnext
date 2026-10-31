@@ -8,8 +8,14 @@ export default function IntroSection() {
   return (
     <section className="max-w-6xl mx-auto px-4 mt-6 text-gray-800 mb-14">
       {/* Banner */}
-      <BannerImage className="mt-24 md:mb-12 mb-8 rounded-xl" />
-
+      {/* <BannerImage className="mt-24 md:mb-12 mb-8 rounded-xl" /> */}
+      <Image
+        src="/images/newhero.webp"
+        alt="Speech Avenues Therapy and educational programs"
+        width={1659}
+        height={948}
+        className="w-full h-auto mt-24 md:mb-12 mb-8 rounded-xl"
+      />
       <div className="flex flex-col lg:flex-row gap-12  justify-center">
         {/* Left Column: Intro Text + CTA + Badges */}
         <div className="w-full max-w-2xl mx-auto space-y-10 text-base md:text-lg text-gray-700 leading-relaxed">

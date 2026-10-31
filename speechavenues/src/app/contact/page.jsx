@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <>
       <TransitionWrapper>
-        <div className="container mx-auto px-4 py-12 max-w-4xl mt-12">
+        <div className="container mx-auto px-4 py-12 max-w-3xl mt-12">
           <h1 className="font-nunito text-5xl font-bold mb-6 text-center text-gray-800">
             Contact Us
           </h1>
@@ -42,10 +42,15 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-8 bg-white shadow-lg rounded-xl md:shadow-none p-6">
             {/* Contact Info */}
             <div className="text-center md:text-left">
-              <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+              <h2 className="text-2xl text-center font-semibold text-gray-700 mb-4">
                 Get in Touch
               </h2>
-              <p className="text-gray-700 mb-2">
+
+              <p className="text-gray-700 mb-2 p-2 text-center">
+                You can reach us at either our Rockledge or Palm Bay office
+                using the contact information below:
+              </p>
+              <p className="text-gray-700 mb-2 text-center">
                 <span className="font-bold">Email:</span>{' '}
                 <a
                   href="mailto:admin@speechavenues.com"
@@ -54,7 +59,7 @@ export default function Contact() {
                   admin@speechavenues.com
                 </a>
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 mb-2 text-center">
                 <span className="font-bold">Phone:</span>{' '}
                 <a
                   href="tel:+13213382419"
@@ -67,7 +72,7 @@ export default function Contact() {
 
             {/* Business Hours */}
             <div>
-              <h2 className="text-2xl font-semibold text-gray-700 mb-4 text-center md:text-left">
+              <h2 className="text-2xl text-center font-semibold text-gray-700 mb-4 ">
                 Hours of Operation
               </h2>
               <ul className="space-y-1 text-gray-700">

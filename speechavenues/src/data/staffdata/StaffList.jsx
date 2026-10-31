@@ -156,17 +156,17 @@ const nonTherapyStaff = [
     width: 300,
     height: 400,
   },
-  {
-    id: 3,
-    name: 'Garrett L.',
-    role: 'Palm Bay Coordinator',
-    bio: 'Meet Garrett, our Palm Bay Coordinator! Garrett handles many of the referrals and administative tasks for our Palm Bay office though also works as a vital member of our staff in Rockledge. Garrett is dedicated, hardworking, and always brings a positive attitude to the team. Outside of work, he enjoys spending time with his wife and their dog, Loretta. We’re excited to have him as part of the team and look forward to watching him continue to grow in his role!',
-    imageUrl:
-      'https://res.cloudinary.com/dfchcqbiq/image/upload/v1778791128/Speech%20Avenues/Bio%20Photos/garrettl_yqfx7l.webp',
-    alt: 'Portrait of Garrett L.',
-    width: 300,
-    height: 400,
-  },
+  // {
+  //   id: 3,
+  //   name: 'Garrett L.',
+  //   role: 'Palm Bay Coordinator',
+  //   bio: 'Meet Garrett, our Palm Bay Coordinator! Garrett handles many of the referrals and administative tasks for our Palm Bay office though also works as a vital member of our staff in Rockledge. Garrett is dedicated, hardworking, and always brings a positive attitude to the team. Outside of work, he enjoys spending time with his wife and their dog, Loretta. We’re excited to have him as part of the team and look forward to watching him continue to grow in his role!',
+  //   imageUrl:
+  //     'https://res.cloudinary.com/dfchcqbiq/image/upload/v1778791128/Speech%20Avenues/Bio%20Photos/garrettl_yqfx7l.webp',
+  //   alt: 'Portrait of Garrett L.',
+  //   width: 300,
+  //   height: 400,
+  // },
   {
     id: 4,
     name: 'Aimee',
