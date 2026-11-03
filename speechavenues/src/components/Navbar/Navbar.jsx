@@ -20,6 +20,7 @@ const navLinks = [
   { href: '/contact', label: 'Contact' },
   { href: '/gallery', label: 'Gallery' },
   { href: 'https://satc-cca.org', label: 'School', isSchool: true },
+  { href: '/donate', label: 'Donate' },
 ];
 
 export default function Navbar() {
