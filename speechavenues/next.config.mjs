@@ -40,8 +40,10 @@ const nextConfig = {
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
-      'upgrade-insecure-requests',
-    ].join('; ');
+      isDevelopment ? '' : 'upgrade-insecure-requests',
+    ]
+      .filter(Boolean)
+      .join('; ');
 
     const reportOnlyCsp = [
       "default-src 'self'",
@@ -105,7 +107,7 @@ const nextConfig = {
           {
             key: 'Permissions-Policy',
             value:
-              'camera=(), geolocation=(), microphone=(), payment=(), usb=(), browsing-topics=()',
+              'camera=(), geolocation=(), microphone=(), payment=(), usb=()',
           },
         ],
       },

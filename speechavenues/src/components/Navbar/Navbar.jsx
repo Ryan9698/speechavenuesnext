@@ -34,8 +34,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="font-quicksand fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-gray-800 text-white shadow-md h-16 flex items-center px-6">
-        <div className="flex justify-between items-center w-full max-w-7xl mx-auto">
+      <nav className="font-quicksand sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-gray-800 text-white shadow-md h-16 flex items-center px-6">
+        <div className="flex justify-between items-center w-full h-full max-w-7xl mx-auto">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -142,7 +142,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="h-16" /> {/* Spacer */}
+
       <MobileMenu isOpen={mobileOpen} setIsOpen={setMobileOpen} />
     </>
   );

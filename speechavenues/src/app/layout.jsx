@@ -1,5 +1,6 @@
 import '@/assets/styles/globals.css';
 import { Suspense } from 'react';
+import LocationBar from '@/components/LocationBar/LocationBar';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics/GoogleAnalytics';
@@ -118,6 +119,7 @@ export default function RootLayout({ children }) {
           </Suspense>
 
           <Suspense fallback={null}>
+            <LocationBar />
             <Navbar />
           </Suspense>
           <main className="flex-grow">{children}</main>

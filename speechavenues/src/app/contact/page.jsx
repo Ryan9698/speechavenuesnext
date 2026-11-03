@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { TransitionWrapper } from '@/components/Animations';
 import GoogleReviewCTA from '@/components/GoogleReviewCTA/GoogleReviewCTA';
 
@@ -89,6 +90,28 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
+        <section
+          aria-labelledby="intake-heading"
+          className="mx-auto max-w-3xl px-6 py-8 text-center mb-12 border border-blue-100 rounded-xl"
+        >
+          <h2 id="intake-heading" className="text-2xl font-bold text-gray-800">
+            New Patient Intake Forms
+          </h2>
+
+          <p className="mt-3 text-gray-700">
+            Preparing for your first appointment? Download and complete your
+            intake paperwork before your visit.
+          </p>
+
+          <Link
+            href="/forms"
+            className="mt-5 inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+          >
+            View Intake Forms
+          </Link>
+        </section>
+
         <section className="mx-auto px-6 max-w-3xl text-center mb-12">
           <h2 className="text-2xl font-bold text-gray-800">
             Interested in Joining Our Team?

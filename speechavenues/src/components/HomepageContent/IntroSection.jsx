@@ -14,7 +14,7 @@ export default function IntroSection() {
         alt="Speech Avenues Therapy and educational programs"
         width={1659}
         height={948}
-        className="w-full h-auto mt-24 md:mb-12 mb-8 rounded-xl"
+        className="w-full h-auto mt-12 md:mb-12 mb-8 rounded-xl"
       />
       <div className="flex flex-col lg:flex-row gap-12  justify-center">
         {/* Left Column: Intro Text + CTA + Badges */}
