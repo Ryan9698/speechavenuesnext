@@ -43,8 +43,8 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-8 bg-white shadow-lg rounded-xl md:shadow-none p-6">
             {/* Contact Info */}
             <div className="text-center md:text-left">
-              <h2 className="text-2xl text-center font-semibold text-gray-700 mb-4">
-                Get in Touch
+              <h2 className="text-3xl text-center font-semibold text-gray-700 mb-4">
+                Get in Touch!
               </h2>
 
               <p className="text-gray-700 mb-2 p-2 text-center">
@@ -93,7 +93,7 @@ export default function Contact() {
 
         <section
           aria-labelledby="intake-heading"
-          className="mx-auto max-w-3xl px-6 py-8 text-center mb-12 border border-blue-100 rounded-xl"
+          className="mx-auto max-w-3xl px-6 py-8 text-center mb-12 border border-blue-100 bg-blue-50 rounded-xl"
         >
           <h2 id="intake-heading" className="text-2xl font-bold text-gray-800">
             New Patient Intake Forms

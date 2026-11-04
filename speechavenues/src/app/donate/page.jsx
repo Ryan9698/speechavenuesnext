@@ -22,6 +22,15 @@ export default function Donate() {
             long-term space where students can continue learning, building
             confidence, and developing greater independence.
           </p>
+
+          <a
+            href="https://www.zeffy.com/en-US/donation-form/help-cca-secure-a-lasting-home-2?source=org-page"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block p-4 bg-blue-500 hover:bg-blue-600 text-white mx-auto rounded-xl"
+          >
+            Donate to Support CCA
+          </a>
         </div>
       </section>
     </div>
