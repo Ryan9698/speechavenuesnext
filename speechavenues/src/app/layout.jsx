@@ -26,8 +26,6 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL('https://speechavenues.com/'),
   // The object isn't necessary at this point but the site may grow and the data may change in the future. It's a reminder for me that you can have different fields in the title
-  canonical: '/',
-  applicationName: 'Speech Avenues (Next)',
   author: {
     name: 'Ryan Caltabiano',
     url: 'https://ryancaltabiano.com',
